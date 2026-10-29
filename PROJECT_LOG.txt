@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.5, full expansion; release publication pending
+Version: 0.1.0-alpha.5, published experimental expansion; user playtest pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.2
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5
 Installed CurseForge profile: Wild Realms remains alpha.2; import alpha.5 separately.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -121,7 +121,11 @@ PASS: export contains 300 unique project/file pairs, correct Minecraft/Forge,
 all KubeJS overrides byte-for-byte, no bundled jars, and SHA-256 checksum.
 PASS: full 226-entry catalogue retained; 219 pinned and seven excluded with reasons.
 Runtime, mixins, optional incompatibilities, performance and gameplay UNTESTED.
-GitHub publication outcome will be appended after the upload is verified.
+PUBLICATION VERIFIED - 2026-10-29
+Source/repairs/log pushed in commit afbeecf. Prerelease v0.1.0-alpha.5 exists;
+GitHub confirms ZIP (22921 bytes) and SHA-256 sidecar (66 bytes) uploaded.
+No new runtime/playtest results. This follow-up records the release outcome
+and updates the current download link; no pack-content changes.
 
 PLAYTEST RECORD
 
