@@ -1,0 +1,13 @@
+name = "Illager Revolution"
+filename = "illagerrevolutionmod-1.5.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "45c55c4a5c16c00e8bec5c391953be722cf0946c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8125631
+project-id = 841586

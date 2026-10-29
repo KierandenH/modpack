@@ -1,0 +1,1584 @@
+[
+  {
+    "id": "001",
+    "name": "Ice and Fire: Dragons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "002",
+    "name": "Dragon Mounts: Legacy",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dragon-mounts-legacy",
+    "status": "DEFERRED: USER BALANCE CONCERNS / POSSIBLE QUEST GATING",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "003",
+    "name": "Dragon Survival",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dragons-survival",
+    "status": "SEPARATE: DRAGON PLAYER IDENTITY ALTERNATIVE",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "004",
+    "name": "Alex's Mobs",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-mobs",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "005",
+    "name": "Alex's Caves",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-caves",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "006",
+    "name": "Mowzie's Mobs",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "007",
+    "name": "L_Ender's Cataclysm",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "008",
+    "name": "Born in Chaos",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/born-in-chaos",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "009",
+    "name": "Mutant Monsters",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mutant-monsters",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "010",
+    "name": "Illager Invasion",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/illager-invasion",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "011",
+    "name": "Savage & Ravage",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/savage-and-ravage",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "012",
+    "name": "Rotten Creatures",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rotten-creatures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "013",
+    "name": "Aquamirae",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/aquamirae",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "014",
+    "name": "The Graveyard",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-graveyard-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "015",
+    "name": "Bosses of Mass Destruction [Forge]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "016",
+    "name": "The Endergetic Expansion",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/endergetic",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "017",
+    "name": "Ender's Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enders-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "018",
+    "name": "Friends&Foes",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "019",
+    "name": "Meet Your Fight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/meet-your-fight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "020",
+    "name": "The Conjurer",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-conjurer",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "021",
+    "name": "The Twilight Forest",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "022",
+    "name": "The Aether",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "023",
+    "name": "Deep Aether",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/deep-aether",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "024",
+    "name": "The Aether: Redux",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/aether-redux",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "025",
+    "name": "Blue Skies",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/blue-skies",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "026",
+    "name": "The Bumblezone",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "027",
+    "name": "Deeper and Darker",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/deeperdarker",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "028",
+    "name": "The Undergarden",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-undergarden",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "029",
+    "name": "DivineRPG",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/official-divinerpg",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "030",
+    "name": "Advent of Ascension",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "031",
+    "name": "Voidscape",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/voidscape",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "032",
+    "name": "The Lost Cities",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-lost-cities",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "033",
+    "name": "Iron's Spells 'n Spellbooks",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "034",
+    "name": "Ars Nouveau",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ars-nouveau",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "035",
+    "name": "Ars Elemental",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ars-elemental",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "036",
+    "name": "Ars Additions",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ars-additions",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "037",
+    "name": "Occultism",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/occultism",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "038",
+    "name": "Hexerei",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/hexerei",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "039",
+    "name": "EvilCraft",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/evilcraft",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "040",
+    "name": "Blood Magic",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/blood-magic",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "041",
+    "name": "Malum",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/malum",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "042",
+    "name": "Eidolon: Repraised",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/eidolon-repraised",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "043",
+    "name": "Forbidden and Arcanus",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/forbidden-arcanus",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "044",
+    "name": "Mahou Tsukai",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mahou-tsukai",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "045",
+    "name": "Goety",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/goety",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "046",
+    "name": "Vampirism",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/vampirism-become-a-vampire",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "047",
+    "name": "Werewolves",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/werewolves-become-a-beast",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "048",
+    "name": "Enigmatic Legacy",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "049",
+    "name": "Kingdom Keys 2",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/kingdom-keys-re-coded",
+    "status": "REJECTED: USER DISLIKES CONTENT / COMMAND HUD",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "050",
+    "name": "Touhou Little Maid",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/touhou-little-maid",
+    "status": "REJECTED: USER REQUESTS NO GENSOKYO CONTENT",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "051",
+    "name": "SlashBlade",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/slashblade",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "052",
+    "name": "Mine Piece",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mine-piece",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "053",
+    "name": "Inventory Pets",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-pets",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "054",
+    "name": "Chance Cubes",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/chance-cubes",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "055",
+    "name": "Artifacts",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/artifacts",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "056",
+    "name": "Relics",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/relics-mod",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "057",
+    "name": "Buddycards",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/buddycards",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "058",
+    "name": "Rats",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/rats",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "059",
+    "name": "When Dungeons Arise",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "060",
+    "name": "When Dungeons Arise: Seven Seas",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "061",
+    "name": "Dungeon Crawl",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "062",
+    "name": "Repurposed Structures",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "063",
+    "name": "Towns and Towers",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/towns-and-towers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "064",
+    "name": "Valhelsia Structures",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/valhelsia-structures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "065",
+    "name": "ChoiceTheorem's Overhauled Village",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "066",
+    "name": "YUNG's Better Dungeons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "067",
+    "name": "YUNG's Better Mineshafts",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "068",
+    "name": "YUNG's Better Strongholds",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "069",
+    "name": "YUNG's Better Desert Temples",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "070",
+    "name": "YUNG's Better Jungle Temples",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "071",
+    "name": "YUNG's Better Ocean Monuments",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "072",
+    "name": "YUNG's Better Nether Fortresses",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "073",
+    "name": "YUNG's Better Witch Huts",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "074",
+    "name": "YUNG's Better End Island",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "075",
+    "name": "YUNG's Bridges",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-bridges",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "076",
+    "name": "Apotheosis",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/apotheosis",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "077",
+    "name": "Simply Swords",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/simply-swords",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "078",
+    "name": "Spartan Weaponry",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "079",
+    "name": "Spartan Shields",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/spartan-shields",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "080",
+    "name": "Epic Knights: Shields, Armor and Weapons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/epic-knights-armor-and-weapons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "081",
+    "name": "Tetra",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/tetra",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "082",
+    "name": "Silent Gear",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/silent-gear",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "083",
+    "name": "Silent's Gems",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/silents-gems",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "084",
+    "name": "Gobber",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/gobber",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "085",
+    "name": "SimpleOres",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/simpleores",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "086",
+    "name": "Treasure2",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/treasure2",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "087",
+    "name": "Biomes O' Plenty",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "088",
+    "name": "Ecologics",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ecologics",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "089",
+    "name": "Naturalist",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/naturalist",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "090",
+    "name": "Critters and Companions",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/critters-and-companions",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "091",
+    "name": "Unusual Prehistory",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/unusual-prehistory",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "092",
+    "name": "Domestication Innovation",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/domestication-innovation",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "093",
+    "name": "Doggy Talents Next",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/doggy-talents-next",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "094",
+    "name": "Guard Villagers",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/guard-villagers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "095",
+    "name": "Small Ships",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/small-ships",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "096",
+    "name": "Paragliders",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/paragliders",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "097",
+    "name": "Farmer's Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/farmers-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "098",
+    "name": "Nether's Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/nethers-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "099",
+    "name": "Supplementaries",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "100",
+    "name": "Quark",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/quark",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "101",
+    "name": "Chococraft",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/chococraft",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "102",
+    "name": "Book of Dragons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/book-of-dragons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "103",
+    "name": "Dragons of Berk",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dragons-of-berk",
+    "status": "SEPARATE: ALTERNATIVE TO BOOK OF DRAGONS",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "104",
+    "name": "Mythic Mounts (Forge)",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mythic-mounts-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "105",
+    "name": "Realistic Horse Genetics",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/realistic-horse-genetics",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "106",
+    "name": "Ribbits",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ribbits",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "107",
+    "name": "Human Companions",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/human-companions",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "108",
+    "name": "Villager Recruits",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/recruits",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "109",
+    "name": "Villager Workers 2",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/workers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "110",
+    "name": "Goblin Traders",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/goblin-traders",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "111",
+    "name": "More Villagers",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/more-villagers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "112",
+    "name": "Bountiful",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/bountiful",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "113",
+    "name": "MCA Reborn",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/minecraft-comes-alive-reborn",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "114",
+    "name": "Wares",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/wares",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "115",
+    "name": "MineColonies",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/minecolonies",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "116",
+    "name": "Untamed Wilds",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/untamedwilds",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "117",
+    "name": "Exotic Birds",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/exotic-birds",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "118",
+    "name": "Environmental",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/environmental",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "119",
+    "name": "Upgrade Aquatic",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "120",
+    "name": "Autumnity",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/autumnity",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "121",
+    "name": "Habitat",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/habitat",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "122",
+    "name": "Earth Mobs",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/earth-mobs",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "123",
+    "name": "Enderman Overhaul",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "124",
+    "name": "Creeper Overhaul",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "125",
+    "name": "It Takes a Pillage",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/it-takes-a-pillage",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "126",
+    "name": "Illager Revolution",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/illager-revolution",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "127",
+    "name": "Whisperwoods",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/whisperwoods",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "128",
+    "name": "LUMINOUS: NETHER",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/luminous-nether",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "129",
+    "name": "Mutant More",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/new-mutant-more",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "130",
+    "name": "Cobblemon",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/cobblemon",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "131",
+    "name": "Productive Bees",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/productivebees",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "132",
+    "name": "Modern Chickens",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/modern-chickens",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "133",
+    "name": "Aquaculture 2",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/aquaculture",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "134",
+    "name": "Fish of Thieves",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/fish-of-thieves",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "135",
+    "name": "Nether Depths Upgrade",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/nether-depths-upgrade",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "136",
+    "name": "Mystical Agriculture",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "137",
+    "name": "Mystical Agradditions",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mystical-agradditions",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "138",
+    "name": "Croptopia",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/croptopia",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "139",
+    "name": "Fruits Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/fruits-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "140",
+    "name": "Delightful",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/delightful",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "141",
+    "name": "Brewin' And Chewin'",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "142",
+    "name": "Farmer's Respite",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/farmers-respite",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "143",
+    "name": "Collector's Reap",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/collectors-reap",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "144",
+    "name": "Ocean's Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/oceans-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "145",
+    "name": "Alex's Delight",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/alexs-delight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "146",
+    "name": "Feywild",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/feywild",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "147",
+    "name": "Legendary Monsters",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/legendary-monsters",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "148",
+    "name": "Celestisynth",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/celestisynth",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "149",
+    "name": "Marium's Soulslike Weaponry",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mariums-soulslike-weaponry",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "150",
+    "name": "Stalwart Dungeons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/stalwart-dungeons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "151",
+    "name": "Gateways to Eternity",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/gateways-to-eternity",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "152",
+    "name": "Dimensional Doors",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dimensionaldoors",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "153",
+    "name": "Dimensional Dungeons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dimensional-dungeons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "154",
+    "name": "Unusual End",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/unusual-end",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "155",
+    "name": "Enlightend",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enlightend",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "156",
+    "name": "Bygone Nether",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/bygone-nether",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "157",
+    "name": "Nature's Aura",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/natures-aura",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "158",
+    "name": "Roots Classic",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/roots-classic",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "159",
+    "name": "Reliquary Reincarnations",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "160",
+    "name": "Ars Ocultas",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ars-ocultas",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "161",
+    "name": "Ars Instrumentum",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ars-instrumentum",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "162",
+    "name": "Dungeons and Taverns",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "163",
+    "name": "Explorify",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/explorify",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "164",
+    "name": "Structory",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/structory",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "165",
+    "name": "Dungeons Enhanced",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dungeonsenhanced",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "166",
+    "name": "Medieval Buildings",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/medieval-buildings",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "167",
+    "name": "Realm RPG: Fallen Adventurers",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/realm-rpg-fallen-adventurers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "168",
+    "name": "Fantasy's Furniture",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/fantasys-furniture",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "169",
+    "name": "Handcrafted",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "170",
+    "name": "Chipped",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/chipped",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "171",
+    "name": "Serene Seasons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/serene-seasons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "172",
+    "name": "Iter RPG",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/iter-rpg",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "173",
+    "name": "Dungeons Content",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/minecraft-dungeons-content",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "174",
+    "name": "Dungeon Now Loading",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-now-loading",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "175",
+    "name": "BrassAmber BattleTowers",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/brassamberbattletowers",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "176",
+    "name": "Doomlike Dungeons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/project-74246",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "177",
+    "name": "Moog's Voyager Structures",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "178",
+    "name": "Moog's End Structures",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "179",
+    "name": "Ancient Structures: Cultural buildings",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ancient-cultural-structures",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "180",
+    "name": "The Abyss II - The Other Side",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/the-abyss-chapter-ii",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "181",
+    "name": "Myths & Legends (oVinter)",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/myths-n-legends",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "182",
+    "name": "Species",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/species",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "183",
+    "name": "Fossils and Archeology: Revival",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/fossils",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "184",
+    "name": "EEEAB's Mobs",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/eeeabs-mobs",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "185",
+    "name": "Enchanted: Witchcraft",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enchanted-witchcraft",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "186",
+    "name": "Totemic",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/totemic",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "187",
+    "name": "Enchanted: Wands & Tomes",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enchanted-wands-tomes",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "188",
+    "name": "Enigmatic Addons",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enigmatic-addons",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "189",
+    "name": "Passive Skill Trees",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/passive-skill-tree",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "190",
+    "name": "Ice and Fire: Spellbooks",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-spellbooks",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "191",
+    "name": "ProjectE [OPTIONAL: OVERPOWERED ALCHEMY]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/projecte",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "192",
+    "name": "Tinkers Construct [OPTIONAL: ARTISAN WEAPONCRAFT]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/tinkers-construct",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "193",
+    "name": "Progressive Bosses [OPTIONAL: REPEATABLE CHALLENGE]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/progressive-bosses",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "194",
+    "name": "AtomicStryker's Infernal Mobs [OPTIONAL: ELITE MONSTERS]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/atomicstrykers-infernal-mobs",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "195",
+    "name": "Origins (Forge) [OPTIONAL: CHARACTER IDENTITY; DISCONTINUED]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/origins-forge",
+    "status": "SEPARATE: CHARACTER IDENTITY ALTERNATIVE",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "196",
+    "name": "Jujutsu Craft (Sorcery Fight), by Orca [OPTIONAL: ANIME CHAOS]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/sorceryfight",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "197",
+    "name": "Mine and Slash [OPTIONAL: SEPARATE RPG RULESET]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mine-and-slash-reloaded",
+    "status": "SEPARATE: REPLACEMENT RPG RULESET",
+    "detail": "Retained outside the main build by user preference / alternative-system scope."
+  },
+  {
+    "id": "198",
+    "name": "End Remastered [OPTIONAL: EXPLORATION GATE]",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/endremastered",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U01",
+    "name": "JEI: Recipes and item lookup.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U02",
+    "name": "Jade: Identify blocks and entities.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U03",
+    "name": "AppleSkin: Food and saturation information.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/appleskin",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U04",
+    "name": "Mouse Tweaks: Inventory handling.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U05",
+    "name": "Controlling: Find keybind conflicts.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/controlling",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U06",
+    "name": "Enchantment Descriptions: Understand enchantments.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U07",
+    "name": "Xaero's Minimap: Local navigation.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U08",
+    "name": "Xaero's World Map: Track discoveries.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U09",
+    "name": "Waystones: Fast return travel.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/waystones",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U10",
+    "name": "Nature's Compass: Locate biomes.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/natures-compass",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U11",
+    "name": "Explorer's Compass: Locate structures.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/explorers-compass",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U12",
+    "name": "Sophisticated Backpacks: Carry treasure.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U13",
+    "name": "Sophisticated Storage: Store treasure without a factory.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U14",
+    "name": "Comforts: Sleep while exploring.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/comforts",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U15",
+    "name": "Carry On: Move supported containers and creatures.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/carry-on",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U16",
+    "name": "GraveStone Mod: Recover your equipment after disasters.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/gravestone-mod",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U17",
+    "name": "Polymorph: Choose between conflicting crafting recipes.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/polymorph",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U18",
+    "name": "Lootr: Personal chest loot in multiplayer.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/lootr",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U19",
+    "name": "Clumps: Combine XP orbs.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/clumps",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "U20",
+    "name": "FTB Backups 2: World backups.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ftb-backups-2",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "P1",
+    "name": "Embeddium: Rendering optimization; client.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/embeddium",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "P2",
+    "name": "ModernFix: Loading/memory fixes.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/modernfix",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "P3",
+    "name": "FerriteCore: Memory optimization.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "P4",
+    "name": "Entity Culling: Avoid rendering hidden entities; client.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/entityculling",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "P5",
+    "name": "spark: Diagnose performance; not an FPS boost by itself.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/spark",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "A1",
+    "name": "AmbientSounds -- regional environmental audio. Add CreativeCore as required.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/ambientsounds",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "A2",
+    "name": "Sound Physics Remastered -- environmental echoes and sound occlusion.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  },
+  {
+    "id": "A3",
+    "name": "Falling Leaves (NeoForge/Forge) -- falling leaf particles; select Forge 1.20.1.",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/falling-leaves-forge",
+    "status": "pinned",
+    "detail": "Exact file in pack/mods; runtime compatibility untested."
+  }
+]

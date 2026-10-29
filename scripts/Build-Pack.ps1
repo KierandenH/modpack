@@ -1,4 +1,6 @@
 $ErrorActionPreference = 'Stop'
+& (Join-Path $PSScriptRoot 'Build-CompatibilityOverrides.ps1')
+& (Join-Path $PSScriptRoot 'Verify-Compatibility.ps1')
 $root = Split-Path $PSScriptRoot -Parent
 $localTool = Join-Path $root '.tools/packwiz/packwiz.exe'
 $tool = if (Test-Path $localTool) { $localTool } else { (Get-Command packwiz -ErrorAction Stop).Source }
@@ -34,6 +36,16 @@ try {
     if ($manifest.minecraft.version -ne '1.20.1') { throw 'Wrong Minecraft version' }
     if (-not ($manifest.minecraft.modLoaders | Where-Object id -eq 'forge-47.4.28')) { throw 'Wrong Forge version' }
     if (-not $zip.GetEntry('overrides/kubejs/server_scripts/wild_realms.js')) { throw 'Missing integration override' }
+    foreach ($override in Get-ChildItem (Join-Path $root 'pack/kubejs') -File -Recurse) {
+        $relative = [IO.Path]::GetRelativePath((Join-Path $root 'pack'), $override.FullName).Replace('\', '/')
+        $entry = $zip.GetEntry('overrides/' + $relative)
+        if (-not $entry) { throw "Missing compatibility override: $relative" }
+        $stream = $entry.Open()
+        $sha = [Security.Cryptography.SHA256]::Create()
+        try { $hash = [Convert]::ToHexString($sha.ComputeHash($stream)) }
+        finally { $stream.Dispose(); $sha.Dispose() }
+        if ($hash -ne (Get-FileHash $override.FullName -Algorithm SHA256).Hash) { throw "Override differs in archive: $relative" }
+    }
     Write-Output "Verified $($manifest.files.Count) pinned mods; no bundled jars."
 } finally { $zip.Dispose() }
 (Get-FileHash $archive -Algorithm SHA256).Hash.ToLower() | Set-Content ($archive + '.sha256')

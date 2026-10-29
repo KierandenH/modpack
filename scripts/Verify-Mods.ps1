@@ -45,8 +45,8 @@ foreach ($pin in Get-ChildItem (Join-Path $root 'pack/mods/*.pw.toml')) {
     $suffix = [int]$id.Substring($id.Length - 3)
     $url = "https://edge.forgecdn.net/files/$prefix/$suffix/$([Uri]::EscapeDataString($filename))"
     $dest = Join-Path $cache $filename
-    if (-not (Test-Path $dest)) { Invoke-WebRequest $url -OutFile $dest }
-    if ((Get-FileHash $dest -Algorithm $algorithm).Hash.ToLower() -ne $expected) { throw "Hash mismatch: $filename" }
+    if (-not (Test-Path -LiteralPath $dest)) { Invoke-WebRequest $url -OutFile $dest }
+    if ((Get-FileHash -LiteralPath $dest -Algorithm $algorithm).Hash.ToLower() -ne $expected) { throw "Hash mismatch: $filename" }
     $zip = [IO.Compression.ZipFile]::OpenRead($dest)
     try {
         $metadata = Read-ForgeMetadata $zip

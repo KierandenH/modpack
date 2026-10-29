@@ -1,36 +1,28 @@
-# Install and play Wild Realms
+# Install and play Wild Realms alpha.5
 
-## This computer
+The existing **Wild Realms** CurseForge profile is still alpha.2. This update
+does not modify it, its worlds, or control your launcher.
 
-The alpha is already imported in CurseForge as **Wild Realms**. Open Minecraft's
-**My Modpacks** tab, select **Wild Realms**, and click **Play**. In Minecraft
-Launcher, confirm that **Wild Realms / forge-47.4.28** is selected and click Play.
-Java 17 is installed and was used for the initial launch.
+1. Download `Wild-Realms-0.1.0-alpha.5.zip` from the
+   [alpha.5 release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5).
+   The same archive is built locally in `dist/`.
+2. In CurseForge, open Minecraft → My Modpacks → Import and select the ZIP.
+   Import into a separate profile; name it **Wild Realms alpha.5**.
+3. Allow all 300 referenced files to download. Use Minecraft 1.20.1,
+   Forge 47.4.28 and 64-bit Java 17, as pinned by the archive.
+4. Start with 10–12 GB allocated RAM on this 64 GB computer, no shaders, and a
+   new disposable world. This is an initial setting, not a measured requirement.
+5. Follow the alpha.5 test request in [PROJECT_LOG.txt](../PROJECT_LOG.txt).
 
-The instance is separate from your other packs. Its worlds and logs are in
-`C:\Users\kiera\curseforge\minecraft\Instances\Wild Realms`.
+Do not use Update all: AzureLib 3.2.0 is deliberately pinned. Preserve existing
+worlds and close Minecraft before backups. This expansion removes some old
+content and adds world generation; old saves are not the acceptance baseline.
 
-## Another computer or a fresh installation
+If startup fails, report the error screen and `logs/latest.log`, plus the newest
+`crash-reports/` file if present. Script diagnostics are in `logs/kubejs/`.
+Redact personal details before sharing logs publicly.
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.2).
-2. In CurseForge, select Minecraft, **My Modpacks**, then **Import**. Choose the ZIP.
-3. Let CurseForge download the 104 pinned files and install Forge 47.4.28.
-4. Use 64-bit Java 17. Start with about 8 GB allocated memory if your computer has
-   at least 16 GB total; leave enough memory for Windows and other applications.
-5. Click Play and choose a new test world. Keep shaders off for the first test.
-
-The Supplementaries notice about Amendments can be continued past for a new
-world: this pack does not include Amendments or import its old blocks.
-
-## Updating and troubleshooting
-
-Do not click **Update all**. Book of Dragons needs the pinned AzureLib 3.2.0.
-Import future alpha releases into a separate profile and copy a backed-up world
-only after checking the release notes. Close Minecraft before making backups.
-
-For a crash, keep `logs/latest.log` and the newest file under `crash-reports/`.
-For script errors, also inspect `logs/kubejs/`. Redact account names, addresses
-and other personal details before posting logs publicly.
-
-See [testing status and known issues](TESTING.md). This is an early client alpha;
-multiplayer servers and long-term save compatibility have not been validated.
+Only alpha.2 has been launched so far. Alpha.5 has static checks but requires
+your launch and gameplay tests. HUD/control tuning, balance, extended survival
+and dedicated-server support remain outstanding. The Supplementaries notice
+about optional Amendments can be continued past in this new profile.

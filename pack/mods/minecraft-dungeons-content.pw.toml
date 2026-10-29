@@ -1,0 +1,13 @@
+name = "Dungeons Content"
+filename = "dungeons_1.19_mc1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5f70cf1d996fdd2c0e4b3151b3bfdf087981f0b7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7212037
+project-id = 423533

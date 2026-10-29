@@ -27,3 +27,16 @@ Sources:
 - https://www.curseforge.com/minecraft/mc-mods/geckolib
 - https://packwiz.infra.link/tutorials/creating/adding-mods/
 
+
+Alpha.3 removes Dragon Mounts, Kingdom Keys and Touhou Little Maid following user feedback. Shared dependency pins remain unchanged. Dragon Mounts tests above apply only if it is reintroduced.
+
+## Alpha.5 expansion
+
+All 300 pinned files pass hash and mandatory-ID checks. Missing library metadata
+was corrected by adding Lodestone, FLIB, Platform and Kleiders Custom Renderer.
+AeroBlender is already nested in Deep Aether; no older standalone copy is needed.
+AzureLib stays 3.2.0. The alpha.4 Buddycards/Iron's Spells patch targets stay pinned.
+The Maven range audit checks 756 mandatory declarations and top-level duplicate
+IDs, using the manifest version when mods.toml uses file.jarVersion. It ignores
+dependency tables attached to undeclared placeholder IDs (such as examplemod).
+This is static inspection, not proof of runtime/mixin/optional compatibility.

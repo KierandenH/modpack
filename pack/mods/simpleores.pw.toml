@@ -1,0 +1,13 @@
+name = "SimpleOres"
+filename = "SimpleOres2-1.20.1-6.0.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "034cd282e5dd7d00289e08f5138d0ddac8f3b74d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4717451
+project-id = 226138

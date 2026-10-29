@@ -1,0 +1,13 @@
+name = "Celestisynth: Wishes and Hells"
+filename = "celestisynth-1.20.1-1.3.4-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1e0b3462ff81b012fb7914110e68a386aca3a316"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7686018
+project-id = 872712

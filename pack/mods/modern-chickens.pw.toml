@@ -1,0 +1,13 @@
+name = "Modern Chickens"
+filename = "ModernChickens-1.20.1-2.7.3-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "29d938e0fd722046d16e033ae9c5cc9ce85cdc5c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9234343
+project-id = 1368019

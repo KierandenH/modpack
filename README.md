@@ -7,24 +7,23 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Expanded starter: 0.1.0-alpha.2
+## Playtest revision: 0.1.0-alpha.5
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
-This is a pinned alpha foundation. It launches and creates a survival world;
+This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
 it is not yet a balanced or fully tested modpack.
 
-The expanded starter has **104 pinned mod files**: 69 selected content,
-convenience and customization/performance mods, plus 35 required dependencies.
+The expansion has **300 pinned mod files**, covering 219 catalogue selections plus KubeJS and transitive support/dependency mods.
 The original 20-file alpha was the dependency foundation.
 
-- Dragons and mounts: Book of Dragons, Ice and Fire, Dragon Mounts, Mythic
+- Dragons and mounts: Book of Dragons, Ice and Fire, Mythic
   Mounts, ChocoCraft and Realistic Horse Genetics.
 - Wildlife and companions: Alex's Mobs/Caves, Naturalist, Exotic Birds,
   Doggy Talents, Human Companions, Ribbits and more.
 - Adventures: Twilight Forest, Aether/Deep Aether, Blue Skies, Bumblezone,
   Undergarden, Deeper and Darker, Cataclysm, Mowzie's Mobs and dungeon mods.
 - Magic and collecting: Ars Nouveau, Iron's Spells, Occultism, Hexerei,
-  Kingdom Keys, Relics, Artifacts, Buddycards and Inventory Pets.
+  Relics, Artifacts, Buddycards and Inventory Pets.
 - Home and exploration: farming, fishing, furniture, building blocks,
   seasons, ships, Waystones, bounties and trading.
 
@@ -38,7 +37,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.2)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
@@ -47,8 +46,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 The launcher downloads the referenced mod files from CurseForge. The archive
 contains no third-party mod jars. It is a client starter, not a server installer.
-See [the setup guide](docs/SETUP.md). On the development computer it is already
-installed in CurseForge as **Wild Realms**.
+See [the setup guide](docs/SETUP.md). Import alpha.5 as a separate profile; the existing Wild Realms instance remains alpha.2.
 
 ## Project layout
 
@@ -95,3 +93,12 @@ retain their rights. Review distribution requirements before a public release.
 
 See [the roadmap](docs/ROADMAP.md) and [dependency decisions](docs/DEPENDENCIES.md).
 
+
+Alpha.5 is a new experimental expansion. It has static file/dependency checks only; the successful launch/world test belongs to alpha.2. Import it separately and use a disposable world.
+Kingdom Keys (including its command HUD) and Touhou Little Maid are removed.
+Dragon Mounts is deferred for balance and possible quest gating. Older
+Disney-style dimensions, such as Lion King, remain a research candidate.
+
+The build preserves alpha.4 compatibility repairs for Buddycards rules and two Iron's Spells
+loot tables without changing reward odds. See [patch details](docs/COMPATIBILITY.md).
+Gameplay validation is pending. HUD tuning is deferred until mod additions finish.

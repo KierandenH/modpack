@@ -99,13 +99,15 @@
     "number": "049",
     "name": "Kingdom Keys 2",
     "url": "https://www.curseforge.com/minecraft/mc-mods/kingdom-keys-re-coded",
-    "success": true
+    "success": true,
+    "currentStatus": "Removed in alpha.3 after user feedback; original selection result is historical"
   },
   {
     "number": "050",
     "name": "Touhou Little Maid",
     "url": "https://www.curseforge.com/minecraft/mc-mods/touhou-little-maid",
-    "success": true
+    "success": true,
+    "currentStatus": "Removed in alpha.3 after user feedback; original selection result is historical"
   },
   {
     "number": "053",
