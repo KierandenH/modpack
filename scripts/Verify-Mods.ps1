@@ -7,6 +7,32 @@ New-Item -ItemType Directory -Force $cache | Out-Null
 $known = @{ minecraft = '1.20.1'; forge = '47.4.28' }
 $requirements = @()
 $report = @('# Downloaded-file inspection', '', 'Checks hashes, Forge metadata and missing mandatory mod IDs. Version ranges require review.', '')
+function Read-ForgeMetadata($archive, [int]$depth = 0) {
+    if ($depth -gt 8) { throw 'Unexpected nested jar depth' }
+    $text = ''
+    $entry = $archive.GetEntry('META-INF/mods.toml')
+    if ($entry) {
+        $reader = [IO.StreamReader]::new($entry.Open())
+        try { $text = $reader.ReadToEnd() } finally { $reader.Dispose() }
+    }
+    $index = $archive.GetEntry('META-INF/jarjar/metadata.json')
+    if ($index) {
+        $reader = [IO.StreamReader]::new($index.Open())
+        try { $embedded = $reader.ReadToEnd() | ConvertFrom-Json } finally { $reader.Dispose() }
+        foreach ($jar in $embedded.jars) {
+            $nested = $archive.GetEntry($jar.path)
+            if (-not $nested) { throw "Missing bundled jar: $($jar.path)" }
+            $memory = [IO.MemoryStream]::new()
+            $stream = $nested.Open()
+            try { $stream.CopyTo($memory) } finally { $stream.Dispose() }
+            $memory.Position = 0
+            $inner = [IO.Compression.ZipArchive]::new($memory, [IO.Compression.ZipArchiveMode]::Read)
+            try { $text += "`n" + (Read-ForgeMetadata $inner ($depth + 1)) }
+            finally { $inner.Dispose(); $memory.Dispose() }
+        }
+    }
+    return $text
+}
 foreach ($pin in Get-ChildItem (Join-Path $root 'pack/mods/*.pw.toml')) {
     $s = Get-Content $pin.FullName -Raw
     $filename = [regex]::Match($s, '(?m)^filename = "([^"]+)"').Groups[1].Value
@@ -23,14 +49,12 @@ foreach ($pin in Get-ChildItem (Join-Path $root 'pack/mods/*.pw.toml')) {
     if ((Get-FileHash $dest -Algorithm $algorithm).Hash.ToLower() -ne $expected) { throw "Hash mismatch: $filename" }
     $zip = [IO.Compression.ZipFile]::OpenRead($dest)
     try {
-        $entry = $zip.GetEntry('META-INF/mods.toml')
-        if (-not $entry) { throw "Missing Forge metadata: $filename" }
-        $reader = [IO.StreamReader]::new($entry.Open())
-        try { $metadata = $reader.ReadToEnd() } finally { $reader.Dispose() }
+        $metadata = Read-ForgeMetadata $zip
+        if (-not $metadata) { throw "Missing Forge metadata, including nested jars: $filename" }
         $metadata = [regex]::Replace($metadata, '(?m)^\s*#.*$', '')
         foreach ($mod in [regex]::Matches($metadata, '(?s)\[\[mods\]\](.*?)(?=\[\[|\z)')) {
             $modId = [regex]::Match($mod.Value, 'modId\s*=\s*"([^"]+)"').Groups[1].Value
-            if ($known.ContainsKey($modId)) { throw "Duplicate mod ID: $modId" }
+            # Forge resolves shared nested libraries; the same ID may be bundled by several mods.
             $known[$modId] = $filename
         }
         foreach ($dep in [regex]::Matches($metadata, '(?s)\[\[dependencies\.[^\]]+\]\](.*?)(?=\[\[|\z)')) {

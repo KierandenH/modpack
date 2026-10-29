@@ -13,6 +13,11 @@ commands. Entries are candidates, not an assertion of compatibility.
 
 ## 0.2: living wilderness
 
+Alpha.2 already brings 57 additional catalogue selections into the starter,
+including much of this wilderness group and the adventure group below.
+Its dependency files are resolved; runtime and gameplay acceptance still
+determine when it is ready for a long-term world.
+
 Evaluate Alex's Mobs, Mythic Mounts, Realistic Horse Genetics, Exotic Birds,
 Domestication Innovation and NPC/companion options in small batches. Check
 spawn distribution, sanctuary safety and sustained entity performance.

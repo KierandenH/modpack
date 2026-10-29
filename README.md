@@ -3,15 +3,28 @@
 An extravagant fantasy adventure modpack built around dragons, collecting,
 magic and exploration. No mandatory factory progression.
 
-## Starter: 0.1.0-alpha.1
+## Expanded starter: 0.1.0-alpha.2
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned, exportable alpha foundation, not a launch-tested release.
 
-The starter includes Book of Dragons, Dragon Mounts: Legacy, Ars Nouveau,
-Farmer's Delight, Explorify, Waystones, Comforts, JEI and Jade. KubeJS supplies
-the future customization layer; FerriteCore and ModernFix supply performance
-support. Eight required libraries bring the initial total to 20 mod files.
+The expanded starter has **104 pinned mod files**: 69 selected content,
+convenience and customization/performance mods, plus 35 required dependencies.
+The original 20-file alpha was the dependency foundation.
+
+- Dragons and mounts: Book of Dragons, Ice and Fire, Dragon Mounts, Mythic
+  Mounts, ChocoCraft and Realistic Horse Genetics.
+- Wildlife and companions: Alex's Mobs/Caves, Naturalist, Exotic Birds,
+  Doggy Talents, Human Companions, Ribbits and more.
+- Adventures: Twilight Forest, Aether/Deep Aether, Blue Skies, Bumblezone,
+  Undergarden, Deeper and Darker, Cataclysm, Mowzie's Mobs and dungeon mods.
+- Magic and collecting: Ars Nouveau, Iron's Spells, Occultism, Hexerei,
+  Kingdom Keys, Relics, Artifacts, Buddycards and Inventory Pets.
+- Home and exploration: farming, fishing, furniture, building blocks,
+  seasons, ships, Waystones, bounties and trading.
+
+See [the exact mod list](docs/MODLIST.md). KubeJS supplies the customization
+layer; FerriteCore and ModernFix supply performance support.
 
 Book of Dragons is the initial HTTYD choice. Dragons of Berk remains an
 alternative in the roadmap. Neither mod's genetics or taming is shared with
@@ -20,7 +33,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Import `dist/Wild-Realms-0.1.0-alpha.1.zip` as a custom profile in CurseForge,
+1. Import `dist/Wild-Realms-0.1.0-alpha.2.zip` as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
 3. Start with a new test world and no shaders. Keep existing worlds separate.
@@ -61,12 +74,11 @@ exactly**, and an automatic dependency resolver selected 3.2.2 incorrectly.
 
 ## Version control and GitHub
 
-This folder is a local Git repository. GitHub hosting has not been created.
-To publish later, create an empty private GitHub repository, then connect it:
+The project is hosted at [KierandenH/modpack](https://github.com/KierandenH/modpack).
+The local `main` branch tracks `origin/main`. To upload reviewed changes:
 
 ```powershell
-git remote add origin https://github.com/YOUR-ACCOUNT/wild-realms.git
-git push -u origin main
+git push
 ```
 
 The archive and cache are generated locally and are not committed. No broad
