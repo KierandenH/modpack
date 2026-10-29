@@ -7,7 +7,7 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.5
+## Playtest revision: 0.1.0-alpha.6
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
@@ -37,7 +37,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.6)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
@@ -46,7 +46,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 The launcher downloads the referenced mod files from CurseForge. The archive
 contains no third-party mod jars. It is a client starter, not a server installer.
-See [the setup guide](docs/SETUP.md). Import alpha.5 as a separate profile; the existing Wild Realms instance remains alpha.2.
+See [the setup guide](docs/SETUP.md). Import alpha.6 as a separate profile; the existing Wild Realms instance contains alpha.5.
 
 ## Project layout
 
@@ -102,3 +102,9 @@ Disney-style dimensions, such as Lion King, remain a research candidate.
 The build preserves alpha.4 compatibility repairs for Buddycards rules and two Iron's Spells
 loot tables without changing reward odds. See [patch details](docs/COMPATIBILITY.md).
 Gameplay validation is pending. HUD tuning is deferred until mod additions finish.
+
+Alpha.6 addresses the reported incomplete-import startup failure with an
+installation readiness checker; mod pins are unchanged. Read the
+[diagnosis](docs/CRASH_ALPHA5.md), wait for import completion, and run
+CHECK-INSTALLATION.cmd in the profile folder before Play. This manual check
+cannot disable the launcher's Play button. No successful alpha.6 launch is claimed.

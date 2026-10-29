@@ -1,5 +1,5 @@
 WILD REALMS - CHANGE NOTES, PLAYTEST RESULTS AND COMPLETE BACKLOG
-Last updated: 2026-10-29
+Last updated: 2026-10-30
 
 PROTOCOL
 Every GitHub update and every playtest result must be recorded here. Preserve
@@ -10,13 +10,13 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.5, published experimental expansion; user playtest pending
+Version: 0.1.0-alpha.6, installation-readiness fix; publication pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5
-Installed CurseForge profile: Wild Realms remains alpha.2; import alpha.5 separately.
+Installed Wild Realms: alpha.5 files verified after failed startup; alpha.6 import pending.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -127,6 +127,31 @@ GitHub confirms ZIP (22921 bytes) and SHA-256 sidecar (66 bytes) uploaded.
 No new runtime/playtest results. This follow-up records the release outcome
 and updates the current download link; no pack-content changes.
 
+2026-10-30 - 0.1.0-alpha.6 - Incomplete import diagnosis and readiness check
+- User supplied alpha.5 crash report and startup log. Reviewed all 44 reported
+  dependency failures: 24 distinct missing mod IDs plus four outdated Curios
+  failures. Other event errors cascade from the failed dependency state.
+- Startup discovered 159/300 top-level files. 140 of the 141 undiscovered files
+  have creation times after the scan. Citadel, Blueprint and pinned Curios
+  arrived after dependency discovery. Nested Curios 5.6.1 was only a fallback.
+- Read-only inspection now verifies all 300 installed jar hashes against pins.
+  Downloads were incomplete at launch; no evidence justifies changing mod pins.
+- Added CHECK-INSTALLATION.cmd, read-only Verify-Installation.ps1 and generated
+  SHA-256 manifest for 300 jars and 15 KubeJS overrides. Manual pre-launch check;
+  it does not block the CurseForge Play button or start/control Minecraft.
+- Added complete/missing/corrupt/extra-file, bracketed-name and unsafe-path
+  regression tests. Export checks include the checker and manifest bytes.
+- Preserved all content, removals, compatibility repairs and the full backlog.
+  Full sanitized analysis: docs/CRASH_ALPHA5.md. Raw personal logs not committed.
+- PASS: all 300 installed jar SHA-1 hashes and readiness mod-only check.
+- PASS: 756 mandatory Maven ranges, no top-level duplicate mod IDs.
+- PASS: readiness checker regression cases and existing book/loot regressions.
+- PASS: export contains 300 references, no bundled jars, all overrides/checker bytes.
+- PASS: extracted release plus all pinned jars returns READY for all 315 files.
+- Test fixture hard-link creation was denied by the environment; ordinary copies
+  were used for the successful full-profile check. No installed files changed.
+- No game launch or gameplay performed; successful alpha.6 runtime is UNTESTED.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -153,12 +178,19 @@ Source: C:/Users/kiera/Documents/moddinhg/minecraft modpack/Changes to be made V
   quest-gated return. This is a user concern, not a measured balance result.
 - No crash/performance measurements or other acceptance results supplied.
 
+2026-10-30 - Alpha.5 - User-reported failed startup
+Evidence: supplied crash report and startup log, not assistant gameplay.
+FAIL: dependency discovery at 00:20:47; crash report at 00:20:59. Import was
+still populating files. No main menu, world or gameplay pass can be inferred.
+Subsequent read-only file inspection passed; user must retry after import
+completion. Do not mark the runtime issue verified resolved until that retry.
 FULL OUTSTANDING WORK
 Status meanings: REJECTED = removed by user choice; OPEN = unfinished; EVALUATE = candidate/decision needed;
 DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
+- Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
 - Buddycards rules-book repair implemented in alpha.4; verify opening and all pages in-game.
 - Iron's Spells citadel_tomes and crypt_loot repaired in alpha.4; verify loaded tables and rewards in-game.
 - Correct Human Companions' misspelled biome references in two structure tags.
@@ -228,15 +260,15 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.5
-Import dist/Wild-Realms-0.1.0-alpha.5.zip into a NEW CurseForge profile.
-Existing Wild Realms is still alpha.2. Use a fresh disposable world.
-1. Confirm the main menu loads; report any dependency/mixin/crash screen.
-2. Create a world, explore, open inventory/JEI, then save and reload.
-3. Open the repaired Buddycards book and check fresh Iron's Spells loot.
-4. Try dragons/mounts and one magic system; note HUD/key conflicts for later.
-5. Report version, symptoms, reproduction steps, FPS/stutters and relevant logs.
-No alpha.5 runtime result is assumed. Previous successful playtest was alpha.2.
+USER PLAYTEST REQUEST - ALPHA.6
+Import Wild-Realms-0.1.0-alpha.6.zip separately and WAIT for import completion.
+Open the profile folder, double-click CHECK-INSTALLATION.cmd, require READY.
+If NOT READY, let downloads finish and check again; report remaining failures.
+Then launch. If it crashes, send the NEW crash report and latest.log.
+If the main menu loads, create a disposable world, try JEI, save and reload;
+then test the repaired Buddycards book and fresh Iron's Spells loot.
+This is a manual readiness check, not an automatic launcher lock.
+No successful alpha.5/alpha.6 runtime or gameplay result is assumed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.
 INSTALLED means a project is pinned, not fully tested. EVALUATE/ADD means not

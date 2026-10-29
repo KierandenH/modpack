@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 & (Join-Path $PSScriptRoot 'Build-CompatibilityOverrides.ps1')
 & (Join-Path $PSScriptRoot 'Verify-Compatibility.ps1')
+& (Join-Path $PSScriptRoot 'Build-InstallationManifest.ps1')
 $root = Split-Path $PSScriptRoot -Parent
 $localTool = Join-Path $root '.tools/packwiz/packwiz.exe'
 $tool = if (Test-Path $localTool) { $localTool } else { (Get-Command packwiz -ErrorAction Stop).Source }
@@ -36,7 +37,11 @@ try {
     if ($manifest.minecraft.version -ne '1.20.1') { throw 'Wrong Minecraft version' }
     if (-not ($manifest.minecraft.modLoaders | Where-Object id -eq 'forge-47.4.28')) { throw 'Wrong Forge version' }
     if (-not $zip.GetEntry('overrides/kubejs/server_scripts/wild_realms.js')) { throw 'Missing integration override' }
-    foreach ($override in Get-ChildItem (Join-Path $root 'pack/kubejs') -File -Recurse) {
+    $overrides = @(Get-ChildItem (Join-Path $root 'pack/kubejs') -File -Recurse)
+    foreach ($name in @('Verify-Installation.ps1', 'CHECK-INSTALLATION.cmd', 'installation-manifest.json')) {
+        $overrides += Get-Item (Join-Path $root ('pack/' + $name))
+    }
+    foreach ($override in $overrides) {
         $relative = [IO.Path]::GetRelativePath((Join-Path $root 'pack'), $override.FullName).Replace('\', '/')
         $entry = $zip.GetEntry('overrides/' + $relative)
         if (-not $entry) { throw "Missing compatibility override: $relative" }

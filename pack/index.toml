@@ -1,6 +1,18 @@
 hash-format = "sha256"
 
 [[files]]
+file = "CHECK-INSTALLATION.cmd"
+hash = "2b627cef8d2181ff5dda794f0ffb339d2d59d24d52e9a1e74fc76cdb4a2b8177"
+
+[[files]]
+file = "Verify-Installation.ps1"
+hash = "96b29508d9a72f42ac8da7bb1932c9840e0071471871fd13f610b3b87ab1c08c"
+
+[[files]]
+file = "installation-manifest.json"
+hash = "f2ec81e20bdc42d0a1a7b6aae078008da349b6dd374118661da7a09e5544b6d6"
+
+[[files]]
 file = "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json"
 hash = "7512a9c1e02e1ccbb36169c91f17783211bc5cbad46fed49d9ddb4882ad218a9"
 
@@ -54,7 +66,7 @@ hash = "eb733b7b98c16e70e126d870ab1414720248c05a49654e09f08b7b60a0f31518"
 
 [[files]]
 file = "kubejs/server_scripts/wild_realms.js"
-hash = "0f2a10c497ac4081b0dcb50e766b043c07c229e57c1e0fe20a5c77577e5444f3"
+hash = "1d97e494e5e91bfc560b0177ec78d35d63403dc7aa6ece51963084eaf2d44183"
 
 [[files]]
 file = "kubejs/startup_scripts/buddycards_book.js"

@@ -82,3 +82,16 @@ anything fails. An initial Buddycards rejection can still appear before the
 startup repair; look for the later "Restored Buddycards rules book" message.
 These tests have NOT been run. HUD configuration is deferred by user until all
 mod additions are finished. No new gameplay result recorded.
+
+## Alpha.6 — installation failure remediation (2026-10-30)
+
+User alpha.5 startup failed during dependency discovery: 159/300 top-level
+files were detected. Installed-file creation times confirm downloads continued
+after startup. All 300 installed files now match the pins. Full diagnosis:
+[CRASH_ALPHA5.md](CRASH_ALPHA5.md). The 44 dependency errors are not 44 separate
+mod conflicts. No successful alpha.5 or alpha.6 runtime test is recorded.
+
+Alpha.6 retains the mod pins and adds a readiness checker covering all jars and
+KubeJS overrides. Before testing: wait for the complete import, open the profile
+folder, run CHECK-INSTALLATION.cmd, require READY, then launch. Report any new
+failure with the new log. The checker does not run Minecraft or validate mixins.

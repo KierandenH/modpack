@@ -1,0 +1,1265 @@
+{
+  "version": "0.1.0-alpha.6",
+  "files": [
+    {
+      "path": "mods/AoA3-1.20.1-3.7.1-all.jar",
+      "sha256": "f417ecb337d4a3b2aebec559a9262d8a86cc93ee7910f4eea64108bff063193a"
+    },
+    {
+      "path": "mods/aether-redux-2.0.19-1.20.1-neoforge.jar",
+      "sha256": "cd5103e67618d3876be3afe08e6ef101ddbffe9d4ec6e4df5f6c5987fd48d59e"
+    },
+    {
+      "path": "mods/aether-1.20.1-1.5.2-neoforge.jar",
+      "sha256": "5cb64ab1f27e78e8338fe67f9c766578904aad9bc1f8bcc90f306ea52aea3fc5"
+    },
+    {
+      "path": "mods/alexscaves-2.0.2.jar",
+      "sha256": "131e205ce3eed384d701b336d8a0d4a671108ed56b6eff6014f0e407db2997f0"
+    },
+    {
+      "path": "mods/alexsdelight-1.5.jar",
+      "sha256": "439da92c904959e805c2237ebda9e96db60870dd3b58b4b402547d494fa0057a"
+    },
+    {
+      "path": "mods/alexsmobs-1.22.9.jar",
+      "sha256": "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c"
+    },
+    {
+      "path": "mods/AmbientSounds_FORGE_v6.3.11_mc1.20.1.jar",
+      "sha256": "63a4ea6ea11fa63982325306ae09268080c296633b6bfbf72dbd7c8514d4f114"
+    },
+    {
+      "path": "mods/ancientstructures-forge-1.20.1-0.0.16.jar",
+      "sha256": "f498d3b185bb4470111328e3108ca8fab6e565b7287528c8b8f96670844ecddb"
+    },
+    {
+      "path": "mods/Apotheosis-1.20.1-7.4.8.jar",
+      "sha256": "5ed8c17cf62837bb649d1054e3e4fe93c4d9bdec98fe9f332e2637a260da30da"
+    },
+    {
+      "path": "mods/ApothicAttributes-1.20.1-1.3.7.jar",
+      "sha256": "68487b11c0d4e2f67a85f2b04bf65e99ac15294f2923f4391f83e9542293187a"
+    },
+    {
+      "path": "mods/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "sha256": "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426"
+    },
+    {
+      "path": "mods/Aquaculture-1.20.1-2.5.7.jar",
+      "sha256": "4c96cf0dd3363a8e15f9ef6b6bfc00ac7d4791e8e9eeebe19b8092c59e800f8f"
+    },
+    {
+      "path": "mods/aquamirae-forge-1.20.1-7.1.14.jar",
+      "sha256": "5439edc57af3075a1600effe0906ba322e89346077bcb80b761a4bff4cbff59b"
+    },
+    {
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af"
+    },
+    {
+      "path": "mods/areaeffectcloud3d-1.0.4.jar",
+      "sha256": "be56747d150d32e86768dec08ef67a7b1d3be485beadb96e9a63283c198822c5"
+    },
+    {
+      "path": "mods/Armor of the Ages-forge-1.20.1-1.3.16.jar",
+      "sha256": "88768aeb6b003f4644fa8aad34dd6105f0fa1a22a63859181450c42846c2199e"
+    },
+    {
+      "path": "mods/ars_additions-1.20.1-1.6.7.jar",
+      "sha256": "35639890eefa1ed6635f83ca16b80aeddaa400f2b2340567499e34667a63b428"
+    },
+    {
+      "path": "mods/ars_elemental-1.20.1-0.6.8.0.jar",
+      "sha256": "2172db18ab7a4f43da49a2bb245b3d90f1c6cd8f7ce7905870dbc60e3f5ad40b"
+    },
+    {
+      "path": "mods/ars_instrumentum-1.20.1-4.1.0.jar",
+      "sha256": "1ff7923640b80d27726ab864937b1342c7bbfb1d424185e9cfcb25ca5894d2b5"
+    },
+    {
+      "path": "mods/ars_nouveau-1.20.1-4.12.7-all.jar",
+      "sha256": "1f1debc282a0c379c1141f2840ea294eede6f6b544c589663f40bbe17b59a1af"
+    },
+    {
+      "path": "mods/ars_ocultas-1.20.1-1.2.2-all.jar",
+      "sha256": "5373af3f799173f07cdb48142bf90c33d05b74fd081ccde9df7632c393d09840"
+    },
+    {
+      "path": "mods/artifacts-forge-9.5.19.jar",
+      "sha256": "f1e4dc786866b6e4f2a48142f2acf63bb9bee54ac2f31621ad5d8f18ab54c7b0"
+    },
+    {
+      "path": "mods/athena-forge-1.20.1-3.1.2.jar",
+      "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
+    },
+    {
+      "path": "mods/infernalmobs-1.20.1.11.jar",
+      "sha256": "13e14b2bd709a6f95c1d8ec8b1b7118f619d68431b56c30019b9698433a831e5"
+    },
+    {
+      "path": "mods/AttributeFix-Forge-1.20.1-21.0.5.jar",
+      "sha256": "43ccfd91c1a24d1b3c9d3ccf2dd6a86e9f0c2ba442b111a2238fbff3cf88af11"
+    },
+    {
+      "path": "mods/autumnity-1.20.1-5.0.2.jar",
+      "sha256": "01e6b9b3020a045fffd7113ba35fdad8d5411079c1b3a8a8944ff0755a275952"
+    },
+    {
+      "path": "mods/azurelib-neo-1.20.1-3.2.0.jar",
+      "sha256": "4c487817cbac3d582e1eb1f6c8db300951dc98699f36ab067c309a3b14746904"
+    },
+    {
+      "path": "mods/bagus_lib-1.20.1-5.6.1.jar",
+      "sha256": "aeca001b9692235beb2a7c46cb110d55fc9ada0dbc8acff61dfa2f9e39158ffb"
+    },
+    {
+      "path": "mods/balm-forge-1.20.1-7.3.44.jar",
+      "sha256": "ad11d968770bb1ce73377626b6f1dcd4ae6f8be1ef6f37cee9b872b8176aebd3"
+    },
+    {
+      "path": "mods/BiomesOPlenty-forge-1.20.1-19.0.0.96.jar",
+      "sha256": "330f482487ac3135557b6e898d7e1ae5330321e9cfd5ba63e13a16cf2e8d8b98"
+    },
+    {
+      "path": "mods/blockui-1.20.1-1.0.194-snapshot.jar",
+      "sha256": "80f613d9b41753411c290c01b215672c149c51222e993f124dcd1e7720e9de32"
+    },
+    {
+      "path": "mods/BloodMagic-1.18-1.20.1-3.3.8-50.jar",
+      "sha256": "8bf5750c4ff10b13f1cfc57efeadb321e11d52a882c3905006dfe3287c3bedf0"
+    },
+    {
+      "path": "mods/blue_skies-1.20.1-1.3.31.jar",
+      "sha256": "dda5351a7d75f8074e9878912140fd5ab2fe4e74d7678d4f9c52c0b86bce9748"
+    },
+    {
+      "path": "mods/blueprint-1.20.1-7.1.5.jar",
+      "sha256": "ab6782901ffb7b08b86325897fb3a2194e0fb1a346af316d74707101c36afb9f"
+    },
+    {
+      "path": "mods/bookofdragons-1.4-1.20.1.jar",
+      "sha256": "68e59efe5a8e9a2bbff1b0238561a4e3b8bc6bbdcd3f2bcdedf312a71eef60a4"
+    },
+    {
+      "path": "mods/Bookshelf-Forge-1.20.1-20.2.15.jar",
+      "sha256": "7980d4a0beed1dcd2c283cf65f3c93f6b0085833f3ac490014979c95f1dfaf67"
+    },
+    {
+      "path": "mods/born_in_chaos_[Forge]1.20.1_1.7.5.jar",
+      "sha256": "9f242f4f3330f3d0d985f5f3ce9a92fe09016ff9c6162252f201d17009b28d7d"
+    },
+    {
+      "path": "mods/BOMD-Forge-1.20.1-1.1.2.jar",
+      "sha256": "9d064557007fbf8a48da92034209b209edd99a16a5017ee104cdc13206390441"
+    },
+    {
+      "path": "mods/Bountiful-6.0.4+1.20.1-forge.jar",
+      "sha256": "ba171d8cf146faa138563b4b7114742e1589fc444fce7503a1779eb80a8a4765"
+    },
+    {
+      "path": "mods/ba_bt-1.20.1-3.0.0-beta3.2.1.jar",
+      "sha256": "df9cbc8b7f657858d1fa823c6eabe1af027e02c0e9b5fdbd5c4398ae97653ed6"
+    },
+    {
+      "path": "mods/BrewinAndChewin-1.20.1-3.2.1.jar",
+      "sha256": "d06edc7a145e8808903b7bd06e0639458a817fbc4ee589be239c0af77a6367db"
+    },
+    {
+      "path": "mods/bucketlib-1.20.1-2.3.8.0.jar",
+      "sha256": "52890f76108f6b0e6214fada8854294febf4e545a00194c3bde0d73c16cc5819"
+    },
+    {
+      "path": "mods/Buddycards-1.20.1-4.3.2.jar",
+      "sha256": "23d1f8f9d068216b8310bbedd78abc7dcc38ea9107c17b649465dba6bcdb8adb"
+    },
+    {
+      "path": "mods/bygonenether-1.3.2-1.20.x.jar",
+      "sha256": "6518399a2bf81f85488571203a2f3589a0aac976fd0c34364489b7c356000bad"
+    },
+    {
+      "path": "mods/caelus-forge-3.2.0+1.20.1.jar",
+      "sha256": "37495445e79df8b30a3a038a0051f3c8aa8447f91a9d0aa0d20baef69dda9368"
+    },
+    {
+      "path": "mods/carryon-forge-1.20.1-2.1.2.7.jar",
+      "sha256": "d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613"
+    },
+    {
+      "path": "mods/celestisynth-1.20.1-1.3.4-all.jar",
+      "sha256": "d16e4bda6f2f493364d36026905dfcdaf4f042f12b919fa7c04c6030c09000b7"
+    },
+    {
+      "path": "mods/CerbonsAPI-Forge-1.20.1-1.1.0.jar",
+      "sha256": "54a0a20da56ab1af2d0d7f5cf1133c059a7523485d567521084f822e81505dfb"
+    },
+    {
+      "path": "mods/ChanceCubes-1.20.1-5.0.2.489.jar",
+      "sha256": "f7ceb4ee5c5132d577ec3db4584b7bb22bb01edb3a98dae8e49eb36174b8cb03"
+    },
+    {
+      "path": "mods/chipped-forge-1.20.1-3.0.7.jar",
+      "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63"
+    },
+    {
+      "path": "mods/chococraft-1.20.1-forge-0.9.12.jar",
+      "sha256": "c3fb81f56a93d6d1dfa79aa9dac84397d00b815c022b19347aca61d6216b32ce"
+    },
+    {
+      "path": "mods/[forge]ctov-3.4.14.jar",
+      "sha256": "c4b0326efa655b180cc2b9d87994ca639ee4415debbf45788f665e9f4f864d3c"
+    },
+    {
+      "path": "mods/citadel-2.6.3-1.20.1.jar",
+      "sha256": "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce"
+    },
+    {
+      "path": "mods/cloth-config-11.1.136-forge.jar",
+      "sha256": "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"
+    },
+    {
+      "path": "mods/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "sha256": "1d1cfcf386f182b1d0bdbe4bd4fc57b96234e8c7468e95e1575ad4dd6433243a"
+    },
+    {
+      "path": "mods/Cobblemon-forge-1.5.2+1.20.1.jar",
+      "sha256": "f1ea45404eac2aff0c16a3642e2db646e4117297c22686fa5c64dad67325a0ff"
+    },
+    {
+      "path": "mods/collectorsreap-1.20.1-1.5.5.jar",
+      "sha256": "d2a752e26cd252e9e9d5a0c5052c5d590dfe20ea8a2eb386f5db73cc60971501"
+    },
+    {
+      "path": "mods/comforts-forge-6.4.0+1.20.1.jar",
+      "sha256": "56398103e0e3821c98f21a5b556d57deb0686b9f50868b4278ecb73cc9d2f42c"
+    },
+    {
+      "path": "mods/Controlling-forge-1.20.1-12.0.2.jar",
+      "sha256": "516308a93824119f6a1ebc75425aa21ee8f8de0c331942793a054ba6d9c24944"
+    },
+    {
+      "path": "mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar",
+      "sha256": "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4"
+    },
+    {
+      "path": "mods/creeperoverhaul-3.0.2-forge.jar",
+      "sha256": "212eb2a2d767f54fbfbac2336c63fe2bd1aae4d827ab358da329a746358b6dd9"
+    },
+    {
+      "path": "mods/cristellib-1.1.6-forge.jar",
+      "sha256": "3856ad565ea45d6189452d813e2f021b365b686d3b1adae5f747c56a1e535d9f"
+    },
+    {
+      "path": "mods/crittersandcompanions-forge-1.20.1-2.7.1.jar",
+      "sha256": "468bdf80d5a38bd1389be28c39ed0016d62078bd81f82577f1dbd54aae672c33"
+    },
+    {
+      "path": "mods/Croptopia-1.20.1-FORGE-4.0.1.jar",
+      "sha256": "bbd35cbdbe8b9d20a70ab79a42781a82f19f51de068861c431879becbce66d28"
+    },
+    {
+      "path": "mods/Cucumber-1.20.1-7.0.16.jar",
+      "sha256": "b586a3cd1de362c365f923e5c325273916822f4b3a792c0d9ff6747d7deb2be6"
+    },
+    {
+      "path": "mods/cupboard-1.20.1-4.2.jar",
+      "sha256": "6a384b880c2429e017f83657438e1fc00d091592cc2860d6d2986094bac5d48f"
+    },
+    {
+      "path": "mods/curios-forge-5.14.1+1.20.1.jar",
+      "sha256": "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"
+    },
+    {
+      "path": "mods/CyclopsCore-1.20.1-1.22.3.jar",
+      "sha256": "611413837dfaf330de47a36ca53a7e7b9543b69ded2ca5bd92e66dc1f99538c4"
+    },
+    {
+      "path": "mods/dawnoftimebuilder-forge-1.20.1-1.5.54.jar",
+      "sha256": "73e41254edfb0bed589920185eaee7270e12e0905642a473fee4ab5790c9afdf"
+    },
+    {
+      "path": "mods/deep_aether-1.20.1-1.1.7.jar",
+      "sha256": "ab6bce474afa41edb53299d6ccbba6af22b881b7a7eab4988124ba6b6eff7feb"
+    },
+    {
+      "path": "mods/deeperdarker-forge-1.20.1-1.3.3.jar",
+      "sha256": "d07dc6155e0b751c7d1ec26dabb7284a41798c85e48b0d809fd1254e489ed455"
+    },
+    {
+      "path": "mods/Delightful-1.20.1-3.8.1.jar",
+      "sha256": "b4cc8808db58ab96440d79a509d72c52a71cc97450d8437d8072d32a278994f4"
+    },
+    {
+      "path": "mods/dimdungeons-207-neoforge-1.20.1.jar",
+      "sha256": "304ab24630d90ea1d98f6c700d5a7cd0a5bf57ced641dc7bede8204f7e93cd74"
+    },
+    {
+      "path": "mods/dimdoors-5.4.4-1.20.1-forge.jar",
+      "sha256": "ee8193a36d07827e52d540a81d07460e3b47a0bda6366adef1873d9b02a83b52"
+    },
+    {
+      "path": "mods/DoggyTalentsNext-1.20.1-1.19.1.jar",
+      "sha256": "4e4e0aeee636906dba48b0055cb44ec591308180f9bc509c9040b278a815cb96"
+    },
+    {
+      "path": "mods/domesticationinnovation-1.7.1-1.20.1.jar",
+      "sha256": "00f20efea12ea981b8d75e257a136c08e0c00c324554e69cf20193376c942e97"
+    },
+    {
+      "path": "mods/domum_ornamentum-1.20.1-1.0.304-snapshot-universal.jar",
+      "sha256": "3a5e8495da3acb3b331393d5131cef03068ee5df2164828e9c22a472f071455f"
+    },
+    {
+      "path": "mods/dungeons-and-taverns-3.0.3.f[Forge].jar",
+      "sha256": "251b531ff2882c61a4c2eba3bd7b1683aa22b6c2d459e27bfde04a2948c99e1e"
+    },
+    {
+      "path": "mods/Dungeon Crawl-1.20.1-2.3.15.jar",
+      "sha256": "71e1b8ceaf20c3102ae42ef2761ca47f30fe4cbd20ecbb687df2ce75d1785514"
+    },
+    {
+      "path": "mods/Dungeon Now Loading-forge-1.20.1-2.2.jar",
+      "sha256": "287b6ddbf4eceac67607114ee03b4bc08f7c355dfe7d1c2193f6ae884ec0c2f3"
+    },
+    {
+      "path": "mods/dungeons_enhanced-1.20.1-5.4.3.jar",
+      "sha256": "caf6a694cf338d77b71208dcdd4e234e5b87594123a55bfb4f4e0122ae61b9c3"
+    },
+    {
+      "path": "mods/earthmobsmod-1.20.1-10.5.0.jar",
+      "sha256": "107d7ed7592d5ad1771c7b5ab2e7830f276bc06a5f4126e21e07a899c352aa24"
+    },
+    {
+      "path": "mods/ecologics-forge-1.20.1-2.2.7.jar",
+      "sha256": "1d9f7d1f460c1550fc67687c71881f567e6e0f66bb852156e44580e880fe97f6"
+    },
+    {
+      "path": "mods/eeeabsmobs-1.20.1-0.98.1.jar",
+      "sha256": "a569163ee5a7c77c8dc537a1c11c87e5b0f58ddaddbe1ddf59e123c7101b7b1c"
+    },
+    {
+      "path": "mods/eidolon_repraised-1.20.1-0.3.13.jar",
+      "sha256": "a8cff6bf65b6fd9ebf74bfd4b685623d3abde6ec541506dae106bc3d5ba7527c"
+    },
+    {
+      "path": "mods/embeddium-0.3.31+mc1.20.1.jar",
+      "sha256": "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"
+    },
+    {
+      "path": "mods/enchanted_wands_tomes-1.1.0-forge-neoforge-1.20.1.jar",
+      "sha256": "8fdae6bd3b8de2eff2b5097cf25e9c9b16c9e5054a4b2fb95418a6117b4a4604"
+    },
+    {
+      "path": "mods/enchanted-forge-1.20.1-3.1.14.jar",
+      "sha256": "35d961a03b686abec45fb1cf175a4999b0818df6a111ee9808c6e4feda684193"
+    },
+    {
+      "path": "mods/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar",
+      "sha256": "909d1941d4ef6e4b7336738ee31380d6e1117c3c22feb70b64fed47f1cba2b07"
+    },
+    {
+      "path": "mods/endergetic-1.20.1-5.0.1.jar",
+      "sha256": "e6afa76562e32e8b31d320095c9c27eff5557f8048723add835ba011057e14c2"
+    },
+    {
+      "path": "mods/endermanoverhaul-forge-1.20.1-1.0.4.jar",
+      "sha256": "18f9f0bf3a9b4f77ad6913c28ccb927cde24f5d19524152cfe79ebb3dcccacc5"
+    },
+    {
+      "path": "mods/endersdelight-1.1.4.jar",
+      "sha256": "68aefd85c9076c1ffbb404a9151c09ccb73a33d12e55e2585cbf6e5e442fbf81"
+    },
+    {
+      "path": "mods/endrem_forge-5.3.3-R-1.20.1.jar",
+      "sha256": "19295ca4a798f2e813f359fa376f586bc57fadacd78b7e32440257f9f8bf2557"
+    },
+    {
+      "path": "mods/enigmaticaddons-1.2.7.jar",
+      "sha256": "feee98191812be2f44b2e269213e2a036c8a26a82b1b488bd2f296c918a1a41f"
+    },
+    {
+      "path": "mods/EnigmaticLegacy-2.30.1.jar",
+      "sha256": "cf8488350ccb03fdc5e1f3508a30137234b6dc85ea258b9ee37ceaa485f34024"
+    },
+    {
+      "path": "mods/enlightend-5.0.14-1.20.1.jar",
+      "sha256": "80da6c8ff98e1005092b7add04e48ee1a7bdb7b8bfb9938877d08656239dc9f4"
+    },
+    {
+      "path": "mods/entityculling-forge-1.11.3-mc1.20.1.jar",
+      "sha256": "86de2a9fc6538bc26e71e5393ae72018eb9bb349a5dbaa0645fd194da5654b66"
+    },
+    {
+      "path": "mods/environmental-1.20.1-4.1.2.jar",
+      "sha256": "007084624762d426ef055594c80992d3315514f5b351bbe4164ec18a7183653d"
+    },
+    {
+      "path": "mods/EpheroLib-1.20.1-FORGE-1.2.0.jar",
+      "sha256": "8924a015f28348c806e6680addc2d5a8bcaf8439dd51ce48ce3b2f2b0e522407"
+    },
+    {
+      "path": "mods/epic-knights-1.20.1-forge-10.15.jar",
+      "sha256": "5923859b45f6f0f8236f09980f1ead9b48ae9824872a429153d928fd10d5835d"
+    },
+    {
+      "path": "mods/EvilCraft-1.20.1-1.3.4.jar",
+      "sha256": "f49728de9910b7dca0717b5bbc7561cd05ae2beadd76e3a49909938544d8edff"
+    },
+    {
+      "path": "mods/exoticbirds-1.20.1-1.0.1.jar",
+      "sha256": "bf17851898a6fb473c711f6c897f833823967af40dd6d32fde95c7de958e99aa"
+    },
+    {
+      "path": "mods/ExplorersCompass-1.20.1-1.4.0-forge.jar",
+      "sha256": "0d9a7705f39a9eac19c33e0fbe5422280048991a341dc0d9471bff32111c502c"
+    },
+    {
+      "path": "mods/Explorify v1.6.5.mod.jar",
+      "sha256": "2dc76398b48b2aae9b4024642da098b0880125572de160cb5ecf91d102890cad"
+    },
+    {
+      "path": "mods/fallingleaves-1.20.1-2.1.2.jar",
+      "sha256": "6202d8241f01e21278fd5de644fd2e992824069f2cf0fc9dc6a74ab2218015b6"
+    },
+    {
+      "path": "mods/fantasyfurniture-1.20.1-9.0.0.jar",
+      "sha256": "11035b688bb1018a7ebfdaa868ffe6ace87e533b678dcf3b689c15f79fe1af2c"
+    },
+    {
+      "path": "mods/FarmersDelight-1.20.1-1.3.4.jar",
+      "sha256": "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce"
+    },
+    {
+      "path": "mods/farmersrespite-1.20.1-2.1.2.jar",
+      "sha256": "21c15ef71f66684cbd94080e04649741bdf2b2ea6a6d542783e8961365d090bb"
+    },
+    {
+      "path": "mods/liberanimalium-1.0+1.20.1-forge.jar",
+      "sha256": "ca75e40bbf578ad72ede656f579703fe57dc48c046bb0ab41c1cd947637f9bbe"
+    },
+    {
+      "path": "mods/ferritecore-6.0.1-forge.jar",
+      "sha256": "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54"
+    },
+    {
+      "path": "mods/feywild-1.20.1-5.6.4.jar",
+      "sha256": "967d1d6ae5a7c1512971e4d95f105c0262e4633570f8673b21ac9e03e433513c"
+    },
+    {
+      "path": "mods/fish_of_thieves-mc1.20.1-v3.4.0-forge.jar",
+      "sha256": "deed9982f30f591164a185efb6c0e8fec1d22d175ff967f933ac673256ece34a"
+    },
+    {
+      "path": "mods/flib-1.20.1-0.0.16.jar",
+      "sha256": "5736fd8a36fb3c69f99bae3127fb3743b68c801ffbab71a876c2a203a2c19e0e"
+    },
+    {
+      "path": "mods/forbidden_arcanus-1.20.1-2.2.6.jar",
+      "sha256": "f45d9d919b5e2ee2574fbfac340293420db80327c543dcf9c1b4fd3a79c8cc61"
+    },
+    {
+      "path": "mods/fossil-forge-1.20.1-9.3.4.0.jar",
+      "sha256": "e880ec182c1609ee85d56fc90df8017c75d095c4e2befab6581290a22f62ca03"
+    },
+    {
+      "path": "mods/fragmentum-5.4.0+1.20.1-forge.jar",
+      "sha256": "c7d907c91059891a2c27e35a7202675c81d428b57ce12c71c952c955fd4f4748"
+    },
+    {
+      "path": "mods/framework-forge-1.20.1-0.8.0.jar",
+      "sha256": "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0"
+    },
+    {
+      "path": "mods/friendsandfoes-forge-5.0.4+mc1.20.1.jar",
+      "sha256": "bc2dfd2ae3a80409b5472bce6abbd764989deab1696bbe0ec77800ae59f8704e"
+    },
+    {
+      "path": "mods/fruitsdelight-1.1.3.jar",
+      "sha256": "ad136ea910d1b09bab90425168f64d841ea4f57d49f8a616da9882c7d6d8aec1"
+    },
+    {
+      "path": "mods/ftbbackups2-forge-1.20-1.0.23.jar",
+      "sha256": "19cea280a56e533b9669d4f866aef38ebe54f6d8627efe6798016e17b6b4afda"
+    },
+    {
+      "path": "mods/fusion-1.3.16-forge-mc1.20.1.jar",
+      "sha256": "a146fe1ccc05715b5e6e3d732c48fcb0ab1698b372e725c23d900b5efa46f349"
+    },
+    {
+      "path": "mods/fzzy_config-0.7.7+1.20.1+forge.jar",
+      "sha256": "c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575"
+    },
+    {
+      "path": "mods/GatewaysToEternity-1.20.1-4.2.6.jar",
+      "sha256": "f6101d9f11b1aed6f97473b797b47201d03d8a9dcb2294f4bcb9d5f5cdbf413f"
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "sha256": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747"
+    },
+    {
+      "path": "mods/GlitchCore-forge-1.20.1-0.0.1.1.jar",
+      "sha256": "e42a8b513da08a910c133caeafad9fc2fcc22fdaaa2eb3e2516e9112a5a0db61"
+    },
+    {
+      "path": "mods/Gobber2-Forge-1.20.1-2.8.9.jar",
+      "sha256": "b57f298e421d50fb242b2f5c5f67dce8bdf6f47b83443d9fca8f9bcb82963d73"
+    },
+    {
+      "path": "mods/goblintraders-forge-1.20.1-1.11.5.jar",
+      "sha256": "05362605ea68a0b45a12b796a6787f30430bd55e462959f0a43ccd63ca14438a"
+    },
+    {
+      "path": "mods/goety-2.5.60.0.jar",
+      "sha256": "989af00dfbb3acedd8b2d0b809079f6222775b5ed094771f65569a5da3dbacee"
+    },
+    {
+      "path": "mods/gottschcore-1.20.1-2.10.0.jar",
+      "sha256": "9301480a14a9a25ecb38dfde8e26612b66563d58a53e995b2332a80427abf417"
+    },
+    {
+      "path": "mods/gravestone-forge-1.20.1-1.0.35.jar",
+      "sha256": "3d31bd224bc1f9055c502cf675416ae8046dbc15bf2db6627e26a032da437e85"
+    },
+    {
+      "path": "mods/guardvillagers-1.20.1-1.6.19.jar",
+      "sha256": "4c48c88144bcd8d47820baa5ca0d0c1cab8984da4ec2ceeb7ed164c27d1266f3"
+    },
+    {
+      "path": "mods/habitat-1.4.jar",
+      "sha256": "297567adbf0320056601aa216acaa34dcbce046364dd5db0115445319962f1e8"
+    },
+    {
+      "path": "mods/handcrafted-forge-1.20.1-3.0.6.jar",
+      "sha256": "1da3c7c524bfb656bb370757af55f08f1678e8e1cb934e1c4c04aa773ed64a79"
+    },
+    {
+      "path": "mods/hexerei-0.4.2.3.jar",
+      "sha256": "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
+    },
+    {
+      "path": "mods/humancompanions-1.20.1-1.7.6.jar",
+      "sha256": "016613eb2efde75c10fa9dd3827b5c5c808408f85df60cbe73fcd570cd53f965"
+    },
+    {
+      "path": "mods/iceandfire-2.1.13-1.20.1-beta-5.jar",
+      "sha256": "2b80245fc9b7d6fdc61d71f9892f4c6114eb7f303f65634845aaab25f84d1e82"
+    },
+    {
+      "path": "mods/ice_and_fire_spellbooks-2.3.2-1.20.1.jar",
+      "sha256": "c15f6234274407976c791f2d1b3776d0aacc5138341aaf81367bd9e47a7f13a5"
+    },
+    {
+      "path": "mods/IllagerInvasion-v8.0.7-1.20.1-Forge.jar",
+      "sha256": "790d52067b30e85ff0dcc4131cf709f9f45c619bdc6b6ff11ed8ac4e3f61acda"
+    },
+    {
+      "path": "mods/illagerrevolutionmod-1.5.1.jar",
+      "sha256": "820f3a7dcebf03c3efb3b49757ff84c12ee34f276da68fb9115b9bbc698fa152"
+    },
+    {
+      "path": "mods/insanelib-1.23.4.6.jar",
+      "sha256": "cadc3902d8bb6d454f6b5039381da3995220640a1945b65400a2a16f4052a318"
+    },
+    {
+      "path": "mods/inventorypets-1.20.1-2.2.9.jar",
+      "sha256": "51d3669c839bbbb86e8259104ab5a3e4134bcc7121d2f4d498b4d693fa0aca44"
+    },
+    {
+      "path": "mods/irons_lib-1.20.1-2.3.0.jar",
+      "sha256": "85f606530258f7a37b73f6138da0aeb512f3aa9fe7b5253fb15b0b670fa1862f"
+    },
+    {
+      "path": "mods/irons_spellbooks-1.20.1-3.16.3.jar",
+      "sha256": "54b5aaa52887c38f570fbd820288171234d8541c17a5e953f9271189fdd480fb"
+    },
+    {
+      "path": "mods/takesapillage-1.0.3-1.20.1.jar",
+      "sha256": "b8ebc7ea467637dc918ffa9c8eaa273f8723e6e81be93cf5f69618f8072baa11"
+    },
+    {
+      "path": "mods/iter_rpg-0.7.9a-forge-1.20.1.jar",
+      "sha256": "8b73bbb3af745b65920122207a74fd84d68659c3760ed728921dd98d41763d09"
+    },
+    {
+      "path": "mods/Jade-1.20.1-Forge-11.13.3.jar",
+      "sha256": "a632c77975e5aedff6322b0072f8b0db3f5d4bf914df6bdcc87d1aea4d5f55f4"
+    },
+    {
+      "path": "mods/jei-1.20.1-forge-15.74.0.233.jar",
+      "sha256": "9ae1a7aab456ad75c3642258419aede85bf84e26a398532e5b4e8f1fa1c4dad6"
+    },
+    {
+      "path": "mods/Kambrik-6.1.1+1.20.1-forge.jar",
+      "sha256": "37d0c2b03a1f3aacb30498d67c35adaca99dc9ecd30f66f383016f4cbc85be8e"
+    },
+    {
+      "path": "mods/kleiders_custom_renderer-7.4.1-forge-1.20.1.jar",
+      "sha256": "9e7bf7f20560120ec6de86f76ca88bb2f1c6ad22e98980bce119599f1e0c809e"
+    },
+    {
+      "path": "mods/kotlinforforge-4.12.0-all.jar",
+      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae"
+    },
+    {
+      "path": "mods/kubejs-forge-2001.6.5-build.26.jar",
+      "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb"
+    },
+    {
+      "path": "mods/legendarymonsters-2.2.4 MC 1.20.1.jar",
+      "sha256": "e5910b0b0a7aa5442ec83a827d08e0609f20041a04e22a656835bb419bf042d9"
+    },
+    {
+      "path": "mods/L_Enders_Cataclysm-3.31.jar",
+      "sha256": "c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362"
+    },
+    {
+      "path": "mods/lionfishapi-3.0.jar",
+      "sha256": "d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871"
+    },
+    {
+      "path": "mods/lithostitched-forge-1.20.1-1.4.11.jar",
+      "sha256": "c19a5a36c0e6cb3782cf7ca5b9648fb1bce5fc41fd737bed423a1f4971bccf75"
+    },
+    {
+      "path": "mods/lodestone-1.20.1-1.6.4.1.jar",
+      "sha256": "e9f8b7bc70ba99d97005f2acee2061b149785fbae3c1e37db08c79197bcc7c2d"
+    },
+    {
+      "path": "mods/lootr-forge-1.20-0.7.35.94.jar",
+      "sha256": "01200ee5889e6bcc3c5fa8f32b7b49a4bd58e653699eeb655c6f2dd314e3ce51"
+    },
+    {
+      "path": "mods/Luminous Nether V1.3.4 - Forge 1.20.1.jar",
+      "sha256": "e368252fb062078f24ff0401db814f7e8b0d8544584e5dac44e1c8b53b0f0d84"
+    },
+    {
+      "path": "mods/mahoutsukai-1.20.1-v1.34.81.jar",
+      "sha256": "761b489b86de68d1d05fe516e68337c43858eb0bd4d1d1e8228f7b72a4d32d5a"
+    },
+    {
+      "path": "mods/malum-1.20.1-1.6.7.jar",
+      "sha256": "ceda6ce4cc19de21ff6c21a732d8f9270ecc83cdae69027b13aaa24b536307f8"
+    },
+    {
+      "path": "mods/Mantle-1.20.1-1.11.117.jar",
+      "sha256": "bcb9681f78dde0da7e63e92abb341dc0dc09503fc1ab78c96f9d40571edc240d"
+    },
+    {
+      "path": "mods/soulslike-weaponry-1.4.10-1.20.1-forge.jar",
+      "sha256": "cdf6552d31f9d40f7e3e3b3bc689ecc3eb5e40d4712f102e1d80a027e96a0fcc"
+    },
+    {
+      "path": "mods/medieval_buildings-1.20.1-1.1.3-forge.jar",
+      "sha256": "1e45593b718dbdb04a4ab228cf165afc27840e605bc44a65e0b0730b1ec1c178"
+    },
+    {
+      "path": "mods/meetyourfight-1.20.1-1.6.2.jar",
+      "sha256": "624624471b8b3aefa98a798ae6d20ff6efef02d74f4702c05c21306714b02bda"
+    },
+    {
+      "path": "mods/mezz_config-1.20.1-forge-0.6.9.jar",
+      "sha256": "556460469e7561158676d9fa361dcc78be26d93dd422a3033dfa028739ec0b71"
+    },
+    {
+      "path": "mods/MinePiece-ver15-forge-1.20.1.jar",
+      "sha256": "f9ecbb8f86148a01def15f1efd20bc33775a2a3633287a4a69fde183a4d09704"
+    },
+    {
+      "path": "mods/minecolonies-1.20.1-1.1.1304-snapshot.jar",
+      "sha256": "1857012f4220b2546464a024487fe6dbc0ef2812c82a0144f1133729dc315f23"
+    },
+    {
+      "path": "mods/minecraft-comes-alive-7.7.1-beta.5+1.20.1-universal.jar",
+      "sha256": "0661e8d59918143f1d6c89d279dbdd7c2772b64ac51806394b2ba291c1449771"
+    },
+    {
+      "path": "mods/dungeons_1.19_mc1.20.1.jar",
+      "sha256": "cd664d411864712aae1dc5ec29a6575464853550559adba3b16da8a1cd1406a4"
+    },
+    {
+      "path": "mods/ModernChickens-1.20.1-2.7.3-Forge.jar",
+      "sha256": "8bb0a6b6519f707fb56f7e3bb73429489c67300081bbc19c7607eecf410315ed"
+    },
+    {
+      "path": "mods/modernfix-forge-5.27.91+mc1.20.1.jar",
+      "sha256": "b42fe87fd5ffa46f7db56c6cee01b08dea362baf4cc56a70db40d928773b5000"
+    },
+    {
+      "path": "mods/modonomicon-1.20.1-forge-1.79.3.jar",
+      "sha256": "6a95475102948bff7046b53bc3882ebfdfcf8f0d7a5d14fe612e63680cfe18a3"
+    },
+    {
+      "path": "mods/MoogsEndStructures-universal-1.20-2.1.0.jar",
+      "sha256": "6d5c7f2a8773b96d00d8292e08b00ca7d32f2503be5151cf4f59e1871f57394f"
+    },
+    {
+      "path": "mods/MoogsStructureLib-forge-1.20-3.4.2.jar",
+      "sha256": "e608ce2e206b5cca513ab1b79a5eba40237e65d910998118041277909d5488b9"
+    },
+    {
+      "path": "mods/MoogsVoyagerStructures-universal-1.20-5.1.3.jar",
+      "sha256": "94cbcbea535729eab2f33bfb7fe27428cb18a3d294ad117a71c263857226f1ee"
+    },
+    {
+      "path": "mods/morehitboxes-forge-1.20.1-1.9.2.jar",
+      "sha256": "d7d181f9bf7fc4ae889bb86c3c71b1668290ff05464fd9640cbe439ba4c7b5b5"
+    },
+    {
+      "path": "mods/morevillagers-forge-1.20.1-5.0.0.jar",
+      "sha256": "44b86176f3c9905c4dc2fc9b8b38c31693da7e10ab10b53fd108e985be8f4658"
+    },
+    {
+      "path": "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "sha256": "6c27d16aa715ac6613a55fc463739e2c7b78279e4e4c4cede299e4a2d4a70f08"
+    },
+    {
+      "path": "mods/mowziesmobs-1.8.2.jar",
+      "sha256": "e8ce1768cda6f1e1fadd2321c92921b473bd0cee45ba4b8387fb30f8326cb31c"
+    },
+    {
+      "path": "mods/multipiston-1.20-0.0.47-snapshot.jar",
+      "sha256": "ea41ccf857b3dd9cb7b1128f982fa138f1a62fdb6a4995adbd99eff963d71721"
+    },
+    {
+      "path": "mods/MutantMonsters-v8.0.8-1.20.1-Forge.jar",
+      "sha256": "9a1835dd388a04c37acb1384e7c39650804103b3dd9d4b3910fd49022d18a4bf"
+    },
+    {
+      "path": "mods/mutil-1.20.1-6.3.0.jar",
+      "sha256": "a027af93336e820e95072f3d9d913497e3883f7fa487f1381e42023fcd2ec3c8"
+    },
+    {
+      "path": "mods/MysticalAgradditions-1.20.1-7.0.12.jar",
+      "sha256": "47d4da9247889bb3992406a6c5ad7d87ea0d1bfc02df10fcc5b3963b0861a0f7"
+    },
+    {
+      "path": "mods/MysticalAgriculture-1.20.1-7.0.24.jar",
+      "sha256": "f9c5f8ac46d354e00b8ec0d5abfc3a224a78d15c521928f788b21bbe7792206d"
+    },
+    {
+      "path": "mods/mythicmounts-20.1-7.4.2-forge.jar",
+      "sha256": "86beb8e6745b8f778f054b12f3db64a053f20a4d9ea03bfb1550cb9e98ea57e3"
+    },
+    {
+      "path": "mods/mythsandlegends-1.0.6.jar",
+      "sha256": "5bd4f5b8cddb3e43f3c59f72f671e501d9007a049be0838e7c3e56b8033013e5"
+    },
+    {
+      "path": "mods/naturalist-2.0.9-forge-1.20.1.jar",
+      "sha256": "b721713241003bf48ffde307a57e4c8572f48df3dcac08ffe7baacc919748fc2"
+    },
+    {
+      "path": "mods/NaturesAura-39.4.jar",
+      "sha256": "df1c4dffce5d02695031c674e6fd7b34b8a67cece88400c48e942bb27b8fff6d"
+    },
+    {
+      "path": "mods/NaturesCompass-1.20.1-1.12.0-forge.jar",
+      "sha256": "bc3601e9e050802569647de843fe9d3160934c5f31412cba62ca2ea8c1485197"
+    },
+    {
+      "path": "mods/netherdepthsupgrade-3.1.5-1.20.jar",
+      "sha256": "ff15d40b448bf799615904335efca741f206d24e232ebc925c405315f179529e"
+    },
+    {
+      "path": "mods/nethersdelight-1.20.1-4.0.jar",
+      "sha256": "28b072bc5c09ee889468546676c9bf0268eaa415865704bbeeb33f6a37005a30"
+    },
+    {
+      "path": "mods/mutantmore-1.20.1-early_access-2.0.0.jar",
+      "sha256": "8cc7dc53ce0b7f5a0290a96e4cce210accc1f479a8c5ccbd8ae21fbfa8cb1f31"
+    },
+    {
+      "path": "mods/occultism-1.20.1-1.158.0.jar",
+      "sha256": "21449cefa0a64ab6a8750cdbf1e0f90408366f6e90497cf4d0367c98b2159754"
+    },
+    {
+      "path": "mods/oceansdelight-1.0.2-1.20.jar",
+      "sha256": "ea6ae6bd1459046b7d7fd2c515a80b6966ff2c629bdf22d6298f0a73432b932d"
+    },
+    {
+      "path": "mods/divinerpg-1.10.7.5.jar",
+      "sha256": "ce73e2a3f97082cae1ae4afbb1b2facea0331a381b8d5d8f8e67ed27bb450030"
+    },
+    {
+      "path": "mods/Paraglider-forge-20.1.3.jar",
+      "sha256": "3528e4d424682a415ae97b9597e5ed0567e5a194b4aeb30ae364e962da43b36a"
+    },
+    {
+      "path": "mods/PassiveSkillTree-1.20.1-BETA-0.7.6e-all.jar",
+      "sha256": "dc16e0695711d098d8b80addf7220ed46c5526a429efbcbcc12f1b739c8446e6"
+    },
+    {
+      "path": "mods/Patchouli-1.20.1-85-FORGE.jar",
+      "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5"
+    },
+    {
+      "path": "mods/Placebo-1.20.1-8.6.3.jar",
+      "sha256": "1cdf906cfbcbb5e5be2ef1bb721f79a24b01bd2ac559c8cdbfb7693f62421571"
+    },
+    {
+      "path": "mods/Platform-forge-1.20.1-1.4.2.jar",
+      "sha256": "90a8dbe620614f4be677e43071cfaf01bbad382ad3354088d6caaf182fca7166"
+    },
+    {
+      "path": "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "sha256": "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"
+    },
+    {
+      "path": "mods/polylib-forge-2000.0.3-build.143.jar",
+      "sha256": "abf42a3240b083fc96b9c022a049323cd4130844fcef338e1ab8b2cd6502a04b"
+    },
+    {
+      "path": "mods/polymorph-forge-0.49.11+1.20.1.jar",
+      "sha256": "cb633f3a3220ccfd00efbb57fb37bf7be44b5266195103af26add462fa71d86a"
+    },
+    {
+      "path": "mods/productivebees-1.20.1-12.6.0.jar",
+      "sha256": "b728e5640fcfd0bd7137cabf475455588452ace89a3dd136333a60fdf7049af4"
+    },
+    {
+      "path": "mods/progressivebosses-4.3.12.jar",
+      "sha256": "bdc585265d31246b5c7a2f32ff8b39efc5bfd500aa11aab6d26ada306c7b9bd1"
+    },
+    {
+      "path": "mods/dldungeonsjbg-2.2.1-MC1.20.1.jar",
+      "sha256": "9c6f8fb68617aa723beabfa3cb88b0ee999cde49d6f7054cc911aa04505e664a"
+    },
+    {
+      "path": "mods/ProjectE-1.20.1-PE1.0.1.jar",
+      "sha256": "f51f387e56307e7cda26915ca0c789760d85e97a8b40b8bfa0988be66371d018"
+    },
+    {
+      "path": "mods/PuzzlesLib-v8.1.36-1.20.1-Forge.jar",
+      "sha256": "103f1d46c16023e346802a9b2024db885cf8dc3a43ee5106bcd5ed8165073efd"
+    },
+    {
+      "path": "mods/Quark-4.0-462.jar",
+      "sha256": "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478"
+    },
+    {
+      "path": "mods/quest_giver-1.20.1-1.5.3.jar",
+      "sha256": "f890f32e6a2f948061bbf060cbe7dd4b8c4d6ee3fd05472662e523cbb39d1685"
+    },
+    {
+      "path": "mods/ranged_weapon_api-forge-2.3.4+1.20.1.jar",
+      "sha256": "f39b67ba0294dd1fa52c3b62aedcc8e19b972dd76f6eeb234b9c9f001201743d"
+    },
+    {
+      "path": "mods/Rats-1.20.1-8.1.3.jar",
+      "sha256": "9a73aa327f8d48a06208bb6f47f03799e061eac8714f09301df0ef5d34ca5f3c"
+    },
+    {
+      "path": "mods/realistic_horse_genetics-1.20.1-13.5.jar",
+      "sha256": "933ff9683a0a9bed4060111504de7d917f7929ff7022c56f85bfc3f86e8ddb1a"
+    },
+    {
+      "path": "mods/realmrpg_skeletons-1.1.0-forge-1.20.1.jar",
+      "sha256": "5206c8117f3869f6ea894c034f4a18d4def40ef8b0da106eb662ebd4e8ebbf36"
+    },
+    {
+      "path": "mods/recruits-1.20.1-1.15.2.jar",
+      "sha256": "4b53c1b752e886ba10985aad2df30d668971810230eb77867e07428a21d1af7f"
+    },
+    {
+      "path": "mods/relics-1.20.1-0.8.0.13.jar",
+      "sha256": "2731d3b81533564c5d206faf94e4e8afaf928d97b47b720e5d6aaa017333096f"
+    },
+    {
+      "path": "mods/reliquary-1.20.1-2.0.66.1577.jar",
+      "sha256": "f964cf10ca78b989bd05c5bcecdc2eb19210a20eb5fa801f98ee93250f748c1a"
+    },
+    {
+      "path": "mods/repurposed_structures-7.1.25+1.20.1-forge.jar",
+      "sha256": "e252a6a5682ba9d2b362d81a429f7700bf79c7914adc51065af73cac9a581fcb"
+    },
+    {
+      "path": "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "sha256": "c404b9e5cf8595427a72d4ca6ee5730289168762b463f169be3ae5dfe3727ded"
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8"
+    },
+    {
+      "path": "mods/rhino-forge-2001.2.3-build.10.jar",
+      "sha256": "fed2211429301bf043864183cab9ab8e92d4cc4dbb9e488ce6c75217c54584a6"
+    },
+    {
+      "path": "mods/Ribbits-1.20.1-Forge-3.0.5.jar",
+      "sha256": "e04aa665df7e96844fe8833f29cc343feefac8ad7b949399d7b4a60475123e2b"
+    },
+    {
+      "path": "mods/RootsClassic-1.20.1-1.4.2.jar",
+      "sha256": "a32106b234bd8fef372f26e804cdfe1e0eef43a6f369ad79c7761d4bbd97017d"
+    },
+    {
+      "path": "mods/rottencreatures-forge-1.20.1-1.1.0.jar",
+      "sha256": "cbf97ceeb4378b493884fc49fb668098edaca135dad81db548dea6f4c324e81b"
+    },
+    {
+      "path": "mods/savage_and_ravage-1.20.1-6.0.1.jar",
+      "sha256": "6df35846b724ff95aa2e54a858ff0b354e0fadd8caa49985e3a34006921cb257"
+    },
+    {
+      "path": "mods/Searchables-forge-1.20.1-1.0.3.jar",
+      "sha256": "c1a76e93886210574d3f298c0461241fb711e52ac22c7a04d3236840f29e6576"
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.38B-forge.jar",
+      "sha256": "9d8c290258a11edc6788992aba055b46791329e8ade5f8f209f28ecda2bacbcf"
+    },
+    {
+      "path": "mods/SereneSeasons-forge-1.20.1-9.1.0.3.jar",
+      "sha256": "650c35858d335d45adea5445ffaed25ccd433f5cbfe4936ac2694b250177b674"
+    },
+    {
+      "path": "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "sha256": "5bb146c691f2c5054752f006a61aab6335ecb1cd9718a9643733de5367971047"
+    },
+    {
+      "path": "mods/silent-gear-1.20.1-3.6.7.jar",
+      "sha256": "0f438b1919544e6ba0b4e44ee4496d7dfab878f90c9ab02cca46507217e0dc5a"
+    },
+    {
+      "path": "mods/silent-lib-1.20.1-8.0.0.jar",
+      "sha256": "9ca45fb6d723474d145227bed27dd1791cca30ac96fd8f05084417b0779e0e01"
+    },
+    {
+      "path": "mods/silents-gems-1.20.1-4.7.0.jar",
+      "sha256": "f02508a3f80eb903bdd2fddc2743fd6c9b2082992e31530b21850b367286009e"
+    },
+    {
+      "path": "mods/SimpleCoreLib-1.20.1-6.0.1.2.jar",
+      "sha256": "20782de059615c0acd84c65f46fe70e8de0b6861a96cd2a1b443005828eaf6d0"
+    },
+    {
+      "path": "mods/SimpleOres2-1.20.1-6.0.0.3.jar",
+      "sha256": "eb30398247260f02f4f7f4fd5ca7423ca4239522c6c5c129ca1080c94fb4feee"
+    },
+    {
+      "path": "mods/simplyswords-forge-neoforge-1.70.2-1.20.1.jar",
+      "sha256": "642e385ffda914f1b9411f0a457fe5fb5e05aa160dc44392dec9a549c2bcec21"
+    },
+    {
+      "path": "mods/SimplyTooltips-forge-0.1.5-1.20.1.jar",
+      "sha256": "a50357b4982132522f48afc6fa625c453359390f8180e4c72f6288ecd46dee3c"
+    },
+    {
+      "path": "mods/SlashBlade-1.20.1-0.1.2.jar",
+      "sha256": "5d792f93f70d111275d60d6b1979436e4cc08847076003b1d7ca89235e4d57a7"
+    },
+    {
+      "path": "mods/smallships-2.0.2-forge-1.20.1.jar",
+      "sha256": "9296279c692e424bbd358bc37170708828ddb4c4f683a2074b5e9dfa867d13c8"
+    },
+    {
+      "path": "mods/SmartBrainLib-forge-1.20.1-1.15.jar",
+      "sha256": "665f65f77cc36379a9ae11c09db5d9efa1ad4f8d017edc8f65903ff27cacdb1d"
+    },
+    {
+      "path": "mods/sophisticatedbackpacks-1.20.1-3.26.17.2231.jar",
+      "sha256": "a454049fbf89c7159cf04c7e67e3112187934cd83de7f3d93294ff2b94f5ac3d"
+    },
+    {
+      "path": "mods/sophisticatedcore-1.20.1-1.5.17.2435.jar",
+      "sha256": "4b4216f2daecb80ac34d18cb9728709681e3c62e6e6f1d6b3aad5e2d5a1b4cdf"
+    },
+    {
+      "path": "mods/sophisticatedstorage-1.20.1-1.5.10.2204.jar",
+      "sha256": "903d03b1b5ffa34ce3f5196a2c74a26edd1386ae0b5c2804b50f2ac687117838"
+    },
+    {
+      "path": "mods/JujutsuCraft-ver51-forge-1.20.1.jar",
+      "sha256": "94a1bdd649d170ae663e2e7773cf2b7ad71d907e35381a782e3976de252566af"
+    },
+    {
+      "path": "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar",
+      "sha256": "591fa317c4e462039dae01967bf370acb284d5118cf5839a33f1d01b6c0def3c"
+    },
+    {
+      "path": "mods/spark-1.10.53-forge.jar",
+      "sha256": "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed"
+    },
+    {
+      "path": "mods/SpartanShields-1.20.1-forge-3.1.1.jar",
+      "sha256": "920368908e26e1a75186e06affd03274d0fe93770d5c5d12c177f53d7aa1deac"
+    },
+    {
+      "path": "mods/SpartanWeaponry-1.20.1-forge-3.2.1-all.jar",
+      "sha256": "2736ac2dd52a7b3a188df454e61a4154cd36e273fa770f3ab89dcf6e732e88ad"
+    },
+    {
+      "path": "mods/species-3.5.jar",
+      "sha256": "60cdc79387a14440d199dd217fe24edd6cd68d865460ee48e944d4bb0d78b23f"
+    },
+    {
+      "path": "mods/stalwart-dungeons-1.20.1-1.2.8.jar",
+      "sha256": "c0b967220e751629da248151a30d8d21f9cf3afc6c92da0aa8bd838a05f8fd7a"
+    },
+    {
+      "path": "mods/stateobserver-forge-1.20.1-1.4.3.jar",
+      "sha256": "7deb690b98f503fc2bed51a9b68a68b24feba46073c2eae2ea73e2e32c26833d"
+    },
+    {
+      "path": "mods/Structory_1.20.x_v1.3.5.jar",
+      "sha256": "43f4b4b88bb9caa1114928a93e787335e56171b5233a545bf2f4da1ce9fe943b"
+    },
+    {
+      "path": "mods/structureessentials-1.20.1-5.1.jar",
+      "sha256": "e6a027c600378f26ead8f8299ebf3c64dace6565c758300a4d0b8599ad6974af"
+    },
+    {
+      "path": "mods/structure_gel-1.20.1-2.16.2.jar",
+      "sha256": "1584a5aed31c0f63e53c29d53cf4e069cdabf358e785240cc500702dc5918e3e"
+    },
+    {
+      "path": "mods/structurize-1.20.1-1.0.823-snapshot.jar",
+      "sha256": "37635cca4f4f2f8b6785802525d0871979a5177e43e1a40dba53402eed90d557"
+    },
+    {
+      "path": "mods/supplementaries-1.20-3.1.44-forge.jar",
+      "sha256": "13c07f2b290f9f3dc8fcab8287ad699b0af16974291ad43c7cc95f8cf235a90b"
+    },
+    {
+      "path": "mods/TerraBlender-forge-1.20.1-3.0.1.10.jar",
+      "sha256": "c109016f46ca9bdae69976bf080bbf2e8e5968cb66c0a78845f8ca6af5dbbeb1"
+    },
+    {
+      "path": "mods/tetra-1.20.1-6.17.0.jar",
+      "sha256": "261ea9e0a09b314f8db58d02e75a9f543238f2e3dfe950f605e592686f631e6f"
+    },
+    {
+      "path": "mods/TATOS 1.0.5_beta.jar",
+      "sha256": "a42bc700a8fcfc32fa8ec122720296bc61b3324cd6f249a60fe342793ecbf5f5"
+    },
+    {
+      "path": "mods/the_bumblezone-7.15.2+1.20.1-forge.jar",
+      "sha256": "0aa95b7aab2dbea44b6cbace2f3556670fd8bd613937c736df7cbd9b9de8e8a9"
+    },
+    {
+      "path": "mods/the-conjurer-1.20.1-1.1.6.jar",
+      "sha256": "13116af840e2c2a734d36cbd475bdbaf6ee3a26ff7653ea6641667a8ff937480"
+    },
+    {
+      "path": "mods/graveyard-FORGE-4.0.1+mc1.20.1.jar",
+      "sha256": "e25cd81622f36875cc2a9cda69da91211989e6fbcc8ce48b3f29344a4b889957"
+    },
+    {
+      "path": "mods/lostcities-1.20-7.5.7.jar",
+      "sha256": "1a473ca9e7a1040d5e3b402a42eddd7b2fc34a5f270f9c6d0c604f0c0faa8009"
+    },
+    {
+      "path": "mods/twilightforest-1.20.1-4.3.2508-universal.jar",
+      "sha256": "0bdc89263616d1b35c32ef82c5e9c14cbd20368e2fe8b468c72a28320be7a778"
+    },
+    {
+      "path": "mods/The_Undergarden-1.20.1-0.8.14.jar",
+      "sha256": "43029e388ab455f8c9bcfc8653b9a57a3eb1ff6b435cf6e58722d2d4c50d2444"
+    },
+    {
+      "path": "mods/TConstruct-1.20.1-3.12.1.231.jar",
+      "sha256": "474bb3e14646be1b4e343aa0d3a8482ff5db6350da19355fac6c5ddd2050ac19"
+    },
+    {
+      "path": "mods/Totemic-forge-1.20.1-0.12.18.jar",
+      "sha256": "2504b8fe4dd8b38492a7572d684f827b728a1f181e759e56d93cf2e17ca3978e"
+    },
+    {
+      "path": "mods/Towns-and-Towers-1.12-Fabric+Forge.jar",
+      "sha256": "9c8115af7109579da990249fdd67b38323a45be70f8a3a962b61da69c7021984"
+    },
+    {
+      "path": "mods/towntalk-1.20.1-1.1.0.jar",
+      "sha256": "7ba6ab6ff1422b9175c3a7f232309db2c82d3ca3787547c79da7839cd78c262f"
+    },
+    {
+      "path": "mods/treasure2-1.20.1-4.2.1.jar",
+      "sha256": "e6f8e288281635a6c92cfb3cd50628a272667ebb99e271c1c84f166d3c6d151e"
+    },
+    {
+      "path": "mods/untamedwilds-1.20.1-4.0.4.jar",
+      "sha256": "47782ad2e846fa2b3c3dfba5305b9b4dbe752cc6ab1b17b1fd314a1a63b1ebbb"
+    },
+    {
+      "path": "mods/unusualend-2.3.1d.jar",
+      "sha256": "b3f5b4fb5472ae25ed34e7b64ddb4067df9b031771998fa16c5e09a6c3e274b5"
+    },
+    {
+      "path": "mods/unusualprehistory-1.5.0.3.jar",
+      "sha256": "a83c80d5dac97a2d04240b6581b95fc3b65352ea1fb33409a72db2b1a59db018"
+    },
+    {
+      "path": "mods/upgrade_aquatic-1.20.1-6.0.3.jar",
+      "sha256": "f710dee89a146936b0a126bb429f4f741efb4f7374d8ed1d9db5d0bab172e24c"
+    },
+    {
+      "path": "mods/valhelsia_core-forge-1.20.1-1.1.2.jar",
+      "sha256": "d52ae1941c76ff57ee61943b38b5ae95a1e4bffa39604946bee1cfe52964f690"
+    },
+    {
+      "path": "mods/valhelsia_structures-forge-1.20.1-1.1.2.jar",
+      "sha256": "ce2196035200ff1f07ce209d17aae98c0670db601128a3b970edcd69095edd6a"
+    },
+    {
+      "path": "mods/Vampirism-1.20.1-1.10.17.jar",
+      "sha256": "a02309c8480f40ee3e77e85e9b200e9412be9b22b6adeb58d3043997b191b057"
+    },
+    {
+      "path": "mods/villagertradingplus-forge-mc1.20.1-1.1.1.jar",
+      "sha256": "cc90af84a22be12814da2d090bf43ae28d11555e5687e9556bec4ad8fe53028c"
+    },
+    {
+      "path": "mods/Voidscape-1.20.1-1.5.389.jar",
+      "sha256": "c3eb2cc621c035460652f71ecaa80f54db1bc69f8440538f904baf46a96411a8"
+    },
+    {
+      "path": "mods/wares-1.20.1-1.2.10.jar",
+      "sha256": "c7d5a09392a7c19f17925ec0de3abb2e524860294fdd106238341eefa74e7050"
+    },
+    {
+      "path": "mods/waystones-forge-1.20.1-14.1.21.jar",
+      "sha256": "fd6fe3c645328ea7be5bc6723d02c881e34650e0cbd4527ba59e42fa4cbe3c80"
+    },
+    {
+      "path": "mods/Werewolves-1.20.1-2.0.2.7.jar",
+      "sha256": "afcf9174a91e7acbec8dc5f88ebe4822e885cdf4298707e191ff9c0a618b9bb7"
+    },
+    {
+      "path": "mods/DungeonsAriseSevenSeas-1.20.x-1.0.2-forge.jar",
+      "sha256": "4d8b2ee057d08cf13be96d05a08fc933e835d6c36395c692662871d4a1319be2"
+    },
+    {
+      "path": "mods/DungeonsArise-1.20.x-2.1.58-release.jar",
+      "sha256": "f8f1254dbe7ed7c1d5403f20361a36f0d0587c82b71313e3f427c7f1ce7c8a90"
+    },
+    {
+      "path": "mods/whisperwoods-1.20.1-2.1.2-forge.jar",
+      "sha256": "211f99245543494e063ce64a8d4f964a0999df6adb53304d259d97413406358c"
+    },
+    {
+      "path": "mods/workers-1.20.1-2.0.3.jar",
+      "sha256": "c7c59a7a87bf51ec5ffbadfe5340f854f92397591a52ab5af1df8bffd71d941e"
+    },
+    {
+      "path": "mods/xaerominimap-forge-1.20.1-26.6.0.jar",
+      "sha256": "9b39cd06094d7631c8614d172d0ba8399c71c981530af417f12a7909fcb855bd"
+    },
+    {
+      "path": "mods/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+      "sha256": "88c6d844163c95a94d92bc6d87d9011cc840bd6207c3099a81b113d4450a3f6b"
+    },
+    {
+      "path": "mods/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar",
+      "sha256": "bd05da3d9df29b914165583f1c6dfd918a138996447ff32c0418329824027a8f"
+    },
+    {
+      "path": "mods/YungsApi-1.20-Forge-4.0.6.jar",
+      "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1"
+    },
+    {
+      "path": "mods/YungsBetterDesertTemples-1.20-Forge-3.0.3.jar",
+      "sha256": "5a74294725232c665b908af6e25224d111550cf69d74613e415b9f48ff150d16"
+    },
+    {
+      "path": "mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+      "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5"
+    },
+    {
+      "path": "mods/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+      "sha256": "05c2f43a67116f0bbca32d903b55ce1655b9319ed6554080de02bd1d0c232a83"
+    },
+    {
+      "path": "mods/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+      "sha256": "728c0a807742356887edf7d4f736b3870b7c84007ec9c495c27da1dc0b61078d"
+    },
+    {
+      "path": "mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+      "sha256": "6632e7bcc58325098e85bcb755483de7cb3af92a5ea548f3b5c0162cbf0dc1dc"
+    },
+    {
+      "path": "mods/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+      "sha256": "12cffc99dccca69d294ba5bc39c331367794b339061572a6f3773620303a2f51"
+    },
+    {
+      "path": "mods/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+      "sha256": "bea2640c4afeb5231362a756d886ca4f246c7951175c91348272b3ce5d483bae"
+    },
+    {
+      "path": "mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar",
+      "sha256": "054b0a1be86510ed6bd05de66a29200f13f5603c0c9eb7e62074ddc3d19cb0e4"
+    },
+    {
+      "path": "mods/YungsBetterWitchHuts-1.20-Forge-3.0.3.jar",
+      "sha256": "24b3bdc844755e8a39571b5000d8dd829543f7b150d154016ccd926e47d06a71"
+    },
+    {
+      "path": "mods/YungsBridges-1.20-Forge-4.0.3.jar",
+      "sha256": "728e49e81a088291c75835130f59357fe772d77c1f2de91c63872579d5485f6c"
+    },
+    {
+      "path": "mods/Zeta-1.0-31.jar",
+      "sha256": "cd1786902a79434f8fd762d741019d9c8a79725fef7e30a89c153c934e1e6a9e"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json",
+      "sha256": "7512a9c1e02e1ccbb36169c91f17783211bc5cbad46fed49d9ddb4882ad218a9"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/basics.json",
+      "sha256": "e895271acb6f6a637c16a7680241d892c20de2abb1dbc57209902faf2c0dc456"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/ability_list/base_set.json",
+      "sha256": "8b5747a9c4905f362ed88c65e56b56053000754e19b37b7cdf8bafe0eab5e702"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/ability_list/nether_set.json",
+      "sha256": "cce8120ba84eafa47448b93f92630f87e03ebab820967e0cb90b6eda8d297911"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/ability_list/status_effects.json",
+      "sha256": "1eaa30261081973a28c59d9c452642300fa1fbc177f54bbf8390f2488a79e9e4"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/abilities.json",
+      "sha256": "44be654dd2e1c3892b3f027dce4a2228530e1d49a3f1bb1b6c83a7b26653624b"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/combat.json",
+      "sha256": "112dc23ebf5626cf2c3a6ab2076256473fc5f2efa52b60415884280e2f72b646"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/deckbuilding.json",
+      "sha256": "c86b12553e0df6bd9654bde442a4301a60c55dff3ea0ff6b240e37b1afa14931"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/energy.json",
+      "sha256": "d090f5565451154d805047fc5e8692c8b08043ca3c910a56879cd58c3ce87bb5"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/groupings.json",
+      "sha256": "4762e4e87237f12877a5885d2da6ccb5533dc8a76cf61f519e69cd11f8d0420b"
+    },
+    {
+      "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/entries/basics/setup.json",
+      "sha256": "eb1f06e90235bf103e73e692100d8ab95b29dcbe9151507d1a40caefd8fb4747"
+    },
+    {
+      "path": "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/crypt_loot.json",
+      "sha256": "ea564a808fbe5a20429a27a2a51e7049aadd67603681ad724425c123047dcfd5"
+    },
+    {
+      "path": "kubejs/data/irons_spellbooks/loot_tables/chests/citadel/citadel_tomes.json",
+      "sha256": "eb733b7b98c16e70e126d870ab1414720248c05a49654e09f08b7b60a0f31518"
+    },
+    {
+      "path": "kubejs/server_scripts/wild_realms.js",
+      "sha256": "1d97e494e5e91bfc560b0177ec78d35d63403dc7aa6ece51963084eaf2d44183"
+    },
+    {
+      "path": "kubejs/startup_scripts/buddycards_book.js",
+      "sha256": "ae4f952f63c4be16f63eb9910a96b3279e27ae75b73d2bafd605a406768948f8"
+    }
+  ]
+}

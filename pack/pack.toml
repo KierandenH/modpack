@@ -1,12 +1,12 @@
 name = "Wild Realms"
 author = "Wild Realms contributors"
-version = "0.1.0-alpha.5"
+version = "0.1.0-alpha.6"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "dff9a4256160bdba4952ea4e40e49ca84ae7360717221be0641c5226f65836ff"
+hash = "f711cfcde39c05e0a68bfab36e1a18bbbf0d9da43a0facf8e74a3c5dbb890738"
 
 [versions]
 forge = "47.4.28"
