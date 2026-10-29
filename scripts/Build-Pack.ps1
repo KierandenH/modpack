@@ -1,0 +1,41 @@
+$ErrorActionPreference = 'Stop'
+$root = Split-Path $PSScriptRoot -Parent
+$localTool = Join-Path $root '.tools/packwiz/packwiz.exe'
+$tool = if (Test-Path $localTool) { $localTool } else { (Get-Command packwiz -ErrorAction Stop).Source }
+$packText = Get-Content (Join-Path $root 'pack/pack.toml') -Raw
+$version = [regex]::Match($packText, '(?m)^version = "([^"]+)"').Groups[1].Value
+if ($version -notmatch '^[a-zA-Z0-9._-]+$') { throw 'Invalid pack version' }
+$dist = Join-Path $root 'dist'
+New-Item -ItemType Directory -Force $dist | Out-Null
+$archive = Join-Path $dist "Wild-Realms-$version.zip"
+Push-Location (Join-Path $root 'pack')
+try {
+    & $tool refresh
+    if ($LASTEXITCODE -ne 0) { throw 'Index refresh failed' }
+    & $tool --cache (Join-Path $root '.tools/cache') curseforge export -o $archive
+    if ($LASTEXITCODE -ne 0) { throw 'Export failed' }
+} finally { Pop-Location }
+$zip = [IO.Compression.ZipFile]::OpenRead($archive)
+try {
+    if (@($zip.Entries | Where-Object { $_.FullName -match '\.jar$' }).Count) { throw 'Unexpected bundled mod jar; use official CurseForge references' }
+    $entry = $zip.GetEntry('manifest.json')
+    if (-not $entry) { throw 'Missing manifest.json' }
+    $reader = [IO.StreamReader]::new($entry.Open())
+    try { $manifest = $reader.ReadToEnd() | ConvertFrom-Json } finally { $reader.Dispose() }
+    $pins = @(Get-ChildItem (Join-Path $root 'pack/mods/*.pw.toml'))
+    if ($manifest.files.Count -ne $pins.Count) { throw 'Export count differs from source pins' }
+    if (@($manifest.files | Group-Object projectID | Where-Object Count -gt 1).Count) { throw 'Duplicate mod project in archive' }
+    foreach ($pin in $pins) {
+        $s = Get-Content $pin.FullName -Raw
+        $project = [int][regex]::Match($s, '(?m)^project-id = (\d+)').Groups[1].Value
+        $file = [int][regex]::Match($s, '(?m)^file-id = (\d+)').Groups[1].Value
+        if (-not ($manifest.files | Where-Object { $_.projectID -eq $project -and $_.fileID -eq $file })) { throw "Pin missing from archive: $($pin.Name)" }
+    }
+    if ($manifest.minecraft.version -ne '1.20.1') { throw 'Wrong Minecraft version' }
+    if (-not ($manifest.minecraft.modLoaders | Where-Object id -eq 'forge-47.4.28')) { throw 'Wrong Forge version' }
+    if (-not $zip.GetEntry('overrides/kubejs/server_scripts/wild_realms.js')) { throw 'Missing integration override' }
+    Write-Output "Verified $($manifest.files.Count) pinned mods; no bundled jars."
+} finally { $zip.Dispose() }
+(Get-FileHash $archive -Algorithm SHA256).Hash.ToLower() | Set-Content ($archive + '.sha256')
+Write-Output "Built $archive"
+

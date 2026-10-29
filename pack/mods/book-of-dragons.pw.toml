@@ -1,0 +1,13 @@
+name = "Book of Dragons"
+filename = "bookofdragons-1.4-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2a6c6585f4a426981a1e225bd31988e2e3378524"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9339901
+project-id = 1413424

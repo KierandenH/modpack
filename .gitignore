@@ -1,0 +1,6 @@
+.tools/
+dist/
+*.jar
+*.log
+.DS_Store
+

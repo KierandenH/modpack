@@ -1,0 +1,105 @@
+hash-format = "sha256"
+
+[[files]]
+file = "kubejs/server_scripts/wild_realms.js"
+hash = "c9ccd61c582da2fa74cfceb76d3dfc1952a98868e0c544ad07fc5558b5d8a401"
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
+metafile = true
+
+[[files]]
+file = "mods/ars-nouveau.pw.toml"
+hash = "44505ec6c8d7ac5948b3f192cff3db191b07c4d39d501ce3af916006cda3c5a6"
+metafile = true
+
+[[files]]
+file = "mods/azurelib.pw.toml"
+hash = "8ed0dbdbf6767f16811634e86faa87ce324c449f939e052fa10a8a6d1c974b55"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "cc17fd6e85be435f0141ff78ce81233e0645414f6ec5bc1db112a26a79204822"
+metafile = true
+
+[[files]]
+file = "mods/book-of-dragons.pw.toml"
+hash = "017d13a0ace75df40d15b393b703c90ce6cf5fad71f1affbc6ab74427b635d7a"
+metafile = true
+
+[[files]]
+file = "mods/comforts.pw.toml"
+hash = "58bf97ca61f74ea9a540f6e6090aef631155748c49b83a7a338b34d8dece9109"
+metafile = true
+
+[[files]]
+file = "mods/curios.pw.toml"
+hash = "55d77d596c2d805f28b47ea53725ccaa220d2857177cad3909e48d8c12b2a2cb"
+metafile = true
+
+[[files]]
+file = "mods/dragon-mounts-legacy.pw.toml"
+hash = "cec3ebfb61f6fad75016c75e9a57ba99b24b1a2740570904bbe515de42e521b4"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "9f5e29573d64c3e33e372a2d2140335bcb1d84c3afcfc0933cad258acbd4178e"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "349c06c50fa315e9eb618d115f7d1391062706021c645e14f86afae3109d4662"
+metafile = true
+
+[[files]]
+file = "mods/fauna-engine.pw.toml"
+hash = "4a3236e33183521b24b0dfd4f4645694a63258d687ed9fcf531b13e4e1e68ed7"
+metafile = true
+
+[[files]]
+file = "mods/ferritecore.pw.toml"
+hash = "5bd0506bc0be25116b234f2b5af9447f60d82ae1cb6c5be4e12d8841f6c2501c"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "898fd2704dd260ae8f3dc20b4416439751f0a9e76367c4f0bbdac886b6987802"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "a2277a000bcab08a8e0939dae7c8ef3b1db5327e2fa7bd37919e4e2f1b3c174d"
+metafile = true
+
+[[files]]
+file = "mods/jei.pw.toml"
+hash = "6bd9e89474d4fa930d476b89499a02a07f750eec60bb47d4b216254ce48c5efa"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "ed086cdfde6ba4bb175468a76f3df3b9517aea3fe95b09bed0f1fa70f7caeb6a"
+metafile = true
+
+[[files]]
+file = "mods/mezzconfig.pw.toml"
+hash = "c0021f8ac49885f419c8278d9fd326bf83224d9a860f5adf912e7ac04d4be22d"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "c74d4384dfc749a8172a8c6f69f9cd2ebbba56afed4e5b7cbbf459b30c90d17b"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "4bbb339934e6c74bc6129359abe75464f4652defffa6ae28624fbc3d1916c614"
+metafile = true
