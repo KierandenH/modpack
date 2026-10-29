@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.6, installation-readiness fix; publication pending
+Version: 0.1.0-alpha.6, published installation-readiness fix; user retry pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.5
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.6
 Installed Wild Realms: alpha.5 files verified after failed startup; alpha.6 import pending.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -151,6 +151,11 @@ and updates the current download link; no pack-content changes.
 - Test fixture hard-link creation was denied by the environment; ordinary copies
   were used for the successful full-profile check. No installed files changed.
 - No game launch or gameplay performed; successful alpha.6 runtime is UNTESTED.
+
+2026-10-30 - Alpha.6 publication verified
+- Source and diagnosis pushed in commit 2e46514.
+- GitHub prerelease v0.1.0-alpha.6 verified with ZIP (41470 bytes) and SHA-256
+  sidecar (66 bytes). Current download link updated. No new gameplay result.
 
 PLAYTEST RECORD
 
