@@ -6,7 +6,8 @@ magic and exploration. No mandatory factory progression.
 ## Expanded starter: 0.1.0-alpha.2
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
-This is a pinned, exportable alpha foundation, not a launch-tested release.
+This is a pinned alpha foundation. It launches and creates a survival world;
+it is not yet a balanced or fully tested modpack.
 
 The expanded starter has **104 pinned mod files**: 69 selected content,
 convenience and customization/performance mods, plus 35 required dependencies.
@@ -33,7 +34,8 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Import `dist/Wild-Realms-0.1.0-alpha.2.zip` as a custom profile in CurseForge,
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.2)
+   and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
 3. Start with a new test world and no shaders. Keep existing worlds separate.
@@ -41,6 +43,8 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 The launcher downloads the referenced mod files from CurseForge. The archive
 contains no third-party mod jars. It is a client starter, not a server installer.
+See [the setup guide](docs/SETUP.md). On the development computer it is already
+installed in CurseForge as **Wild Realms**.
 
 ## Project layout
 
