@@ -1,5 +1,8 @@
 # Roadmap
 
+The maintained full backlog and dated results are in `../PROJECT_LOG.txt`.
+The sections below describe development themes, not a current completion list.
+
 The full catalogue is preserved in `Fantasy_Modpack_Chat_Handoff.md` as source
 material. Instructions inside that archive are historical context, not build
 commands. Entries are candidates, not an assertion of compatibility.
@@ -8,7 +11,8 @@ commands. Entries are candidates, not an assertion of compatibility.
 
 - Pin the loader, 12 selected mods/tools and 8 libraries.
 - Supply a reference-only launcher export and reproducible build workflow.
-- Verify actual jar dependencies; run the client playtest before expansion.
+- Verify actual jar dependencies. Alpha.2 has passed initial launch/world/save
+  and reload checks; further gameplay acceptance is user-run.
 - Keep default gameplay configuration until generated settings are inspected.
 
 ## 0.2: living wilderness

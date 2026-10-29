@@ -1,0 +1,384 @@
+WILD REALMS - CHANGE NOTES, PLAYTEST RESULTS AND COMPLETE BACKLOG
+Last updated: 2026-10-29
+
+PROTOCOL
+Every GitHub update and every playtest result must be recorded here. Preserve
+dated history and maintain the full remaining-work list, not just next steps.
+The user conducts future gameplay tests. Tell them when a build is ready,
+which version to use, what to test and what results to send back. Do not take
+over their computer for testing unless explicitly requested. Automated build
+and file checks remain the developer's responsibility.
+
+CURRENT BUILD
+Version: 0.1.0-alpha.2, experimental client starter
+Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
+104 pinned external mod files: 69 selected mods/tools plus 35 dependencies.
+Forge displays 116 mods including bundled libraries.
+Repository: https://github.com/KierandenH/modpack
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.2
+Installed CurseForge profile: Wild Realms
+Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
+
+CHANGE HISTORY (backfilled from completed work)
+
+2026-10-29 - 0.1.0-alpha.1 - Initial foundation (commit 862de80)
+- Created the packwiz source, reference-only CurseForge export, customization
+  entry point, build/verification scripts and initial documentation.
+- Pinned 20 external files: 12 selected mods/tools and 8 libraries.
+- Preserved the original full fantasy catalogue in the handoff document.
+
+2026-10-29 - 0.1.0-alpha.2 - Expanded starter (commit 990e831)
+- Expanded to 104 files, including 57 additional catalogue selections and
+  their dependencies. Added dragons, wildlife, dimensions, bosses, magic,
+  collecting, companions, building and farming content.
+- Corrected dependency selections, including AzureLib 3.2.0 exactly for
+  Book of Dragons; included FAUNA Engine, Curios and GeckoLib.
+- Created/pushed the GitHub project and imported the isolated CurseForge profile.
+- Verified 104 pinned hashes and mandatory dependency IDs, including bundled
+  libraries. This is not a complete Maven-range or gameplay compatibility check.
+- Export validation passed: expected mod references, correct loader/version,
+  customization override present, and no third-party jars bundled in the ZIP.
+
+2026-10-29 - Setup, client smoke test and prerelease (commit 8e461fe)
+- Added setup instructions and documented actual test results and known issues.
+- Published GitHub prerelease v0.1.0-alpha.2 with ZIP and SHA-256 checksum;
+  verified that both assets were uploaded.
+- No gameplay balancing, progression integration or full acceptance test yet.
+
+2026-10-29 - Standing documentation and user-playtest protocol
+- Added this TXT as the combined project history, test record and full backlog.
+- Added AGENTS.md so future work follows the user's protocol.
+- Linked this record from README and corrected outdated roadmap status.
+- No mod files changed and no new gameplay test performed for this update.
+- Checks: catalogue inventory reconciled against pinned project slugs; 226
+  source selections retained, including optional alternatives. See inventory.
+
+PLAYTEST RECORD
+
+2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
+(Performed before the new user-run playtest protocol.)
+PASS: fresh CurseForge import; all 104 installed jars match pinned SHA-1 hashes.
+PASS: launch to main menu with Java 17 and Forge 47.4.28.
+PASS: generate and enter a new survival world.
+PASS: save, return to title and reload the same world.
+PASS: KubeJS loads 1/1 server scripts with zero script errors/warnings.
+OBSERVED: JEI registration completed, but was slow. HUDs overlap at small
+window size. Nonfatal mod resource/data errors remain (listed below).
+NOT TESTED: dragon taming/breeding/riding, long-term persistence, boss fights,
+dimension travel, progression, multiplayer, and sustained performance.
+No user-reported playtest results have been received yet.
+
+FULL OUTSTANDING WORK
+Status meanings: OPEN = unfinished; EVALUATE = candidate/decision needed;
+DEFERRED = deliberately postponed, retained in the plan. Installed content
+still requires integration and gameplay acceptance; installed is not completed.
+
+OPEN - Known defects and configuration
+- Repair/replace Buddycards' outdated Patchouli rules-book format.
+- Repair Iron's Spells citadel_tomes and crypt_loot loot tables; verify rewards.
+- Correct Human Companions' misspelled biome references in two structure tags.
+- Investigate Mowzie's Mobs model and dragon particle/animation errors.
+- Configure overlapping HUDs and conflicting combat/mount/magic keybindings.
+- Resolve or explain the optional Supplementaries/Amendments migration notice.
+- Profile slow JEI registration and loading; check memory and entity performance.
+
+OPEN - Integration and experience across all current and future content
+- Expand the fantasy catalogue without shrinking it into a vanilla-plus pack.
+- Preserve dragons, mounts, individual variants, breeding, genetics, wildlife,
+  rare collections, companions, farming and exploration as core experiences.
+- Tune creature spawn rates, habitat distribution, structure spacing, biome
+  compatibility, hostile encounters and settlement/sanctuary safety.
+- Balance boss scaling, spells, weapons, armor, artifacts and reward rarity;
+  resolve duplicate/conflicting recipes and avoid mandatory factory gates.
+- Add onboarding, useful guides, collection milestones and optional quests.
+- Develop the proposed sanctuary/ranch/greenhouse/tavern/settlement loops;
+  these are design proposals to refine, not already implemented systems.
+- Decide Book of Dragons versus Dragons of Berk deliberately; do not assume
+  shared taming/genetics or install both without a compatibility decision.
+- Audit new mods' exact Forge 1.20.1 releases and transitive dependencies;
+  preserve working version pins and verify each exported build.
+
+OPEN - Gameplay acceptance (user-run)
+- Verify JEI recipe browsing and Jade block/entity tooltips.
+- Explore fresh terrain; check structures, creature variety and spawn density.
+- Tame and ride Book of Dragons dragons; test genetics/breeding/variants.
+- Hatch and ride Dragon Mounts dragons independently.
+- Save/reload tamed and bred creatures; check ownership and individual state.
+- Test wildlife companions, horse genetics, mounts and sanctuary safety.
+- Craft/cast Ars Nouveau spells and test other installed magic systems.
+- Test boss encounters, combat equipment, artifacts and collectible rewards.
+- Cook Farmer's Delight meals and use a Comforts sleeping bag.
+- Activate two Waystones and travel both directions.
+- Enter/leave Nether, End and each installed mod dimension; save and reload.
+- Test building/furniture, farming/fishing, seasons, NPCs and settlement loops.
+- Check flight controls, key conflicts and HUD readability at normal resolution.
+- Record hardware/RAM, loading times, sustained FPS, stutters and crash symptoms.
+- Run longer survival sessions and backup/recovery/update checks before calling
+  the pack suitable for a permanent save.
+
+EVALUATE / DEFERRED - Larger optional modules and alternatives
+- Transformation/identity systems (Origins, Dragon Survival, Vampirism,
+  Werewolves) need individual and combined compatibility decisions.
+- Mine and Slash: alternative RPG profile with deliberate damage/stat integration.
+- Mine Piece and other disruptive crossover powers: destruction/balance checks.
+- ProjectE: optional economy that must not trivialize rare collections.
+- MCA, MineColonies and Cobblemon: separate compatibility/performance evaluation.
+- Epic Fight and animation-dependent addons: separate integration evaluation.
+- Hats/Morph ports: conceptual/deferred; no port or rewrite is authorized.
+- Historical 1.12.2 alternatives remain archived in the handoff, not silently
+  substituted for the current 1.20.1 target.
+
+OPEN - Multiplayer, distribution and maintenance
+- Decide server scope, audit client-only mods and build a separate server pack.
+- Test a dedicated server with two clients, dimensions, ownership, inventories,
+  persistence and multiplayer loot; do not infer server support from client tests.
+- Review distribution requirements for additions; keep third-party jars out of
+  repository/export and avoid assigning their authors' content our own license.
+- Maintain reproducible pins, checksums, release notes and installation guides.
+- Document safe version upgrades, worldgen changes, backups and recovery.
+- Keep this backlog and all reported test outcomes current at every update.
+
+USER PLAYTEST REQUEST - READY NOW
+Build: 0.1.0-alpha.2, already installed as Wild Realms.
+This is a short exploratory test, not a request to complete the whole backlog.
+Use a disposable new world or the existing test save; avoid a permanent save.
+1. Play for 15-30 minutes and explore terrain/creatures/structures.
+2. Open inventory and try JEI; note unreadable HUDs and conflicting controls.
+3. If practical, try one dragon/mount or one magic system, then save/reload.
+Report what you tried, what worked, what felt missing, and any crashes,
+freezes, bad performance or control problems. Include the build version and
+reproduction steps. Crash logs can be reviewed locally; redact personal data
+before sharing them publicly. No gameplay result is assumed until reported.
+
+COMPLETE CATALOGUE ADDITION INVENTORY
+The inventory below retains all 226 non-library selections from the handoff.
+INSTALLED means a project is pinned, not fully tested. EVALUATE/ADD means not
+currently pinned; verify availability, compatibility and optional status before
+adding. Optional alternatives are not promises to enable everything together.
+Source descriptions and qualifications: docs/Fantasy_Modpack_Chat_Handoff.md.
+001 [INSTALLED / TEST & INTEGRATE] Ice and Fire: Dragons
+002 [INSTALLED / TEST & INTEGRATE] Dragon Mounts: Legacy
+003 [EVALUATE/ADD] Dragon Survival
+004 [INSTALLED / TEST & INTEGRATE] Alex's Mobs
+005 [INSTALLED / TEST & INTEGRATE] Alex's Caves
+006 [INSTALLED / TEST & INTEGRATE] Mowzie's Mobs
+007 [INSTALLED / TEST & INTEGRATE] L_Ender's Cataclysm
+008 [EVALUATE/ADD] Born in Chaos
+009 [INSTALLED / TEST & INTEGRATE] Mutant Monsters
+010 [EVALUATE/ADD] Illager Invasion
+011 [EVALUATE/ADD] Savage & Ravage
+012 [EVALUATE/ADD] Rotten Creatures
+013 [EVALUATE/ADD] Aquamirae
+014 [EVALUATE/ADD] The Graveyard
+015 [EVALUATE/ADD] Bosses of Mass Destruction [Forge]
+016 [EVALUATE/ADD] The Endergetic Expansion
+017 [EVALUATE/ADD] Ender's Delight
+018 [EVALUATE/ADD] Friends&Foes
+019 [EVALUATE/ADD] Meet Your Fight
+020 [EVALUATE/ADD] The Conjurer
+021 [INSTALLED / TEST & INTEGRATE] The Twilight Forest
+022 [INSTALLED / TEST & INTEGRATE] The Aether
+023 [INSTALLED / TEST & INTEGRATE] Deep Aether
+024 [EVALUATE/ADD] The Aether: Redux
+025 [INSTALLED / TEST & INTEGRATE] Blue Skies
+026 [INSTALLED / TEST & INTEGRATE] The Bumblezone
+027 [INSTALLED / TEST & INTEGRATE] Deeper and Darker
+028 [INSTALLED / TEST & INTEGRATE] The Undergarden
+029 [EVALUATE/ADD] DivineRPG
+030 [EVALUATE/ADD] Advent of Ascension
+031 [EVALUATE/ADD] Voidscape
+032 [EVALUATE/ADD] The Lost Cities
+033 [INSTALLED / TEST & INTEGRATE] Iron's Spells 'n Spellbooks
+034 [INSTALLED / TEST & INTEGRATE] Ars Nouveau
+035 [EVALUATE/ADD] Ars Elemental
+036 [EVALUATE/ADD] Ars Additions
+037 [INSTALLED / TEST & INTEGRATE] Occultism
+038 [INSTALLED / TEST & INTEGRATE] Hexerei
+039 [EVALUATE/ADD] EvilCraft
+040 [EVALUATE/ADD] Blood Magic
+041 [EVALUATE/ADD] Malum
+042 [EVALUATE/ADD] Eidolon: Repraised
+043 [EVALUATE/ADD] Forbidden and Arcanus
+044 [EVALUATE/ADD] Mahou Tsukai
+045 [EVALUATE/ADD] Goety
+046 [EVALUATE/ADD] Vampirism
+047 [EVALUATE/ADD] Werewolves
+048 [EVALUATE/ADD] Enigmatic Legacy
+049 [INSTALLED / TEST & INTEGRATE] Kingdom Keys 2
+050 [INSTALLED / TEST & INTEGRATE] Touhou Little Maid
+051 [EVALUATE/ADD] SlashBlade
+052 [EVALUATE/ADD] Mine Piece
+053 [INSTALLED / TEST & INTEGRATE] Inventory Pets
+054 [EVALUATE/ADD] Chance Cubes
+055 [INSTALLED / TEST & INTEGRATE] Artifacts
+056 [INSTALLED / TEST & INTEGRATE] Relics
+057 [INSTALLED / TEST & INTEGRATE] Buddycards
+058 [EVALUATE/ADD] Rats
+059 [INSTALLED / TEST & INTEGRATE] When Dungeons Arise
+060 [EVALUATE/ADD] When Dungeons Arise: Seven Seas
+061 [INSTALLED / TEST & INTEGRATE] Dungeon Crawl
+062 [EVALUATE/ADD] Repurposed Structures
+063 [EVALUATE/ADD] Towns and Towers
+064 [EVALUATE/ADD] Valhelsia Structures
+065 [EVALUATE/ADD] ChoiceTheorem's Overhauled Village
+066 [INSTALLED / TEST & INTEGRATE] YUNG's Better Dungeons
+067 [INSTALLED / TEST & INTEGRATE] YUNG's Better Mineshafts
+068 [EVALUATE/ADD] YUNG's Better Strongholds
+069 [EVALUATE/ADD] YUNG's Better Desert Temples
+070 [EVALUATE/ADD] YUNG's Better Jungle Temples
+071 [EVALUATE/ADD] YUNG's Better Ocean Monuments
+072 [EVALUATE/ADD] YUNG's Better Nether Fortresses
+073 [EVALUATE/ADD] YUNG's Better Witch Huts
+074 [EVALUATE/ADD] YUNG's Better End Island
+075 [INSTALLED / TEST & INTEGRATE] YUNG's Bridges
+076 [EVALUATE/ADD] Apotheosis
+077 [INSTALLED / TEST & INTEGRATE] Simply Swords
+078 [INSTALLED / TEST & INTEGRATE] Spartan Weaponry
+079 [EVALUATE/ADD] Spartan Shields
+080 [EVALUATE/ADD] Epic Knights: Shields, Armor and Weapons
+081 [EVALUATE/ADD] Tetra
+082 [EVALUATE/ADD] Silent Gear
+083 [EVALUATE/ADD] Silent's Gems
+084 [EVALUATE/ADD] Gobber
+085 [EVALUATE/ADD] SimpleOres
+086 [EVALUATE/ADD] Treasure2
+087 [INSTALLED / TEST & INTEGRATE] Biomes O' Plenty
+088 [INSTALLED / TEST & INTEGRATE] Ecologics
+089 [INSTALLED / TEST & INTEGRATE] Naturalist
+090 [INSTALLED / TEST & INTEGRATE] Critters and Companions
+091 [EVALUATE/ADD] Unusual Prehistory
+092 [INSTALLED / TEST & INTEGRATE] Domestication Innovation
+093 [INSTALLED / TEST & INTEGRATE] Doggy Talents Next
+094 [INSTALLED / TEST & INTEGRATE] Guard Villagers
+095 [INSTALLED / TEST & INTEGRATE] Small Ships
+096 [EVALUATE/ADD] Paragliders
+097 [INSTALLED / TEST & INTEGRATE] Farmer's Delight
+098 [EVALUATE/ADD] Nether's Delight
+099 [INSTALLED / TEST & INTEGRATE] Supplementaries
+100 [INSTALLED / TEST & INTEGRATE] Quark
+101 [INSTALLED / TEST & INTEGRATE] Chococraft
+102 [INSTALLED / TEST & INTEGRATE] Book of Dragons
+103 [EVALUATE/ADD] Dragons of Berk
+104 [INSTALLED / TEST & INTEGRATE] Mythic Mounts (Forge)
+105 [INSTALLED / TEST & INTEGRATE] Realistic Horse Genetics
+106 [INSTALLED / TEST & INTEGRATE] Ribbits
+107 [INSTALLED / TEST & INTEGRATE] Human Companions
+108 [EVALUATE/ADD] Villager Recruits
+109 [EVALUATE/ADD] Villager Workers 2
+110 [INSTALLED / TEST & INTEGRATE] Goblin Traders
+111 [EVALUATE/ADD] More Villagers
+112 [INSTALLED / TEST & INTEGRATE] Bountiful
+113 [EVALUATE/ADD] MCA Reborn
+114 [EVALUATE/ADD] Wares
+115 [EVALUATE/ADD] MineColonies
+116 [EVALUATE/ADD] Untamed Wilds
+117 [INSTALLED / TEST & INTEGRATE] Exotic Birds
+118 [EVALUATE/ADD] Environmental
+119 [EVALUATE/ADD] Upgrade Aquatic
+120 [EVALUATE/ADD] Autumnity
+121 [EVALUATE/ADD] Habitat
+122 [EVALUATE/ADD] Earth Mobs
+123 [INSTALLED / TEST & INTEGRATE] Enderman Overhaul
+124 [INSTALLED / TEST & INTEGRATE] Creeper Overhaul
+125 [EVALUATE/ADD] It Takes a Pillage
+126 [EVALUATE/ADD] Illager Revolution
+127 [EVALUATE/ADD] Whisperwoods
+128 [EVALUATE/ADD] LUMINOUS: NETHER
+129 [EVALUATE/ADD] Mutant More
+130 [EVALUATE/ADD] Cobblemon
+131 [EVALUATE/ADD] Productive Bees
+132 [EVALUATE/ADD] Modern Chickens
+133 [INSTALLED / TEST & INTEGRATE] Aquaculture 2
+134 [INSTALLED / TEST & INTEGRATE] Fish of Thieves
+135 [EVALUATE/ADD] Nether Depths Upgrade
+136 [EVALUATE/ADD] Mystical Agriculture
+137 [EVALUATE/ADD] Mystical Agradditions
+138 [EVALUATE/ADD] Croptopia
+139 [EVALUATE/ADD] Fruits Delight
+140 [EVALUATE/ADD] Delightful
+141 [INSTALLED / TEST & INTEGRATE] Brewin' And Chewin'
+142 [EVALUATE/ADD] Farmer's Respite
+143 [EVALUATE/ADD] Collector's Reap
+144 [EVALUATE/ADD] Ocean's Delight
+145 [EVALUATE/ADD] Alex's Delight
+146 [EVALUATE/ADD] Feywild
+147 [EVALUATE/ADD] Legendary Monsters
+148 [EVALUATE/ADD] Celestisynth
+149 [EVALUATE/ADD] Marium's Soulslike Weaponry
+150 [EVALUATE/ADD] Stalwart Dungeons
+151 [INSTALLED / TEST & INTEGRATE] Gateways to Eternity
+152 [EVALUATE/ADD] Dimensional Doors
+153 [EVALUATE/ADD] Dimensional Dungeons
+154 [EVALUATE/ADD] Unusual End
+155 [EVALUATE/ADD] Enlightend
+156 [EVALUATE/ADD] Bygone Nether
+157 [EVALUATE/ADD] Nature's Aura
+158 [EVALUATE/ADD] Roots Classic
+159 [EVALUATE/ADD] Reliquary Reincarnations
+160 [EVALUATE/ADD] Ars Ocultas
+161 [EVALUATE/ADD] Ars Instrumentum
+162 [EVALUATE/ADD] Dungeons and Taverns
+163 [INSTALLED / TEST & INTEGRATE] Explorify
+164 [EVALUATE/ADD] Structory
+165 [EVALUATE/ADD] Dungeons Enhanced
+166 [EVALUATE/ADD] Medieval Buildings
+167 [EVALUATE/ADD] Realm RPG: Fallen Adventurers
+168 [INSTALLED / TEST & INTEGRATE] Fantasy's Furniture
+169 [INSTALLED / TEST & INTEGRATE] Handcrafted
+170 [INSTALLED / TEST & INTEGRATE] Chipped
+171 [INSTALLED / TEST & INTEGRATE] Serene Seasons
+172 [EVALUATE/ADD] Iter RPG
+173 [EVALUATE/ADD] Dungeons Content
+174 [EVALUATE/ADD] Dungeon Now Loading
+175 [EVALUATE/ADD] BrassAmber BattleTowers
+176 [EVALUATE/ADD] Doomlike Dungeons
+177 [EVALUATE/ADD] Moog's Voyager Structures
+178 [EVALUATE/ADD] Moog's End Structures
+179 [EVALUATE/ADD] Ancient Structures: Cultural buildings
+180 [EVALUATE/ADD] The Abyss II - The Other Side
+181 [EVALUATE/ADD] Myths & Legends (oVinter)
+182 [EVALUATE/ADD] Species
+183 [EVALUATE/ADD] Fossils and Archeology: Revival
+184 [EVALUATE/ADD] EEEAB's Mobs
+185 [EVALUATE/ADD] Enchanted: Witchcraft
+186 [EVALUATE/ADD] Totemic
+187 [EVALUATE/ADD] Enchanted: Wands & Tomes
+188 [EVALUATE/ADD] Enigmatic Addons
+189 [EVALUATE/ADD] Passive Skill Trees
+190 [EVALUATE/ADD] Ice and Fire: Spellbooks
+191 [EVALUATE/ADD] ProjectE [OPTIONAL: OVERPOWERED ALCHEMY]
+192 [EVALUATE/ADD] Tinkers Construct [OPTIONAL: ARTISAN WEAPONCRAFT]
+193 [EVALUATE/ADD] Progressive Bosses [OPTIONAL: REPEATABLE CHALLENGE]
+194 [EVALUATE/ADD] AtomicStryker's Infernal Mobs [OPTIONAL: ELITE MONSTERS]
+195 [EVALUATE/ADD] Origins (Forge) [OPTIONAL: CHARACTER IDENTITY; DISCONTINUED]
+196 [EVALUATE/ADD] Jujutsu Craft (Sorcery Fight), by Orca [OPTIONAL: ANIME CHAOS]
+197 [EVALUATE/ADD] Mine and Slash [OPTIONAL: SEPARATE RPG RULESET]
+198 [EVALUATE/ADD] End Remastered [OPTIONAL: EXPLORATION GATE]
+U01 [INSTALLED / TEST & INTEGRATE] JEI: Recipes and item lookup.
+U02 [INSTALLED / TEST & INTEGRATE] Jade: Identify blocks and entities.
+U03 [EVALUATE/ADD] AppleSkin: Food and saturation information.
+U04 [EVALUATE/ADD] Mouse Tweaks: Inventory handling.
+U05 [EVALUATE/ADD] Controlling: Find keybind conflicts.
+U06 [EVALUATE/ADD] Enchantment Descriptions: Understand enchantments.
+U07 [EVALUATE/ADD] Xaero's Minimap: Local navigation.
+U08 [EVALUATE/ADD] Xaero's World Map: Track discoveries.
+U09 [INSTALLED / TEST & INTEGRATE] Waystones: Fast return travel.
+U10 [EVALUATE/ADD] Nature's Compass: Locate biomes.
+U11 [EVALUATE/ADD] Explorer's Compass: Locate structures.
+U12 [EVALUATE/ADD] Sophisticated Backpacks: Carry treasure.
+U13 [EVALUATE/ADD] Sophisticated Storage: Store treasure without a factory.
+U14 [INSTALLED / TEST & INTEGRATE] Comforts: Sleep while exploring.
+U15 [EVALUATE/ADD] Carry On: Move supported containers and creatures.
+U16 [EVALUATE/ADD] GraveStone Mod: Recover your equipment after disasters.
+U17 [EVALUATE/ADD] Polymorph: Choose between conflicting crafting recipes.
+U18 [EVALUATE/ADD] Lootr: Personal chest loot in multiplayer.
+U19 [EVALUATE/ADD] Clumps: Combine XP orbs.
+U20 [EVALUATE/ADD] FTB Backups 2: World backups.
+P1 [EVALUATE/ADD] Embeddium: Rendering optimization; client.
+P2 [INSTALLED / TEST & INTEGRATE] ModernFix: Loading/memory fixes.
+P3 [INSTALLED / TEST & INTEGRATE] FerriteCore: Memory optimization.
+P4 [EVALUATE/ADD] Entity Culling: Avoid rendering hidden entities; client.
+P5 [EVALUATE/ADD] spark: Diagnose performance; not an FPS boost by itself.
+A1 [EVALUATE/ADD] AmbientSounds -- regional environmental audio. Add CreativeCore as required.
+A2 [EVALUATE/ADD] Sound Physics Remastered -- environmental echoes and sound occlusion.
+A3 [EVALUATE/ADD] Falling Leaves (NeoForge/Forge) -- falling leaf particles; select Forge 1.20.1.

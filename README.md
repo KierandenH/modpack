@@ -3,6 +3,10 @@
 An extravagant fantasy adventure modpack built around dragons, collecting,
 magic and exploration. No mandatory factory progression.
 
+Project protocol: [change notes, playtest results and the full remaining-work
+list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
+tests are user-run; each ready build includes a focused test request.
+
 ## Expanded starter: 0.1.0-alpha.2
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
