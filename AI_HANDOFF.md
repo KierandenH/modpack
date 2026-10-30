@@ -16,7 +16,11 @@ Update PROJECT_LOG.txt with every change and reported test, and include it in
 every push. Record release upload outcomes after verification. Keep raw user
 logs/credentials private. Never claim runtime success from static checks.
 
-Current repair: alpha.7 pins Naturalist 4.0.3 (Forge 1.20.1, CurseForge project
+Alpha.8 removes Environmental after two user world-generation crashes. The new
+Verify-Worldgen.ps1 build gate reproduces the old flower/tall-grass order cycle
+and passes after removal. It is a limited static audit, not a runtime guarantee.
+
+Previous repair: alpha.7 pins Naturalist 4.0.3 (Forge 1.20.1, CurseForge project
 627986/file 4847009) because Delightful 3.8.1 requires Naturalist >=4 when
 installed. Naturalist's newer-dated 2.0.9 does not satisfy that requirement.
 The dependency auditor now checks present optional dependencies too. Check

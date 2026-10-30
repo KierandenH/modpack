@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
 & (Join-Path $PSScriptRoot 'Verify-DependencyRanges.ps1')
+& (Join-Path $PSScriptRoot 'Verify-Worldgen.ps1')
 & (Join-Path $PSScriptRoot 'Build-CompatibilityOverrides.ps1')
 & (Join-Path $PSScriptRoot 'Verify-Compatibility.ps1')
 & (Join-Path $PSScriptRoot 'Build-InstallationManifest.ps1')

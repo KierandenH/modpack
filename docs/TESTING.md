@@ -121,3 +121,18 @@ do not detect this kind of runtime ordering conflict. No fix has been tested.
 The supplied Supplementaries screenshot separately explains its optional
 Amendments split. Moved decorative blocks need Amendments to be preserved in
 old worlds; it is not identified as the cause of this crash.
+
+## Alpha.8: repeated crash addressed by omission
+
+The user's 12:55:34 report repeats the feature-order cycle, naming blossom_valleys
+instead of blossom_woods. The static scan reproduced both with Werewolves:
+flower_default and patch_tall_grass occur in opposing orders. Alpha.8 omits
+Environmental, an optional scenery mod, retaining Werewolves. All 299 jars were
+scanned; no cycle was detected in the checked groups of 307 biome definitions.
+See WORLDGEN_ALPHA7_FAILURE.txt and WORLDGEN_AUDIT.txt for scope and results.
+This is not an exhaustive runtime simulation; Java injections, biome modifiers,
+mixins and effective datapack behavior still require user testing.
+
+Import alpha.8 separately, wait for READY and use a fresh world. Test generation,
+exploration into new chunks, save/reload and a second seed; report new crash logs.
+No alpha.8 gameplay pass is claimed. Amendments remains a separate optional item.

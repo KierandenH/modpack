@@ -7,17 +7,17 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.7
+## Playtest revision: 0.1.0-alpha.8
 
-Known blocker: user-reported world-generation feature-order cycle involving
-Werewolves and Environmental. Alpha.7 is not yet suitable for a playthrough.
+Alpha.8 removes Environmental to address the alpha.7 world-generation cycle.
+The new static worldgen audit passes; user world-creation testing is still required.
 See [test results](docs/TESTING.md).
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
 it is not yet a balanced or fully tested modpack.
 
-The expansion has **300 pinned mod files**, covering 219 catalogue selections plus KubeJS and transitive support/dependency mods.
+The expansion has **299 pinned mod files**, covering 218 catalogue selections plus KubeJS and transitive support/dependency mods.
 The original 20-file alpha was the dependency foundation.
 
 - Dragons and mounts: Book of Dragons, Ice and Fire, Mythic
@@ -41,7 +41,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.8)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
@@ -125,3 +125,11 @@ and gameplay remain untested. The original mandatory-only audit missed this.
 
 For another AI to continue, use [AI_HANDOFF.md](AI_HANDOFF.md), AGENTS.md and
 PROJECT_LOG.txt. CLAUDE.md points to the same instructions.
+
+## Alpha.8 compatibility audit
+
+Environmental is deferred after the repeated Werewolves biome-order crash.
+All 299 pinned jars pass file/dependency checks (845 declared ranges). The new
+worldgen build gate scans 307 biome definitions and reproduces the old conflict;
+no cycle remains in the checked groups. This does not simulate Java-injected
+features, biome modifiers or all runtime behavior. See [scope and results](docs/WORLDGEN_AUDIT.txt).

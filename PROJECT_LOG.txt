@@ -10,9 +10,9 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.7, published; user reports world-generation crash
+Version: 0.1.0-alpha.8, built; publication pending, user retest required
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
-300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
+299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7
@@ -184,6 +184,35 @@ and updates the current download link; no pack-content changes.
 - User should import separately, wait for READY, then test startup, fresh-world
   creation, Naturalist wildlife, Delightful/JEI recipes and save/reload.
 
+2026-10-30 - Alpha.8 - Repeated worldgen conflict and broader static audit
+- User's second report (12:55:34) again fails new chunk generation, now naming
+  werewolves:werewolf_heaven and environmental:blossom_valleys. First report
+  named blossom_woods. This confirms repeated failure, not a successful playtest.
+- User authorized omitting a nonessential mod. Environmental is optional extra
+  biome scenery; removed its pin while keeping Werewolves' distinct transformation
+  content. All dragons/magic remain. 299 files / 218 selections / eight exclusions.
+  Environmental's original catalogue entry is preserved with the removal reason.
+- Added a static worldgen audit over EVERY pinned jar. Groups direct biome feature
+  sequences by dimension tags, explicit dimension references and mod namespace.
+  Before removal it reproduced exactly the flower_default/patch_tall_grass cycle
+  in both Environmental blossom biomes against Werewolves. Failure report saved
+  in docs/WORLDGEN_ALPHA7_FAILURE.txt. After removal no grouped cycle detected
+  across 307 biome JSON definitions in 299 jars (73 tagged Overworld biomes).
+- Initial global union across unrelated dimensions produced misleading candidates;
+  final checker groups dimensions and documents membership limitations.
+- Limits: 2019 biome-modifier JSONs inventoried, NOT applied; Java injection,
+  vanilla definitions, runtime registry/mixin behavior and effective datapack
+  replacement order are not simulated. This cannot promise zero future crashes.
+- Added worldgen audit to build gate alongside declared dependency ranges and
+  existing book/loot/archive checks.
+- PASS: 299 jar hashes and mandatory IDs; 845 mandatory/present-optional
+  dependency ranges; grouped worldgen audit; book/loot regressions; export has
+  299 exact references, all overrides, correct loader and no bundled jars.
+- Full 226-entry catalogue retained; eight exclusions/deferred alternatives.
+- No Minecraft launched. User runs world creation/exploration/save tests.
+- Online issue search unavailable (503); findings rely on supplied reports and
+  actual pinned jar data. No guessed fixes or blanket mod updates.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -241,7 +270,7 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
-- BLOCKER: isolate and repair Werewolves/Environmental feature-order cycle; then user retests fresh world generation.
+- Worldgen cycle reproduced statically; Environmental removed in alpha.8. User must verify fresh world creation and exploration; restoration deferred until repaired.
 - Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.
 - Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
 - Buddycards rules-book repair implemented in alpha.4; verify opening and all pages in-game.
@@ -313,15 +342,16 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.7
-Import Wild-Realms-0.1.0-alpha.7.zip separately and WAIT for import completion.
+USER PLAYTEST REQUEST - ALPHA.8
+Import Wild-Realms-0.1.0-alpha.8.zip separately and WAIT for import completion.
 Open the profile folder, double-click CHECK-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.
 If the main menu loads, create a disposable world, try JEI, save and reload;
 then test the repaired Buddycards book and fresh Iron's Spells loot.
 This is a manual readiness check, not an automatic launcher lock.
-No successful alpha.5/alpha.6/alpha.7 runtime or gameplay result is assumed.
+Alpha.7 reached world generation but crashed. Alpha.8 gameplay remains untested.
+Use a fresh world. Test creation, exploration into new chunks, save/reload and a second seed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.
 INSTALLED means a project is pinned, not fully tested. EVALUATE/ADD means not
@@ -445,7 +475,7 @@ Source descriptions and qualifications: docs/Fantasy_Modpack_Chat_Handoff.md.
 115 [PINNED / USER PLAYTEST PENDING] MineColonies
 116 [PINNED / USER PLAYTEST PENDING] Untamed Wilds
 117 [PINNED / USER PLAYTEST PENDING] Exotic Birds
-118 [PINNED / USER PLAYTEST PENDING] Environmental
+118 [DEFERRED / REMOVED ALPHA.8] Environmental - optional scenery; reproduced Werewolves feature-order conflict.
 119 [PINNED / USER PLAYTEST PENDING] Upgrade Aquatic
 120 [PINNED / USER PLAYTEST PENDING] Autumnity
 121 [PINNED / USER PLAYTEST PENDING] Habitat

@@ -1,6 +1,6 @@
 # Pinned mod list
 
-Alpha.5: 300 pinned external files, covering 219 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
+Alpha.8: 299 pinned external files, covering 218 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
 
 | Mod | File | CurseForge release |
 | --- | --- | --- |
@@ -101,7 +101,6 @@ Alpha.5: 300 pinned external files, covering 219 catalogue selections plus KubeJ
 | Enigmatic Legacy | EnigmaticLegacy-2.30.1.jar | [File 5600004](https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy/files/5600004) |
 | Enlightend | enlightend-5.0.14-1.20.1.jar | [File 4880586](https://www.curseforge.com/minecraft/mc-mods/enlightend/files/4880586) |
 | Entity Culling Fabric/Forge | entityculling-forge-1.11.3-mc1.20.1.jar | [File 9100267](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/9100267) |
-| Environmental | environmental-1.20.1-4.1.2.jar | [File 7065177](https://www.curseforge.com/minecraft/mc-mods/environmental/files/7065177) |
 | EpheroLib | EpheroLib-1.20.1-FORGE-1.2.0.jar | [File 4889101](https://www.curseforge.com/minecraft/mc-mods/epherolib/files/4889101) |
 | Epic Knights: Shields, Armor and Weapons [Fabric/Forge/NeoForge] | epic-knights-1.20.1-forge-10.15.jar | [File 8931670](https://www.curseforge.com/minecraft/mc-mods/epic-knights-armor-and-weapons/files/8931670) |
 | EvilCraft | EvilCraft-1.20.1-1.3.4.jar | [File 9203403](https://www.curseforge.com/minecraft/mc-mods/evilcraft/files/9203403) |
@@ -304,3 +303,5 @@ Alpha.5: 300 pinned external files, covering 219 catalogue selections plus KubeJ
 | YUNG's Better Witch Huts (Forge/NeoForge) | YungsBetterWitchHuts-1.20-Forge-3.0.3.jar | [File 4769489](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts/files/4769489) |
 | YUNG's Bridges (Forge/NeoForge) | YungsBridges-1.20-Forge-4.0.3.jar | [File 4769518](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges/files/4769518) |
 | Zeta | Zeta-1.0-31.jar | [File 7335229](https://www.curseforge.com/minecraft/mc-mods/zeta/files/7335229) |
+
+Environmental is deferred in alpha.8 because of the reproduced Werewolves world-generation ordering conflict; its catalogue entry remains in PROJECT_LOG.txt.

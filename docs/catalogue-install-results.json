@@ -822,8 +822,8 @@
     "id": "118",
     "name": "Environmental",
     "url": "https://www.curseforge.com/minecraft/mc-mods/environmental",
-    "status": "pinned",
-    "detail": "Exact file in pack/mods; runtime compatibility untested."
+    "status": "deferred",
+    "detail": "Removed in alpha.8: reproducible feature-order cycle with Werewolves. Optional scenery; reconsider only after compatibility repair."
   },
   {
     "id": "119",

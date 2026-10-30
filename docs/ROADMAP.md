@@ -1,10 +1,11 @@
 # Roadmap
 
-Alpha.5 now pins 219 of the 226 catalogue selections. Kingdom Keys and Touhou
+Alpha.8 now pins 218 of the 226 catalogue selections. Kingdom Keys and Touhou
 Little Maid remain rejected; Dragon Mounts remains deferred for balance.
 Dragon Survival, Dragons of Berk, Origins and Mine and Slash remain separate
 alternatives. All other catalogue additions, including optional selections,
-are present for user playtesting. Installation is not gameplay acceptance.
+are present for user playtesting except Environmental, deferred after its
+world-generation ordering conflict with Werewolves. Installation is not gameplay acceptance.
 The earlier phase descriptions below are historical design themes.
 
 The maintained full backlog and dated results are in `../PROJECT_LOG.txt`.

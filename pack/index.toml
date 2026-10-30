@@ -10,7 +10,7 @@ hash = "96b29508d9a72f42ac8da7bb1932c9840e0071471871fd13f610b3b87ab1c08c"
 
 [[files]]
 file = "installation-manifest.json"
-hash = "f86b91ed0f0a7c9fbe2e6d2f1ff01a97fdb55219aabb4d622cad96080664f26e"
+hash = "62608d3b7e2173f8f219ec7e5655f5660b6f6a4a46351757c30ce15b8db823b9"
 
 [[files]]
 file = "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json"
@@ -66,7 +66,7 @@ hash = "eb733b7b98c16e70e126d870ab1414720248c05a49654e09f08b7b60a0f31518"
 
 [[files]]
 file = "kubejs/server_scripts/wild_realms.js"
-hash = "f11358fc5646ec8df8815900be2483813a10ec4d031572071d7ecb4773f86948"
+hash = "ac635c8e7da95f78567bb597983577beef454a762283fa9fae3f63d097a9c834"
 
 [[files]]
 file = "kubejs/startup_scripts/buddycards_book.js"
@@ -555,11 +555,6 @@ metafile = true
 [[files]]
 file = "mods/entityculling.pw.toml"
 hash = "97165653c97b92e8617f4bf86babde39a4575cf807c5d544e6d3366007ef1452"
-metafile = true
-
-[[files]]
-file = "mods/environmental.pw.toml"
-hash = "9825060ebdf517eaa5e9d341fcb13816698aa0a39c21953439681e61c36943ff"
 metafile = true
 
 [[files]]
