@@ -9,7 +9,11 @@ foreach ($pin in Get-ChildItem (Join-Path $pack 'mods/*.pw.toml')) {
     $sha1 = [regex]::Match($text, '(?m)^hash = "([^"]+)"').Groups[1].Value
     $path = Join-Path $root ('.tools/verified-jars/' + $name)
     if ((Get-FileHash -LiteralPath $path -Algorithm SHA1).Hash.ToLower() -ne $sha1) { throw "Unverified cache file: $name" }
-    $files += [ordered]@{path=('mods/' + $name);sha256=(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLower()}
+    $id = [regex]::Match($text, '(?m)^file-id = (\d+)').Groups[1].Value
+    $prefix = $id.Substring(0, $id.Length - 3)
+    $suffix = [int]$id.Substring($id.Length - 3)
+    $url = "https://edge.forgecdn.net/files/$prefix/$suffix/$([Uri]::EscapeDataString($name))"
+    $files += [ordered]@{path=('mods/' + $name);sha256=(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLower();url=$url}
 }
 foreach ($file in Get-ChildItem (Join-Path $pack 'kubejs') -File -Recurse) {
     $relative = [IO.Path]::GetRelativePath($pack, $file.FullName).Replace('\','/')

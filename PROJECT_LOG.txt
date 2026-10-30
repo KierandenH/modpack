@@ -10,13 +10,13 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.8, published; user world-generation retest required
+Version: 0.1.0-alpha.9, built; publication pending, user repair/test required
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.8
-Latest user test: reached world generation, then feature-order cycle crash (alpha.7 context).
+Latest user test: alpha.8 profile failed loading with missing dependencies; 60 required jars absent.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -220,6 +220,33 @@ and updates the current download link; no pack-content changes.
 - Ready for user testing: separate import, READY check, fresh world creation,
   new-chunk exploration, save/reload and second seed. Report any new failure.
 
+2026-10-30 - Alpha.9 - Missing installation files, not another biome conflict
+- User report at 16:27:41 has 51 mod-loading dependency failures. Installed
+  profile manifest identifies alpha.8; read-only file check finds 239 matching
+  jars, 60 missing, no extra jars. Blueprint, YUNG's API and other libraries
+  are absent. No world-generation result can be inferred from this startup failure.
+- Verified alpha.8 export declares all 299 mod references required=true,
+  including Blueprint 382216/8827009. Missing files were not removed from pins.
+  Why the launcher omitted them is unconfirmed; do not blame user timing.
+- Added REPAIR-INSTALLATION.cmd / Repair-Installation.ps1. After import ends,
+  user runs it to download missing exact files from official CurseForge CDN.
+  Each download must match its pinned SHA-256 before installation. Existing
+  differing files are never replaced; extra jars still fail the readiness check.
+  Partial downloads are removed; failures are reported without claiming READY.
+- Manifest now records official download URLs. Build checks both new repair
+  files are included byte-for-byte. Mod selection unchanged at 299 files.
+- PASS: isolated Windows PowerShell repair test downloads actual pinned
+  StateObserver jar, verifies hash and reaches READY; repeat leaves file intact.
+  Wrong existing file, wrong download hash, unsafe path and foreign URL rejected.
+  All five prior readiness-check regression cases also pass.
+- Initial test network lookup failed under restricted execution; rerun with
+  network access passed. No installed profile or gameplay was modified.
+- PASS: full alpha.9 build; all 299 cached hashes; 845 dependency ranges;
+  307-biome grouped scan; book/loot regressions; 299 exact archive references,
+  no bundled jars, and all overrides including repair scripts verified.
+- Preserve unrelated existing local Claude handoff edits; they are not part of
+  this release's changes. Full backlog and all 226 catalogue entries retained.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -277,6 +304,7 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
+- Alpha.8 import missing 60 jars: alpha.9 adds verified missing-file repair; user must verify READY/startup. Root cause of launcher omissions remains unknown.
 - Worldgen cycle reproduced statically; Environmental removed in alpha.8. User must verify fresh world creation and exploration; restoration deferred until repaired.
 - Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.
 - Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
@@ -349,15 +377,15 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.8
-Import Wild-Realms-0.1.0-alpha.8.zip separately and WAIT for import completion.
-Open the profile folder, double-click CHECK-INSTALLATION.cmd, require READY.
+USER PLAYTEST REQUEST - ALPHA.9
+Import Wild-Realms-0.1.0-alpha.9.zip separately and WAIT for import completion.
+Open the profile folder, double-click REPAIR-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.
 If the main menu loads, create a disposable world, try JEI, save and reload;
 then test the repaired Buddycards book and fresh Iron's Spells loot.
 This is a manual readiness check, not an automatic launcher lock.
-Alpha.7 reached world generation but crashed. Alpha.8 gameplay remains untested.
+Alpha.7 reached world generation but crashed. Alpha.9 gameplay remains untested.
 Use a fresh world. Test creation, exploration into new chunks, save/reload and a second seed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.

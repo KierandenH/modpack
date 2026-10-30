@@ -7,9 +7,10 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.8
+## Playtest revision: 0.1.0-alpha.9
 
-Alpha.8 removes Environmental to address the alpha.7 world-generation cycle.
+Alpha.9 adds a missing-mod repair tool after the alpha.8 profile imported only 239/299 jars.
+Environmental remains omitted to address the alpha.7 world-generation cycle.
 The new static worldgen audit passes; user world-creation testing is still required.
 See [test results](docs/TESTING.md).
 
@@ -41,12 +42,13 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.8)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.9)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
-3. Start with a new test world and no shaders. Keep existing worlds separate.
-4. Follow [the playtest checklist](docs/TESTING.md) before starting a permanent save.
+3. Wait for import completion, then open the profile folder and run **REPAIR-INSTALLATION.cmd**. Require **READY** before playing. It downloads only missing pinned files and verifies their hashes.
+4. Start with a new test world and no shaders. Keep existing worlds separate.
+5. Follow [the playtest checklist](docs/TESTING.md) before starting a permanent save.
 
 The launcher downloads the referenced mod files from CurseForge. The archive
 contains no third-party mod jars. It is a client starter, not a server installer.

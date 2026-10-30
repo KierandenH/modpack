@@ -40,7 +40,7 @@ try {
     if (-not ($manifest.minecraft.modLoaders | Where-Object id -eq 'forge-47.4.28')) { throw 'Wrong Forge version' }
     if (-not $zip.GetEntry('overrides/kubejs/server_scripts/wild_realms.js')) { throw 'Missing integration override' }
     $overrides = @(Get-ChildItem (Join-Path $root 'pack/kubejs') -File -Recurse)
-    foreach ($name in @('Verify-Installation.ps1', 'CHECK-INSTALLATION.cmd', 'installation-manifest.json')) {
+    foreach ($name in @('Verify-Installation.ps1', 'CHECK-INSTALLATION.cmd', 'Repair-Installation.ps1', 'REPAIR-INSTALLATION.cmd', 'installation-manifest.json')) {
         $overrides += Get-Item (Join-Path $root ('pack/' + $name))
     }
     foreach ($override in $overrides) {

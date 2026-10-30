@@ -136,3 +136,17 @@ mixins and effective datapack behavior still require user testing.
 Import alpha.8 separately, wait for READY and use a fresh world. Test generation,
 exploration into new chunks, save/reload and a second seed; report new crash logs.
 No alpha.8 gameplay pass is claimed. Amendments remains a separate optional item.
+
+## Alpha.9: repair incomplete installed profiles
+
+User alpha.8 report at 16:27:41 contains 51 missing-dependency errors. Read-only
+inspection confirms the profile identifies alpha.8 but contains only 239/299
+expected jars, with 60 missing. Its release ZIP lists all 299 as required.
+The launcher omission cause is unknown; this report is not another biome cycle.
+
+Alpha.9 keeps the pins and supplies REPAIR-INSTALLATION.cmd. After imports finish,
+run it in the new profile and require READY. It retrieves missing official files,
+verifies SHA-256 and leaves differing existing jars untouched. Isolated download,
+repeat/no-change, corrupt-file/hash and path/URL rejection tests passed in Windows
+PowerShell, along with readiness regression tests. No installed game was changed
+or launched. User must test startup, fresh world, exploration and save/reload.

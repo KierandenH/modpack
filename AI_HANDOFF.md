@@ -16,6 +16,10 @@ Update PROJECT_LOG.txt with every change and reported test, and include it in
 every push. Record release upload outcomes after verification. Keep raw user
 logs/credentials private. Never claim runtime success from static checks.
 
+Alpha.9 keeps alpha.8 pins and adds REPAIR-INSTALLATION.cmd for missing imports.
+The alpha.8 profile had only 239/299 jars; all 299 were required in the ZIP.
+Run the repair after import ends, require READY, then user tests gameplay.
+
 Alpha.8 removes Environmental after two user world-generation crashes. The new
 Verify-Worldgen.ps1 build gate reproduces the old flower/tall-grass order cycle
 and passes after removal. It is a limited static audit, not a runtime guarantee.
