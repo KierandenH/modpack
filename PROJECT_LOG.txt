@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.8, built; publication pending, user retest required
+Version: 0.1.0-alpha.8, published; user world-generation retest required
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.8
 Latest user test: reached world generation, then feature-order cycle crash (alpha.7 context).
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -212,6 +212,13 @@ and updates the current download link; no pack-content changes.
 - No Minecraft launched. User runs world creation/exploration/save tests.
 - Online issue search unavailable (503); findings rely on supplied reports and
   actual pinned jar data. No guessed fixes or blanket mod updates.
+
+2026-10-30 - Alpha.8 publication verified
+- Source, mod omission, compatibility audit and full log pushed in commit 62fc2c7.
+- Verified GitHub prerelease v0.1.0-alpha.8 with ZIP (41370 bytes) and SHA-256
+  sidecar (66 bytes). Download link updated. No gameplay result claimed.
+- Ready for user testing: separate import, READY check, fresh world creation,
+  new-chunk exploration, save/reload and second seed. Report any new failure.
 
 PLAYTEST RECORD
 
