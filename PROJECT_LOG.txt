@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.7, Naturalist/Delightful fix; publication pending
+Version: 0.1.0-alpha.7, published; Naturalist/Delightful fix, user playtest pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.6
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7
 Installed profile: latest user screenshot shows Naturalist dependency failure; exact profile unconfirmed.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -176,6 +176,13 @@ and updates the current download link; no pack-content changes.
   at a time, pull latest commits, preserve full backlog and user-run playtests.
 - PASS: alpha.7 export: 300 exact references, correct loader, no bundled jars; all overrides match. Book/loot regressions and installation manifest generation passed. Publication pending.
 - No Minecraft launch or gameplay performed. User retry remains required.
+
+2026-10-30 - Alpha.7 publication verified
+- Source, fix, AI handoff and full log pushed in commit 848b364.
+- GitHub prerelease v0.1.0-alpha.7 verified with ZIP (41436 bytes) and SHA-256
+  sidecar (66 bytes). Current download link updated. No new gameplay result.
+- User should import separately, wait for READY, then test startup, fresh-world
+  creation, Naturalist wildlife, Delightful/JEI recipes and save/reload.
 
 PLAYTEST RECORD
 
@@ -527,4 +534,5 @@ P5 [PINNED / USER PLAYTEST PENDING] spark: Diagnose performance; not an FPS boos
 A1 [PINNED / USER PLAYTEST PENDING] AmbientSounds -- regional environmental audio. Add CreativeCore as required.
 A2 [PINNED / USER PLAYTEST PENDING] Sound Physics Remastered -- environmental echoes and sound occlusion.
 A3 [PINNED / USER PLAYTEST PENDING] Falling Leaves (NeoForge/Forge) -- falling leaf particles; select Forge 1.20.1.
+
 
