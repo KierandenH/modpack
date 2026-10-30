@@ -10,13 +10,13 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.7, published; Naturalist/Delightful fix, user playtest pending
+Version: 0.1.0-alpha.7, published; user reports world-generation crash
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7
-Installed profile: latest user screenshot shows Naturalist dependency failure; exact profile unconfirmed.
+Latest user test: reached world generation, then feature-order cycle crash (alpha.7 context).
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -216,12 +216,32 @@ FAIL: dependency discovery at 00:20:47; crash report at 00:20:59. Import was
 still populating files. No main menu, world or gameplay pass can be inferred.
 Subsequent read-only file inspection passed; user must retry after import
 completion. Do not mark the runtime issue verified resolved until that retry.
+2026-10-30 - Alpha.7 context - User-reported world-generation failure
+- User supplied crash report dated 12:49:50 and Supplementaries notice screenshot.
+- FAIL: Exception generating new chunk; IllegalStateException: Feature order
+  cycle found. Named biome sources: werewolves:werewolf_heaven and
+  environmental:blossom_woods. Overworld generation failed at game time 0.
+- This is evidence of conflicting world-generation feature ordering, not a
+  random transient failure. Exact feature/injection responsible is not yet isolated.
+  Blueprint 7.1.5 appears in the call path; this alone does not prove its fault.
+- Progress: startup reached integrated-server world generation. No successful
+  world entry, gameplay, recipes or save/reload can be marked passed.
+- Separate screenshot: Supplementaries moved wall lanterns, skull candles,
+  ceiling pots/banners and skull piles to optional Amendments. The notice says
+  both mods function separately; old affected blocks can be lost without it.
+  No evidence links this notice to the reported feature-order crash.
+- Checks: read supplied report and screenshot; no game launched or fix tested.
+  Online corroboration attempted but search service unavailable; diagnosis
+  above is based on the supplied evidence. No mod pins or release changed.
+- Documentation update records this test and preserves the complete backlog.
+
 FULL OUTSTANDING WORK
 Status meanings: REJECTED = removed by user choice; OPEN = unfinished; EVALUATE = candidate/decision needed;
 DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
+- BLOCKER: isolate and repair Werewolves/Environmental feature-order cycle; then user retests fresh world generation.
 - Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.
 - Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
 - Buddycards rules-book repair implemented in alpha.4; verify opening and all pages in-game.
@@ -229,7 +249,7 @@ OPEN - Known defects and configuration
 - Correct Human Companions' misspelled biome references in two structure tags.
 - Investigate Mowzie's Mobs model and dragon particle/animation errors.
 - DEFERRED by user: configure HUDs and conflicting combat/mount/magic keybindings after mod additions are finished.
-- Resolve or explain the optional Supplementaries/Amendments migration notice.
+- Amendments notice explained: optional split content, separate from current crash. Evaluate compatible addition to retain moved decorative features.
 - Profile slow JEI registration and loading; check memory and entity performance.
 
 OPEN - Integration and experience across all current and future content
@@ -534,5 +554,3 @@ P5 [PINNED / USER PLAYTEST PENDING] spark: Diagnose performance; not an FPS boos
 A1 [PINNED / USER PLAYTEST PENDING] AmbientSounds -- regional environmental audio. Add CreativeCore as required.
 A2 [PINNED / USER PLAYTEST PENDING] Sound Physics Remastered -- environmental echoes and sound occlusion.
 A3 [PINNED / USER PLAYTEST PENDING] Falling Leaves (NeoForge/Forge) -- falling leaf particles; select Forge 1.20.1.
-
-

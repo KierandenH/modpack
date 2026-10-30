@@ -105,6 +105,19 @@ all 849 mandatory/present-optional ranges pass. Naturalist 4.0.3 Forge 1.20.1
 is an official release: https://modrinth.com/mod/naturalist/version/fapHaClR
 CurseForge equivalent: https://www.curseforge.com/minecraft/mc-mods/naturalist/files/4847009
 
-Alpha.7 launch/gameplay remains user-run and UNTESTED. Import separately, run
+Initial alpha.7 test request (superseded by failure below): import separately, run
 the readiness check and confirm the dependency screen is gone; then create a
 new test world and check Naturalist creatures and Delightful recipes.
+
+## 2026-10-30: user world-generation crash
+
+The user reached world generation but crashed at 12:49:50 with a feature order
+cycle involving `werewolves:werewolf_heaven` and `environmental:blossom_woods`.
+This is a world-generation compatibility blocker. Blueprint appears in the
+stack; the precise conflicting feature or injector still needs isolation.
+No successful world entry or gameplay is recorded. Dependency-range checks
+do not detect this kind of runtime ordering conflict. No fix has been tested.
+
+The supplied Supplementaries screenshot separately explains its optional
+Amendments split. Moved decorative blocks need Amendments to be preserved in
+old worlds; it is not identified as the cause of this crash.

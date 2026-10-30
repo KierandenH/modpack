@@ -9,6 +9,10 @@ tests are user-run; each ready build includes a focused test request.
 
 ## Playtest revision: 0.1.0-alpha.7
 
+Known blocker: user-reported world-generation feature-order cycle involving
+Werewolves and Environmental. Alpha.7 is not yet suitable for a playthrough.
+See [test results](docs/TESTING.md).
+
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
 it is not yet a balanced or fully tested modpack.
@@ -121,4 +125,3 @@ and gameplay remain untested. The original mandatory-only audit missed this.
 
 For another AI to continue, use [AI_HANDOFF.md](AI_HANDOFF.md), AGENTS.md and
 PROJECT_LOG.txt. CLAUDE.md points to the same instructions.
-
