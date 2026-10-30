@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.10, built; publication pending
+Version: 0.1.0-alpha.10, published; existing alpha.9 profile READY for user gameplay test
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.9
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.10
 Installed alpha.9 profile Wild Realms (1): READY, all 299 jars and 15 overrides match. Gameplay untested.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -278,6 +278,13 @@ and updates the current download link; no pack-content changes.
 - Alpha.10 packages the clearer tools for future installations; mod pins unchanged.
   PASS: full build, 299 jar hashes, 845 ranges, grouped worldgen scan,
   book/loot checks and archive verification. All 226 catalogue entries preserved.
+
+2026-10-30 - Alpha.10 publication verified
+- Source/tool improvements and audit record pushed in 75ece0a.
+- Verified prerelease v0.1.0-alpha.10 with ZIP (46725 bytes) and SHA-256 sidecar
+  (66 bytes). Current link updated. No new gameplay result claimed.
+- Existing Wild Realms (1) alpha.9 remains fully verified and has updated tools;
+  user should playtest it without reimport. Alpha.10 is available for new installs.
 
 PLAYTEST RECORD
 
