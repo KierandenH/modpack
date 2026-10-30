@@ -175,3 +175,8 @@ initialization cost; repeat-freeze cause and eventual recovery remain unconfirme
 No stable gameplay or save/reload pass recorded. See feedback/2026-10-31-changes-v2.txt.
 MCA character/destiny dissatisfaction and screenshot MCA/Werewolves + AoA content
 warnings are now backlog items. No mods removed or new release built.
+
+User clarification, 2026-10-31: the whole game froze for multiple minutes and
+user quit. Recovery not observed; classify as a blocking usability defect.
+JEI initialization remains a suspected contributor, not a proven sole cause.
+No additional gameplay test or fix is claimed.

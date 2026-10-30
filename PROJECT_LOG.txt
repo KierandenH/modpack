@@ -307,6 +307,16 @@ and updates the current download link; no pack-content changes.
   Need user clarification: does inventory recover after several minutes, and
   does freezing recur on every opening after initialization completes?
 
+2026-10-31 - User clarification: sustained inventory freeze
+- User reports the entire game remained frozen for multiple minutes, then they
+  quit. Treat as a blocking usability defect, not acceptable initialization.
+- Recovery was not observed. Whether it eventually recovers or recurs on later
+  openings remains unknown; do not label it a proven deadlock or memory issue.
+- Prior JEI timing evidence remains a lead, not a confirmed root cause. Next
+  investigation needs client-thread profiling/stack evidence or controlled
+  isolation; no further long-wait playtest requested from the user.
+- Documentation-only update; no game launched, mod changes or new release.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -364,7 +374,7 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
-- HIGH: user reports inventory freezes in creative and survival. JEI recipe registration took 1.829 minutes plus 20.86s filter build; investigate repeat openings versus initial initialization, not assumed RAM issue.
+- BLOCKER: user reports whole-game inventory freeze lasting multiple minutes before quitting, in creative and survival. JEI recipe registration took 1.829 minutes plus 20.86s filter build; investigate repeat openings versus initial initialization, not assumed RAM issue.
 - Review MCA character/destiny setup with user; explain villagers, relationships, marriage/family and chores. No removal authorized by uncertainty alone.
 - Investigate screenshot MCA/Werewolves partial-compatibility notice and documented remedy; not fixed by removing Environmental.
 - Reassess AoA: installed version warns all dimensions and most mobs are missing during port transition. Do not count it as full adventure content.
