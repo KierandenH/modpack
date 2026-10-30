@@ -7,7 +7,7 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.6
+## Playtest revision: 0.1.0-alpha.7
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
@@ -37,7 +37,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.6)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.7)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
@@ -46,7 +46,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 The launcher downloads the referenced mod files from CurseForge. The archive
 contains no third-party mod jars. It is a client starter, not a server installer.
-See [the setup guide](docs/SETUP.md). Import alpha.6 as a separate profile; the existing Wild Realms instance contains alpha.5.
+See [the setup guide](docs/SETUP.md). Import alpha.7 as a separate profile; keep earlier profiles separate.
 
 ## Project layout
 
@@ -107,4 +107,18 @@ Alpha.6 addresses the reported incomplete-import startup failure with an
 installation readiness checker; mod pins are unchanged. Read the
 [diagnosis](docs/CRASH_ALPHA5.md), wait for import completion, and run
 CHECK-INSTALLATION.cmd in the profile folder before Play. This manual check
-cannot disable the launcher's Play button. No successful alpha.6 launch is claimed.
+cannot disable the launcher's Play button. No successful alpha.7 launch is claimed.
+
+## Alpha.7 compatibility fix
+
+Naturalist is pinned to 4.0.3 (Forge 1.20.1, file 4847009) so it satisfies
+Delightful's optional-but-enforced [4,) requirement. The newer-dated 2.0.9
+release does not satisfy it. Both mods are retained. This is an older Naturalist
+content branch, so use a new test world rather than moving a permanent save.
+The enhanced static audit checks optional dependencies when installed and now
+runs as a build gate. 849 mandatory/present-optional declarations pass; mixins
+and gameplay remain untested. The original mandatory-only audit missed this.
+
+For another AI to continue, use [AI_HANDOFF.md](AI_HANDOFF.md), AGENTS.md and
+PROJECT_LOG.txt. CLAUDE.md points to the same instructions.
+

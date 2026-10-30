@@ -10,7 +10,7 @@ hash = "96b29508d9a72f42ac8da7bb1932c9840e0071471871fd13f610b3b87ab1c08c"
 
 [[files]]
 file = "installation-manifest.json"
-hash = "f2ec81e20bdc42d0a1a7b6aae078008da349b6dd374118661da7a09e5544b6d6"
+hash = "f86b91ed0f0a7c9fbe2e6d2f1ff01a97fdb55219aabb4d622cad96080664f26e"
 
 [[files]]
 file = "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json"
@@ -66,7 +66,7 @@ hash = "eb733b7b98c16e70e126d870ab1414720248c05a49654e09f08b7b60a0f31518"
 
 [[files]]
 file = "kubejs/server_scripts/wild_realms.js"
-hash = "1d97e494e5e91bfc560b0177ec78d35d63403dc7aa6ece51963084eaf2d44183"
+hash = "f11358fc5646ec8df8815900be2483813a10ec4d031572071d7ecb4773f86948"
 
 [[files]]
 file = "kubejs/startup_scripts/buddycards_book.js"
@@ -1004,7 +1004,7 @@ metafile = true
 
 [[files]]
 file = "mods/naturalist.pw.toml"
-hash = "16af2b02b6d53fef2a350842a1cfec27885d7f7aa4810e6c0838a11d85418fa1"
+hash = "a57155e174f160d0cb42c8e10eb648b05865d70a79496a4024111d2a506325ca"
 metafile = true
 
 [[files]]

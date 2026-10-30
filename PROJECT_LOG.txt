@@ -10,13 +10,13 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.6, published installation-readiness fix; user retry pending
+Version: 0.1.0-alpha.7, Naturalist/Delightful fix; publication pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 300 pinned external files: 219 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.6
-Installed Wild Realms: alpha.5 files verified after failed startup; alpha.6 import pending.
+Installed profile: latest user screenshot shows Naturalist dependency failure; exact profile unconfirmed.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -157,6 +157,26 @@ and updates the current download link; no pack-content changes.
 - GitHub prerelease v0.1.0-alpha.6 verified with ZIP (41470 bytes) and SHA-256
   sidecar (66 bytes). Current download link updated. No new gameplay result.
 
+2026-10-30 - Alpha.7 - Naturalist compatibility and AI handoff
+- User screenshot reports Delightful only supports Naturalist 4+, found 2.0.9.
+  Screenshot alone does not prove successful menu/world loading or exact profile.
+- Confirmed Delightful 3.8.1 declares optional Naturalist range [4,). Forge
+  enforces that range when Naturalist is present. The prior mandatory-only
+  checker missed this genuine conflict; the incomplete-import diagnosis remains
+  valid for the earlier log but did not establish full runtime compatibility.
+- Expanded audit to present optional dependencies; before fixing it reproduced
+  exactly this Naturalist mismatch. Absent optional mods remain allowed.
+- Pinned official Naturalist 4.0.3 Forge 1.20.1 (627986/4847009), replacing newer-
+  dated 2.0.9. Both Naturalist and Delightful retained; 300 total files unchanged.
+  This older Naturalist branch may differ in content; use a fresh test world.
+- PASS: all 300 jar hashes/mandatory IDs and 849 mandatory/present-optional ranges.
+- Made dependency range audit a build gate; missing/incompatible installed
+  optional dependency ranges now fail the build gate when incompatible.
+- Added AI_HANDOFF.md and CLAUDE.md for switching assistants; one active editor
+  at a time, pull latest commits, preserve full backlog and user-run playtests.
+- PASS: alpha.7 export: 300 exact references, correct loader, no bundled jars; all overrides match. Book/loot regressions and installation manifest generation passed. Publication pending.
+- No Minecraft launch or gameplay performed. User retry remains required.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -195,6 +215,7 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
+- Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.
 - Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
 - Buddycards rules-book repair implemented in alpha.4; verify opening and all pages in-game.
 - Iron's Spells citadel_tomes and crypt_loot repaired in alpha.4; verify loaded tables and rewards in-game.
@@ -265,15 +286,15 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.6
-Import Wild-Realms-0.1.0-alpha.6.zip separately and WAIT for import completion.
+USER PLAYTEST REQUEST - ALPHA.7
+Import Wild-Realms-0.1.0-alpha.7.zip separately and WAIT for import completion.
 Open the profile folder, double-click CHECK-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.
 If the main menu loads, create a disposable world, try JEI, save and reload;
 then test the repaired Buddycards book and fresh Iron's Spells loot.
 This is a manual readiness check, not an automatic launcher lock.
-No successful alpha.5/alpha.6 runtime or gameplay result is assumed.
+No successful alpha.5/alpha.6/alpha.7 runtime or gameplay result is assumed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.
 INSTALLED means a project is pinned, not fully tested. EVALUATE/ADD means not
@@ -506,3 +527,4 @@ P5 [PINNED / USER PLAYTEST PENDING] spark: Diagnose performance; not an FPS boos
 A1 [PINNED / USER PLAYTEST PENDING] AmbientSounds -- regional environmental audio. Add CreativeCore as required.
 A2 [PINNED / USER PLAYTEST PENDING] Sound Physics Remastered -- environmental echoes and sound occlusion.
 A3 [PINNED / USER PLAYTEST PENDING] Falling Leaves (NeoForge/Forge) -- falling leaf particles; select Forge 1.20.1.
+

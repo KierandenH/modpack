@@ -95,3 +95,16 @@ Alpha.6 retains the mod pins and adds a readiness checker covering all jars and
 KubeJS overrides. Before testing: wait for the complete import, open the profile
 folder, run CHECK-INSTALLATION.cmd, require READY, then launch. Report any new
 failure with the new log. The checker does not run Minecraft or validate mixins.
+
+## Alpha.7: user-reported Naturalist/Delightful error
+
+User screenshot reports Delightful requires Naturalist >=4, found 2.0.9.
+Confirmed in Delightful's optional dependency metadata. The revised audit
+reproduced exactly this failure before the pin change; with Naturalist 4.0.3,
+all 849 mandatory/present-optional ranges pass. Naturalist 4.0.3 Forge 1.20.1
+is an official release: https://modrinth.com/mod/naturalist/version/fapHaClR
+CurseForge equivalent: https://www.curseforge.com/minecraft/mc-mods/naturalist/files/4847009
+
+Alpha.7 launch/gameplay remains user-run and UNTESTED. Import separately, run
+the readiness check and confirm the dependency screen is gone; then create a
+new test world and check Naturalist creatures and Delightful recipes.

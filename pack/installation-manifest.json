@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "files": [
     {
       "path": "mods/AoA3-1.20.1-3.7.1-all.jar",
@@ -746,8 +746,8 @@
       "sha256": "5bd4f5b8cddb3e43f3c59f72f671e501d9007a049be0838e7c3e56b8033013e5"
     },
     {
-      "path": "mods/naturalist-2.0.9-forge-1.20.1.jar",
-      "sha256": "b721713241003bf48ffde307a57e4c8572f48df3dcac08ffe7baacc919748fc2"
+      "path": "mods/naturalist-forge-4.0.3-1.20.1.jar",
+      "sha256": "40110a85093a08d94752f0d9e47af0109be2a1f9b66f5dd25ee4df07468bfe62"
     },
     {
       "path": "mods/NaturesAura-39.4.jar",
@@ -1255,7 +1255,7 @@
     },
     {
       "path": "kubejs/server_scripts/wild_realms.js",
-      "sha256": "1d97e494e5e91bfc560b0177ec78d35d63403dc7aa6ece51963084eaf2d44183"
+      "sha256": "f11358fc5646ec8df8815900be2483813a10ec4d031572071d7ecb4773f86948"
     },
     {
       "path": "kubejs/startup_scripts/buddycards_book.js",

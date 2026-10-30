@@ -190,7 +190,7 @@ Alpha.5: 300 pinned external files, covering 219 catalogue selections plus KubeJ
 | Mystical Agriculture | MysticalAgriculture-1.20.1-7.0.24.jar | [File 8034376](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture/files/8034376) |
 | Mythic Mounts (Forge) | mythicmounts-20.1-7.4.2-forge.jar | [File 4761916](https://www.curseforge.com/minecraft/mc-mods/mythic-mounts-forge/files/4761916) |
 | Myths & Legends | mythsandlegends-1.0.6.jar | [File 9100525](https://www.curseforge.com/minecraft/mc-mods/myths-n-legends/files/9100525) |
-| Naturalist | naturalist-2.0.9-forge-1.20.1.jar | [File 9289192](https://www.curseforge.com/minecraft/mc-mods/naturalist/files/9289192) |
+| Naturalist | naturalist-forge-4.0.3-1.20.1.jar | [File 4847009](https://www.curseforge.com/minecraft/mc-mods/naturalist/files/4847009) |
 | Nature's Aura | NaturesAura-39.4.jar | [File 4963590](https://www.curseforge.com/minecraft/mc-mods/natures-aura/files/4963590) |
 | Nature's Compass | NaturesCompass-1.20.1-1.12.0-forge.jar | [File 7892948](https://www.curseforge.com/minecraft/mc-mods/natures-compass/files/7892948) |
 | Nether Depths Upgrade | netherdepthsupgrade-3.1.5-1.20.jar | [File 5340329](https://www.curseforge.com/minecraft/mc-mods/nether-depths-upgrade/files/5340329) |
