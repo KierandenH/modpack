@@ -1,0 +1,2 @@
+The character creator mod, kind of weird, especially with the spawn location choices and stuff. I want to know what it exactly adds, but if this is it idk if i like it.
+When in creative and survival, when i open my inventory i immediately freeze frame. doesn't seem to be a ram constraint.

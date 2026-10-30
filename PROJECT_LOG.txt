@@ -1,5 +1,5 @@
 WILD REALMS - CHANGE NOTES, PLAYTEST RESULTS AND COMPLETE BACKLOG
-Last updated: 2026-10-30
+Last updated: 2026-10-31
 
 PROTOCOL
 Every GitHub update and every playtest result must be recorded here. Preserve
@@ -16,7 +16,7 @@ Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.10
-Installed alpha.9 profile Wild Realms (1): READY, all 299 jars and 15 overrides match. Gameplay untested.
+Installed alpha.9 Wild Realms (1): files verified; user entered world, reports inventory freezes.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -286,6 +286,27 @@ and updates the current download link; no pack-content changes.
 - Existing Wild Realms (1) alpha.9 remains fully verified and has updated tools;
   user should playtest it without reimport. Alpha.10 is available for new installs.
 
+2026-10-31 - User playtest V2: world entry and inventory freezes
+- Read Changes to be made V2.txt; preserved in docs/feedback/2026-10-31-changes-v2.txt.
+  User dislikes/queries character creation and spawn selection; asks what it adds.
+  User reports immediate inventory freeze in creative and survival, doubts RAM
+  constraint. No mod removal or configuration change assumed from this feedback.
+- Supplied screenshot shows world entry and mod notices. This is progress beyond
+  startup/worldgen failure, not evidence of save/reload or stable gameplay.
+- Read-only alpha.9 profile latest.log: JEI recipe registration 1.829 minutes;
+  Iron's Spells plugin 26.62s, MineColonies 19.46s; ingredient filter 20.86s,
+  57996 ingredients. Strong lead for initial UI stalls, not proof of repeat-freeze
+  cause. Server behind warnings also present. No profiling/game control performed.
+- MCA installed config contains destiny spawn choices; primary project describes
+  human villagers, interactions, relationships, marriage, children/chores and
+  village management: https://github.com/Luke100000/minecraft-comes-alive
+- Screenshot warns MCA/Werewolves partial incompatibility and AoA missing most
+  mobs/all dimensions during its transition. Logged for investigation, not ignored
+  or marked fixed. Optional guide/decorative suggestions remain separate decisions.
+- Updated complete backlog and test notes. No pins, release or game files changed.
+  Need user clarification: does inventory recover after several minutes, and
+  does freezing recur on every opening after initialization completes?
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -343,6 +364,11 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
+- HIGH: user reports inventory freezes in creative and survival. JEI recipe registration took 1.829 minutes plus 20.86s filter build; investigate repeat openings versus initial initialization, not assumed RAM issue.
+- Review MCA character/destiny setup with user; explain villagers, relationships, marriage/family and chores. No removal authorized by uncertainty alone.
+- Investigate screenshot MCA/Werewolves partial-compatibility notice and documented remedy; not fixed by removing Environmental.
+- Reassess AoA: installed version warns all dimensions and most mobs are missing during port transition. Do not count it as full adventure content.
+- Evaluate optional GuideAPI-VP and Luminous:Tag suggestions separately; screenshot messages are not installation instructions.
 - Alpha.8 old profile lacks 60 jars; alpha.9 Wild Realms (1) fully verified READY. Cause of old import omission remains unknown; gameplay tests remain open.
 - Worldgen cycle reproduced statically; Environmental removed in alpha.8. User must verify fresh world creation and exploration; restoration deferred until repaired.
 - Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.

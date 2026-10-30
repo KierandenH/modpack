@@ -164,3 +164,14 @@ including actual CDN download and empty-manifest rejection. Updated the two
 repair tools directly in the verified profile after backup; mods/worlds unchanged.
 No reimport needed for user gameplay testing. Alpha.10 ships these improvements
 for future imports. A complete installation still does not prove runtime stability.
+
+## 2026-10-31: user playtest V2
+
+User entered a world (supplied screenshot), but reports inventory freezes in both
+creative and survival. Read-only log inspection shows JEI recipe registration
+at 1.829 minutes, including Iron's Spells 26.62s and MineColonies 19.46s; ingredient
+filter construction took 20.86s for 57996 ingredients. This suggests initial UI
+initialization cost; repeat-freeze cause and eventual recovery remain unconfirmed.
+No stable gameplay or save/reload pass recorded. See feedback/2026-10-31-changes-v2.txt.
+MCA character/destiny dissatisfaction and screenshot MCA/Werewolves + AoA content
+warnings are now backlog items. No mods removed or new release built.
