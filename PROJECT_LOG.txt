@@ -10,9 +10,9 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.10, published; existing alpha.9 profile READY for user gameplay test
+Version: 0.1.0-alpha.11, built; publication pending, freeze unresolved
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
-299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
+298 pinned external files: 217 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.10
@@ -317,6 +317,39 @@ and updates the current download link; no pack-content changes.
   isolation; no further long-wait playtest requested from the user.
 - Documentation-only update; no game launched, mod changes or new release.
 
+2026-10-31 - Alpha.11 - Inventory investigation and MCA deferral
+- User requested investigation and explicitly put MCA on hold due to character
+  creator/spawn selection. Removed MCA pin; retained catalogue/history/reason.
+  298 external files cover 217 selections + KubeJS + 80 support mods; nine
+  selections rejected/deferred/separate. Other content pins are unchanged.
+- Offline log inspection: JEI runs on Render thread; vanilla recipe registration
+  takes 56.53s, Iron's Spells 26.62s, MineColonies 19.46s; all recipe registration
+  1.829 minutes. Filter indexes 57996 ingredients in 20.86s. Log stops after
+  filter completion, with no complete JEI-startup message. No running Java game
+  was found during investigation, so no historical thread dump can be recovered.
+- Root cause of final freeze is NOT proven. Slow synchronous setup is established;
+  memory pressure/deadlock/late plugin work not ruled out by lack of crash report.
+- Added JEI search.tooltipSearchMode=DISABLED using the installed config schema.
+  Exact pinned jar inspected with javap: DISABLED skips search-string indexing.
+  This reduces one known work source but does NOT skip slow recipe registration
+  or prove the freeze fixed. Name/mod searches, visible tooltips and recipes remain.
+- Added CAPTURE-FREEZE.cmd and Capture-Freeze.ps1 for user-triggered external
+  thread samples: matches Java process to this profile, three bounded jcmd calls,
+  local output only, no game launch/stop or uploads. No matching/ambiguous process
+  fails safely. Diagnostic helper only is stopped if attachment times out.
+- Config is verified semantically so JEI can add defaults without a false hash
+  failure; archive verifies original config/tool bytes. Tests cover missing,
+  changed, wrong-section settings and allowed generated defaults.
+- Tests caught/fixed: .gitkeep incorrectly counted as an exported config override;
+  Windows PowerShell's null process exit code despite a valid thread dump.
+  Final capture test uses isolated sleeping Java source, never Minecraft.
+- PASS: all 298 jar hashes/mandatory IDs, 843 mandatory/present-optional ranges,
+  307-biome grouped audit, book/loot regressions, 298 exact export references,
+  no bundled jars, config/diagnostic/repair overrides match. Nine readiness cases
+  pass; three real fixture thread dumps and absent-process rejection pass.
+  Runtime mitigation remains UNTESTED. See docs/INVENTORY_FREEZE.md.
+- All 226 catalogue entries/full backlog preserved; no installed profile altered.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -375,8 +408,8 @@ still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
 - BLOCKER: user reports whole-game inventory freeze lasting multiple minutes before quitting, in creative and survival. JEI recipe registration took 1.829 minutes plus 20.86s filter build; investigate repeat openings versus initial initialization, not assumed RAM issue.
-- Review MCA character/destiny setup with user; explain villagers, relationships, marriage/family and chores. No removal authorized by uncertainty alone.
-- Investigate screenshot MCA/Werewolves partial-compatibility notice and documented remedy; not fixed by removing Environmental.
+- MCA deferred in alpha.11 at user request; reconsider only if user wants social/family gameplay.
+- DEFERRED: investigate MCA/Werewolves partial-compatibility remedy before any MCA restoration; removing MCA avoids the pair but is not an integration fix.
 - Reassess AoA: installed version warns all dimensions and most mobs are missing during port transition. Do not count it as full adventure content.
 - Evaluate optional GuideAPI-VP and Luminous:Tag suggestions separately; screenshot messages are not installation instructions.
 - Alpha.8 old profile lacks 60 jars; alpha.9 Wild Realms (1) fully verified READY. Cause of old import omission remains unknown; gameplay tests remain open.
@@ -436,7 +469,7 @@ INTEGRATE / DEFERRED - Larger optional modules and alternatives
 - Mine and Slash: alternative RPG profile with deliberate damage/stat integration.
 - Mine Piece and other disruptive crossover powers: destruction/balance checks.
 - ProjectE: optional economy that must not trivialize rare collections.
-- MCA, MineColonies and Cobblemon: included in alpha.5; combined gameplay/performance evaluation pending.
+- MineColonies and Cobblemon combined gameplay/performance evaluation pending. MCA was included in alpha.5, now deferred by user in alpha.11.
 - Epic Fight and animation-dependent addons: separate integration evaluation.
 - Hats/Morph ports: conceptual/deferred; no port or rewrite is authorized.
 - Historical 1.12.2 alternatives remain archived in the handoff, not silently
@@ -452,16 +485,18 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - VERIFIED ALPHA.9 / ALPHA.10
-Existing Wild Realms (1) alpha.9 is verified READY; playtest that profile without reimport.
-For future installs, import Wild-Realms-0.1.0-alpha.10.zip separately and wait for completion.
+USER PLAYTEST REQUEST - ALPHA.11 DIAGNOSTIC BUILD
+Alpha.11 requires a separate fresh profile/world because MCA was removed.
+Import Wild-Realms-0.1.0-alpha.11.zip separately and wait for completion.
 Open the profile folder, double-click REPAIR-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.
 If the main menu loads, create a disposable world, try JEI, save and reload;
 then test the repaired Buddycards book and fresh Iron's Spells loot.
+If inventory freezes, leave game open and run CAPTURE-FREEZE.cmd from this profile.
+Send freeze-reports output and latest.log privately; no multi-minute wait required.
 This is a manual readiness check, not an automatic launcher lock.
-Alpha.7 reached world generation but crashed. Alpha.9 gameplay remains untested.
+Alpha.7 reached world generation but crashed. Alpha.11 gameplay remains untested.
 Use a fresh world. Test creation, exploration into new chunks, save/reload and a second seed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.
@@ -581,7 +616,7 @@ Source descriptions and qualifications: docs/Fantasy_Modpack_Chat_Handoff.md.
 110 [PINNED / USER PLAYTEST PENDING] Goblin Traders
 111 [PINNED / USER PLAYTEST PENDING] More Villagers
 112 [PINNED / USER PLAYTEST PENDING] Bountiful
-113 [PINNED / USER PLAYTEST PENDING] MCA Reborn
+113 [DEFERRED / USER REQUEST ALPHA.11] MCA Reborn - dislikes character/destiny setup; optional social system, compatibility unresolved if restored.
 114 [PINNED / USER PLAYTEST PENDING] Wares
 115 [PINNED / USER PLAYTEST PENDING] MineColonies
 116 [PINNED / USER PLAYTEST PENDING] Untamed Wilds

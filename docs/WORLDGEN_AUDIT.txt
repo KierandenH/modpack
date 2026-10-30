@@ -1,4 +1,4 @@
-Static worldgen audit: 299 pinned jars; 307 biome JSON definitions.
+Static worldgen audit: 298 pinned jars; 307 biome JSON definitions.
 Biome modifier JSON files inventoried but NOT applied: 2019.
 Checks direct feature sequences grouped by dimension tags, explicit dimension references and mod namespace.
 Not covered: Java injections, effective datapack overrides/replacements, vanilla definitions, runtime registries, mixins, or unlisted cross-mod dimension membership.

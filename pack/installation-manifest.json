@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0-alpha.10",
+  "version": "0.1.0-alpha.11",
   "files": [
     {
       "path": "mods/AoA3-1.20.1-3.7.1-all.jar",
@@ -832,11 +832,6 @@
       "url": "https://edge.forgecdn.net/files/9351/282/minecolonies-1.20.1-1.1.1304-snapshot.jar"
     },
     {
-      "path": "mods/minecraft-comes-alive-7.7.1-beta.5+1.20.1-universal.jar",
-      "sha256": "0661e8d59918143f1d6c89d279dbdd7c2772b64ac51806394b2ba291c1449771",
-      "url": "https://edge.forgecdn.net/files/9243/92/minecraft-comes-alive-7.7.1-beta.5%2B1.20.1-universal.jar"
-    },
-    {
       "path": "mods/dungeons_1.19_mc1.20.1.jar",
       "sha256": "cd664d411864712aae1dc5ec29a6575464853550559adba3b16da8a1cd1406a4",
       "url": "https://edge.forgecdn.net/files/7212/37/dungeons_1.19_mc1.20.1.jar"
@@ -1550,11 +1545,19 @@
     },
     {
       "path": "kubejs/server_scripts/wild_realms.js",
-      "sha256": "a285c0a6ca81d4348e336c88e43ec0821ce4268f5ab07e0422a90fb7dd671ec6"
+      "sha256": "b24e989af0c3f71e7298d81698df0cd97798ea1123889962ef11f887233271a6"
     },
     {
       "path": "kubejs/startup_scripts/buddycards_book.js",
       "sha256": "ae4f952f63c4be16f63eb9910a96b3279e27ae75b73d2bafd605a406768948f8"
+    }
+  ],
+  "settings": [
+    {
+      "section": "search",
+      "key": "tooltipSearchMode",
+      "path": "config/jei/client/default/jei-client.ini",
+      "value": "DISABLED"
     }
   ]
 }

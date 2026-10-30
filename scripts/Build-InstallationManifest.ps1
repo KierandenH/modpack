@@ -19,5 +19,6 @@ foreach ($file in Get-ChildItem (Join-Path $pack 'kubejs') -File -Recurse) {
     $relative = [IO.Path]::GetRelativePath($pack, $file.FullName).Replace('\','/')
     $files += [ordered]@{path=$relative;sha256=(Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLower()}
 }
-[ordered]@{version=$version;files=$files} | ConvertTo-Json -Depth 4 | Set-Content (Join-Path $pack 'installation-manifest.json')
+$settings = @(@{path='config/jei/client/default/jei-client.ini';section='search';key='tooltipSearchMode';value='DISABLED'})
+[ordered]@{version=$version;files=$files;settings=$settings} | ConvertTo-Json -Depth 4 | Set-Content (Join-Path $pack 'installation-manifest.json')
 Write-Output "Installation manifest: $($files.Count) pinned files and overrides."

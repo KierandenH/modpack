@@ -787,8 +787,8 @@
     "id": "113",
     "name": "MCA Reborn",
     "url": "https://www.curseforge.com/minecraft/mc-mods/minecraft-comes-alive-reborn",
-    "status": "pinned",
-    "detail": "Exact file in pack/mods; runtime compatibility untested."
+    "status": "deferred",
+    "detail": "On hold by user request in alpha.11: dislikes character creation/destiny spawn selection; social/family system optional. MCA/Werewolves compatibility unresolved if restored."
   },
   {
     "id": "114",

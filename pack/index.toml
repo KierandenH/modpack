@@ -1,8 +1,16 @@
 hash-format = "sha256"
 
 [[files]]
+file = "CAPTURE-FREEZE.cmd"
+hash = "70f3e1ef2d87efe2e093ec74ee8539f6c28f03967b17233904a5ce206a993c44"
+
+[[files]]
 file = "CHECK-INSTALLATION.cmd"
 hash = "2b627cef8d2181ff5dda794f0ffb339d2d59d24d52e9a1e74fc76cdb4a2b8177"
+
+[[files]]
+file = "Capture-Freeze.ps1"
+hash = "b907edf19943bf5c7129964f8157ab1ed8b207567c4062997e6f48013dcee462"
 
 [[files]]
 file = "REPAIR-INSTALLATION.cmd"
@@ -14,11 +22,15 @@ hash = "28eac83a636759e7e968ab39d9be0eee417ad3524b4c1d4525846fb32ffd0fc8"
 
 [[files]]
 file = "Verify-Installation.ps1"
-hash = "96b29508d9a72f42ac8da7bb1932c9840e0071471871fd13f610b3b87ab1c08c"
+hash = "813525da4b216ff5a171460ca91cd1c16c118f9ac15cbaa37cfc46c63677a20f"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini"
+hash = "987f9c83c1b89717481459a85cd46d642e06d0164d577d851b3e530ae02f99b5"
 
 [[files]]
 file = "installation-manifest.json"
-hash = "a18213f79bbf8fe67c772078d264b9c58c757ff6fc9f8da6bc8ad1279a7c9f56"
+hash = "7db93262fd9850f855e773e7291cdaab215427e6f6918d23daf12cfe9868d19a"
 
 [[files]]
 file = "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json"
@@ -74,7 +86,7 @@ hash = "eb733b7b98c16e70e126d870ab1414720248c05a49654e09f08b7b60a0f31518"
 
 [[files]]
 file = "kubejs/server_scripts/wild_realms.js"
-hash = "a285c0a6ca81d4348e336c88e43ec0821ce4268f5ab07e0422a90fb7dd671ec6"
+hash = "b24e989af0c3f71e7298d81698df0cd97798ea1123889962ef11f887233271a6"
 
 [[files]]
 file = "kubejs/startup_scripts/buddycards_book.js"
@@ -908,11 +920,6 @@ metafile = true
 [[files]]
 file = "mods/minecolonies.pw.toml"
 hash = "16e32d35384242586239998a50b9c6633310aa42122fc2964409b311718e1a48"
-metafile = true
-
-[[files]]
-file = "mods/minecraft-comes-alive-reborn.pw.toml"
-hash = "59ce386f1613c99b39d7a400d480cc421e3b3d938b123f8d493b4cbd99b1e30f"
 metafile = true
 
 [[files]]

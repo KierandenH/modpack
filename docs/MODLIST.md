@@ -1,6 +1,6 @@
 # Pinned mod list
 
-Alpha.8: 299 pinned external files, covering 218 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
+Alpha.11: 298 pinned external files, covering 217 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
 
 | Mod | File | CurseForge release |
 | --- | --- | --- |
@@ -170,7 +170,6 @@ Alpha.8: 299 pinned external files, covering 218 catalogue selections plus KubeJ
 | MezzConfig | mezz_config-1.20.1-forge-0.6.9.jar | [File 9318716](https://www.curseforge.com/minecraft/mc-mods/mezzconfig/files/9318716) |
 | Mine Piece | MinePiece-ver15-forge-1.20.1.jar | [File 9146852](https://www.curseforge.com/minecraft/mc-mods/mine-piece/files/9146852) |
 | MineColonies | minecolonies-1.20.1-1.1.1304-snapshot.jar | [File 9351282](https://www.curseforge.com/minecraft/mc-mods/minecolonies/files/9351282) |
-| MCA Reborn [Fabric/Forge] | minecraft-comes-alive-7.7.1-beta.5+1.20.1-universal.jar | [File 9243092](https://www.curseforge.com/minecraft/mc-mods/minecraft-comes-alive-reborn/files/9243092) |
 | Dungeons Content | dungeons_1.19_mc1.20.1.jar | [File 7212037](https://www.curseforge.com/minecraft/mc-mods/minecraft-dungeons-content/files/7212037) |
 | Modern Chickens | ModernChickens-1.20.1-2.7.3-Forge.jar | [File 9234343](https://www.curseforge.com/minecraft/mc-mods/modern-chickens/files/9234343) |
 | ModernFix | modernfix-forge-5.27.91+mc1.20.1.jar | [File 9309378](https://www.curseforge.com/minecraft/mc-mods/modernfix/files/9309378) |
@@ -305,3 +304,5 @@ Alpha.8: 299 pinned external files, covering 218 catalogue selections plus KubeJ
 | Zeta | Zeta-1.0-31.jar | [File 7335229](https://www.curseforge.com/minecraft/mc-mods/zeta/files/7335229) |
 
 Environmental is deferred in alpha.8 because of the reproduced Werewolves world-generation ordering conflict; its catalogue entry remains in PROJECT_LOG.txt.
+
+MCA Reborn is on hold by user request in alpha.11; see PROJECT_LOG.txt for preserved selection history.

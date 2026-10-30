@@ -180,3 +180,13 @@ User clarification, 2026-10-31: the whole game froze for multiple minutes and
 user quit. Recovery not observed; classify as a blocking usability defect.
 JEI initialization remains a suspected contributor, not a proven sole cause.
 No additional gameplay test or fix is claimed.
+
+## Alpha.11: MCA deferred; inventory-freeze mitigation/diagnostics
+
+MCA removed at user request. JEI tooltip-text search disabled to reduce indexing
+work; recipe browsing retained. This does not prove the sustained freeze fixed.
+Full evidence, known limits and one focused retest are in INVENTORY_FREEZE.md.
+298 hashes/mandatory IDs, 843 dependency ranges, grouped biome audit, book/loot,
+archive overrides, nine readiness cases and isolated Java thread capture pass.
+No Minecraft launch/gameplay performed. If frozen, user runs CAPTURE-FREEZE.cmd
+from the affected profile and sends freeze-reports plus latest.log privately.

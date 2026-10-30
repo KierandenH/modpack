@@ -20,6 +20,15 @@ Remove-Item -LiteralPath (Join-Path $temp 'mods/extra.jar')
 Check-Exit 1 'corrupt/incomplete file rejected'
 Remove-Item -LiteralPath $file
 Check-Exit 1 'missing download rejected'
+@{version='settings-test';files=@();settings=@(@{path='settings.ini';section='search';key='tooltipSearchMode';value='DISABLED'})} | ConvertTo-Json -Depth 5 | Set-Content $manifest
+$settingFile = Join-Path $temp 'settings.ini'
+Check-Exit 1 'missing required setting rejected'
+"[search]`ntooltipSearchMode = DISABLED`notherGeneratedSetting = true" | Set-Content $settingFile
+Check-Exit 0 'required setting verified despite generated defaults'
+"[search]`ntooltipSearchMode = ENABLED" | Set-Content $settingFile
+Check-Exit 1 'changed required setting rejected'
+"[other]`ntooltipSearchMode = DISABLED" | Set-Content $settingFile
+Check-Exit 1 'matching key in wrong section rejected'
 @{version='test';files=@(@{path='../outside.jar';sha256='0'})} | ConvertTo-Json -Depth 4 | Set-Content $manifest
 Check-Exit 2 'path traversal rejected'
 # Fixtures stay in the ignored cache for inspection; no user files are touched.

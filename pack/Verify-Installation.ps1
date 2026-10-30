@@ -27,6 +27,23 @@ try {
             if ($file.Extension -eq '.jar' -and $file.Name -notin $expected) { $problems += "EXTRA MOD: $($file.Name)" }
         }
     }
+    if (-not $ModsOnly) {
+        foreach ($setting in $manifest.settings) {
+            $path = [IO.Path]::GetFullPath((Join-Path $root $setting.path))
+            if (-not $path.StartsWith($root, [StringComparison]::OrdinalIgnoreCase)) { throw 'Unsafe setting path' }
+            $values = @()
+            $section = ''
+            if (Test-Path -LiteralPath $path -PathType Leaf) {
+                foreach ($line in Get-Content -LiteralPath $path) {
+                    if ($line -match '^\s*\[([^\]]+)\]\s*$') { $section = $Matches[1] }
+                    elseif ($section -eq $setting.section -and $line -match '^\s*([^#;=]+?)\s*=\s*([^#;]+)') {
+                        if ($Matches[1].Trim() -eq $setting.key) { $values += $Matches[2].Trim() }
+                    }
+                }
+            }
+            if ($values.Count -ne 1 -or $values[0] -ne $setting.value) { $problems += "SETTING MISSING/CHANGED: $($setting.path) [$($setting.section)] $($setting.key) must be $($setting.value)" }
+        }
+    }
     if ($problems.Count) {
         Write-Output 'NOT READY - do not start Minecraft yet.'
         $problems | Write-Output
