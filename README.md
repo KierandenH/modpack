@@ -7,7 +7,7 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.9
+## Playtest revision: 0.1.0-alpha.10
 
 Alpha.9 adds a missing-mod repair tool after the alpha.8 profile imported only 239/299 jars.
 Environmental remains omitted to address the alpha.7 world-generation cycle.
@@ -42,7 +42,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.9)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.10)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.
@@ -135,3 +135,9 @@ All 299 pinned jars pass file/dependency checks (845 declared ranges). The new
 worldgen build gate scans 307 biome definitions and reproduces the old conflict;
 no cycle remains in the checked groups. This does not simulate Java-injected
 features, biome modifiers or all runtime behavior. See [scope and results](docs/WORLDGEN_AUDIT.txt).
+
+Alpha.10 improves repair feedback: profile/version, progress, missing-file count
+and installation-repair.log. Zero downloads is expected when files already match.
+The user's Wild Realms (1) alpha.9 profile passed all 314 file checks and has the
+updated tools; no reimport is needed for its gameplay test. The old Wild Realms
+alpha.8 profile is separate. No runtime/gameplay pass is implied by READY.

@@ -150,3 +150,17 @@ verifies SHA-256 and leaves differing existing jars untouched. Isolated download
 repeat/no-change, corrupt-file/hash and path/URL rejection tests passed in Windows
 PowerShell, along with readiness regression tests. No installed game was changed
 or launched. User must test startup, fresh world, exploration and save/reload.
+
+## Alpha.10: installed-profile verification and repair feedback
+
+User reported no apparent downloads. Actual Wild Realms (1) identifies alpha.9
+and passes all 314 hashes (299 jars + 15 overrides). Improved repair run under
+Windows PowerShell reports 299 already correct, zero downloaded/failed and READY.
+The older Wild Realms alpha.8 profile is separate. No game was launched.
+
+Removed the CMD's initial pause; added profile/version, counts, verification
+progress, persistent log and final result. Seven isolated repair test cases pass,
+including actual CDN download and empty-manifest rejection. Updated the two
+repair tools directly in the verified profile after backup; mods/worlds unchanged.
+No reimport needed for user gameplay testing. Alpha.10 ships these improvements
+for future imports. A complete installation still does not prove runtime stability.

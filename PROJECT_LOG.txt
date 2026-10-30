@@ -10,13 +10,13 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.9, published; user repair/startup/world test required
+Version: 0.1.0-alpha.10, built; publication pending
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 299 pinned external files: 218 catalogue selections, KubeJS and 80 transitive support/dependency mods.
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.9
-Latest user test: alpha.8 profile failed loading with missing dependencies; 60 required jars absent.
+Installed alpha.9 profile Wild Realms (1): READY, all 299 jars and 15 overrides match. Gameplay untested.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
 CHANGE HISTORY (backfilled from completed work)
@@ -254,6 +254,31 @@ and updates the current download link; no pack-content changes.
 - User: import separately, wait for downloads, run REPAIR-INSTALLATION.cmd,
   require READY, then test startup, fresh world, exploration and save/reload.
 
+2026-10-30 - Alpha.10 - Repair feedback and actual installed-profile audit
+- User reports repair CMD appears to download nothing; asked to investigate
+  management/import logic. Inspected both profiles rather than assuming another
+  failed download. Old Wild Realms identifies alpha.8; Wild Realms (1) is alpha.9.
+- PASS: Windows PowerShell checker on actual Wild Realms (1) verifies every
+  one of 299 jars and 15 overrides. READY for alpha.9, no missing files.
+  The repair should download zero files here. Cause of older omissions remains
+  unknown; no evidence that the current export omits required dependencies.
+- Confirmed usability defects: CMD paused before running, and existing-file
+  verification was silent. Removed initial pause, added version/profile path,
+  required/missing counts, regular progress, correct/downloaded/failed summary,
+  persistent installation-repair.log and exit-code display. Final pause retained
+  so errors remain visible. Empty mod manifests now fail instead of implying success.
+- PASS: improved repair against full actual alpha.9 manifest in Windows PowerShell:
+  299 already correct, 0 downloaded, 0 failed, READY 314 files. Only diagnostic log
+  written during this test. No game/launcher launched or controlled.
+- PASS: isolated actual official download, repeat/no-change with persistent
+  no-download explanation, wrong existing file/hash, path traversal, foreign
+  URL and empty-manifest rejection. Installed profile/worlds never used as fixtures.
+- Backed up then updated only the two repair-tool files in Wild Realms (1).
+  Copied bytes verified. Mods/worlds unchanged; user need not reimport to test.
+- Alpha.10 packages the clearer tools for future installations; mod pins unchanged.
+  PASS: full build, 299 jar hashes, 845 ranges, grouped worldgen scan,
+  book/loot checks and archive verification. All 226 catalogue entries preserved.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -311,7 +336,7 @@ DEFERRED = deliberately postponed, retained in the plan. Installed content
 still requires integration and gameplay acceptance; installed is not completed.
 
 OPEN - Known defects and configuration
-- Alpha.8 import missing 60 jars: alpha.9 adds verified missing-file repair; user must verify READY/startup. Root cause of launcher omissions remains unknown.
+- Alpha.8 old profile lacks 60 jars; alpha.9 Wild Realms (1) fully verified READY. Cause of old import omission remains unknown; gameplay tests remain open.
 - Worldgen cycle reproduced statically; Environmental removed in alpha.8. User must verify fresh world creation and exploration; restoration deferred until repaired.
 - Naturalist/Delightful mismatch fixed in alpha.7 pins; user startup/recipe test pending.
 - Alpha.5 incomplete-import startup: cause diagnosed and readiness tool added in alpha.6; user retry pending.
@@ -384,8 +409,9 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.9
-Import Wild-Realms-0.1.0-alpha.9.zip separately and WAIT for import completion.
+USER PLAYTEST REQUEST - VERIFIED ALPHA.9 / ALPHA.10
+Existing Wild Realms (1) alpha.9 is verified READY; playtest that profile without reimport.
+For future installs, import Wild-Realms-0.1.0-alpha.10.zip separately and wait for completion.
 Open the profile folder, double-click REPAIR-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.

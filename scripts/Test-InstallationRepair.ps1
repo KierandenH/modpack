@@ -18,6 +18,7 @@ Check 0 'missing pinned jar downloaded from official CDN, hash verified, READY'
 $file = Join-Path $temp $entry.path
 $time = (Get-Item $file).LastWriteTimeUtc
 Check 0 'complete installation is unchanged'
+if ((Get-Content (Join-Path $temp 'installation-repair.log') -Raw) -notmatch 'Nothing needs downloading') { throw 'No-download explanation missing from persistent log' }
 if ((Get-Item $file).LastWriteTimeUtc -ne $time) { throw 'Existing verified jar was changed' }
 [IO.File]::WriteAllText($file, 'corrupt fixture')
 Check 1 'existing incorrect jar refused without replacement'
@@ -34,3 +35,6 @@ Check 2 'path traversal rejected before download'
 $entry.path = 'mods/safe.jar'; $entry.url = 'https://example.com/file.jar'
 Save-Manifest
 Check 2 'non-CurseForge URL rejected before download'
+$empty = @{version='empty-test';files=@()}
+$empty | ConvertTo-Json | Set-Content $manifest
+Check 2 'empty mod manifest rejected'

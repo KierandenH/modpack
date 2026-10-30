@@ -1,3 +1,7 @@
+Current installation finding: Wild Realms (1) alpha.9 verifies READY (314 files).
+Alpha.10 improves repair feedback/logging; its tools were also copied into that
+existing profile. User can test it without reimport. Old alpha.8 is separate.
+
 # Continuing with another AI
 
 This GitHub repository is the shared source of truth:
