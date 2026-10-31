@@ -10,12 +10,12 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.12, built; publication pending, runtime retest required
+Version: 0.1.0-alpha.12, published; targeted bypass awaits user runtime test
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
 297 pinned external files: 216 catalogue selections, KubeJS and 80 support mods; plus one project-owned compatibility jar (298 installed jars).
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
-Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.11
+Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.12
 Installed alpha.9 Wild Realms (1): files verified; user entered world, reports inventory freezes.
 Detailed pins: docs/MODLIST.md and pack/mods/*.pw.toml
 
@@ -392,6 +392,14 @@ and updates the current download link; no pack-content changes.
   callback cancellation. Nine repair and nine readiness cases pass. Export
   has 297 external references and only the exact project-owned jar, all override
   bytes verified. Live mixin activation/performance remains untested.
+
+2026-10-31 - Alpha.12 publication verified
+- Patch source, AoA deferral and evidence pushed in ead6729.
+- Verified prerelease v0.1.0-alpha.12: ZIP 51907 bytes; checksum sidecar 66 bytes.
+  Current link updated. Compatibility jar rebuild also verified byte-identical.
+- User test required: new profile/fresh world, READY, inventory/reopening,
+  recipe browsing and actual anvil enchanting. Capture again if frozen.
+  No runtime mixin activation, speedup or full freeze resolution claimed yet.
 
 PLAYTEST RECORD
 
