@@ -1,2 +1,2 @@
-Static Maven range audit: 843 mandatory/present-optional declarations checked; 320 mod IDs.
+Static Maven range audit: 836 mandatory/present-optional declarations checked; 319 mod IDs.
 Absent optional dependencies are allowed. This does not test mixins, undeclared incompatibilities, or gameplay.

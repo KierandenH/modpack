@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="wildrealms_compat"
+version="1.0.0"
+displayName="Wild Realms Compatibility"
+description='''Skips exhaustive JEI enchanted-book preview generation. Normal anvil gameplay is unchanged.'''
+[[dependencies.wildrealms_compat]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.28,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.wildrealms_compat]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="BOTH"
+[[dependencies.wildrealms_compat]]
+modId="jei"
+mandatory=true
+versionRange="[15.74.0.233]"
+ordering="AFTER"
+side="CLIENT"

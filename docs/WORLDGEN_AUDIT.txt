@@ -1,5 +1,5 @@
-Static worldgen audit: 298 pinned jars; 307 biome JSON definitions.
-Biome modifier JSON files inventoried but NOT applied: 2019.
+Static worldgen audit: 297 pinned jars; 288 biome JSON definitions.
+Biome modifier JSON files inventoried but NOT applied: 1987.
 Checks direct feature sequences grouped by dimension tags, explicit dimension references and mod namespace.
 Not covered: Java injections, effective datapack overrides/replacements, vanilla definitions, runtime registries, mixins, or unlisted cross-mod dimension membership.
 Tag membership is a conservative approximation, not the runtime biome-source registry.
@@ -7,13 +7,6 @@ No detected cycle is NOT a guarantee of gameplay compatibility.
 minecraft:is_overworld: 73 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 minecraft:is_nether: 7 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 minecraft:is_end: 3 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:barathos: 2 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:deeplands: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:lborean: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:lelyetia: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:nowhere: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:precasia: 13 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-aoa3:precasia_backup: 13 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 aether:the_aether: 4 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 aquamirae:the_maelstrom: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 bloodmagic:dungeon: 1 biomes, 0 cyclic components, 0 unresolved inline/tag features.
@@ -57,7 +50,6 @@ theabyss:the_abyss: 12 biomes, 0 cyclic components, 0 unresolved inline/tag feat
 twilightforest:twilight_forest: 21 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 undergarden:undergarden: 16 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 voidscape:void: 8 biomes, 0 cyclic components, 0 unresolved inline/tag features.
-namespace:aoa3: 19 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 namespace:aether_redux: 8 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 namespace:aether: 4 biomes, 0 cyclic components, 0 unresolved inline/tag features.
 namespace:alexscaves: 6 biomes, 0 cyclic components, 0 unresolved inline/tag features.

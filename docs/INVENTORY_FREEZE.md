@@ -1,5 +1,35 @@
 # Inventory freeze investigation — 2026-10-31
 
+## Alpha.12 update: captured anvil-preview bottleneck
+
+The user ran the capture tool on alpha.11. All three render-thread snapshots
+show JEI `AnvilRecipeMaker` enumerating enchanted-book application previews.
+The thread remains RUNNABLE and accumulates CPU time. Calls include anvil/NBT
+simulation, Illager Revolution enchantment eligibility, and Enigmatic Legacy /
+Curios hooks. Their presence does not establish a defect in those individual
+mods. The shared work is JEI's exhaustive item/enchantment/level enumeration.
+
+Alpha.12 adds a small project-owned client mixin that cancels the zero-argument
+`getBookEnchantmentRecipes()` stream before that work begins. Ordinary anvils,
+enchanting and repair-preview generation are not targeted. JEI loses exhaustive
+book-application previews; item browsing and other recipe categories remain.
+See [patch source/build notes](../compat/README.md).
+
+The exact pinned JEI binary's target method, callback cancellation and generated
+archive bytes are checked. **Live Forge mixin activation and performance are not
+yet verified.** The earlier tooltip-search change remains but did not prevent
+the captured bottleneck. Additional slow recipe plugins may remain after this
+targeted bypass. Later log records vanilla recipe registration finishing, but
+does not establish complete recovery or stable gameplay.
+
+AoA is separately deferred after the user's incomplete-content warning; this
+is not claimed as the freeze fix. The [pinned official file](https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine/files/4988685)
+is 1.20.1-3.7.1 Beta. MCA remains deferred. Use a separate alpha.12 profile and
+fresh world; test inventory/recipe browsing and actual anvil enchanting. If it
+freezes again, capture new thread samples rather than waiting indefinitely.
+
+## Historical alpha.11 investigation
+
 **Unresolved runtime defect. Alpha.11 is a mitigation/diagnostic build, not a
 confirmed freeze fix.** User reported a whole-game freeze for several minutes
 when opening inventory in creative and survival, then quit.

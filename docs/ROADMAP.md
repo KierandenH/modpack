@@ -1,12 +1,13 @@
 # Roadmap
 
-Alpha.11 now pins 217 of the 226 catalogue selections. Kingdom Keys and Touhou
+Alpha.12 now pins 216 of the 226 catalogue selections. Kingdom Keys and Touhou
 Little Maid remain rejected; Dragon Mounts remains deferred for balance.
 Dragon Survival, Dragons of Berk, Origins and Mine and Slash remain separate
 alternatives. All other catalogue additions, including optional selections,
 are present for user playtesting except Environmental, deferred after its
 world-generation ordering conflict with Werewolves. MCA Reborn is also on hold
-at user request because of its character/destiny setup. Installation is not gameplay acceptance.
+at user request because of its character/destiny setup. AoA is deferred because
+the selected 1.20.1 beta does not provide the intended complete adventure content. Installation is not gameplay acceptance.
 The earlier phase descriptions below are historical design themes.
 
 The maintained full backlog and dated results are in `../PROJECT_LOG.txt`.

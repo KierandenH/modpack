@@ -15,6 +15,8 @@ foreach ($pin in Get-ChildItem (Join-Path $pack 'mods/*.pw.toml')) {
     $url = "https://edge.forgecdn.net/files/$prefix/$suffix/$([Uri]::EscapeDataString($name))"
     $files += [ordered]@{path=('mods/' + $name);sha256=(Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLower();url=$url}
 }
+$ownJar = Join-Path $pack 'mods/wildrealms-compat-1.0.0.jar'
+$files += [ordered]@{path='mods/wildrealms-compat-1.0.0.jar';sha256=(Get-FileHash $ownJar -Algorithm SHA256).Hash.ToLower();bundled=$true}
 foreach ($file in Get-ChildItem (Join-Path $pack 'kubejs') -File -Recurse) {
     $relative = [IO.Path]::GetRelativePath($pack, $file.FullName).Replace('\','/')
     $files += [ordered]@{path=$relative;sha256=(Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLower()}

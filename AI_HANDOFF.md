@@ -1,3 +1,8 @@
+Current alpha.12: AoA deferred; user captures identify JEI enchanted-book
+preview enumeration. Project-owned compatibility mod in compat/ bypasses that
+exact stream. Build it before auditing/exporting; no third-party jars bundled.
+Live mixin activation/performance remains untested. See INVENTORY_FREEZE.md.
+
 Current alpha.11: MCA on hold by user request; inventory freeze UNRESOLVED.
 JEI tooltip search disabled as a mitigation, diagnostic capture tool added.
 Read docs/INVENTORY_FREEZE.md and PROJECT_LOG.txt before promising a fix.

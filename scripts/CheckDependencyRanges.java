@@ -56,6 +56,8 @@ class CheckDependencyRanges {
         read(Files.readAllBytes(root.resolve(".tools/verified-jars").resolve(name)),name,false);
       }
     }
+    var ownJar = root.resolve("pack/mods/wildrealms-compat-1.0.0.jar");
+    if (Files.exists(ownJar)) read(Files.readAllBytes(ownJar),ownJar.getFileName().toString(),false);
     int checked=0;
     for(var d:deps) {
       var m=mods.get(d.id);

@@ -1,4 +1,5 @@
 $ErrorActionPreference = 'Stop'
+& (Join-Path $PSScriptRoot 'Build-CompatMod.ps1')
 & (Join-Path $PSScriptRoot 'Verify-DependencyRanges.ps1')
 & (Join-Path $PSScriptRoot 'Verify-Worldgen.ps1')
 & (Join-Path $PSScriptRoot 'Build-CompatibilityOverrides.ps1')
@@ -22,7 +23,8 @@ try {
 } finally { Pop-Location }
 $zip = [IO.Compression.ZipFile]::OpenRead($archive)
 try {
-    if (@($zip.Entries | Where-Object { $_.FullName -match '\.jar$' }).Count) { throw 'Unexpected bundled mod jar; use official CurseForge references' }
+    $bundled = @($zip.Entries | Where-Object { $_.FullName -match '\.jar$' })
+    if ($bundled.Count -ne 1 -or $bundled[0].FullName -ne 'overrides/mods/wildrealms-compat-1.0.0.jar') { throw 'Only the project-owned compatibility jar may be bundled' }
     $entry = $zip.GetEntry('manifest.json')
     if (-not $entry) { throw 'Missing manifest.json' }
     $reader = [IO.StreamReader]::new($entry.Open())
@@ -40,6 +42,7 @@ try {
     if (-not ($manifest.minecraft.modLoaders | Where-Object id -eq 'forge-47.4.28')) { throw 'Wrong Forge version' }
     if (-not $zip.GetEntry('overrides/kubejs/server_scripts/wild_realms.js')) { throw 'Missing integration override' }
     $overrides = @(Get-ChildItem (Join-Path $root 'pack/kubejs') -File -Recurse)
+    $overrides += Get-Item (Join-Path $root 'pack/mods/wildrealms-compat-1.0.0.jar')
     $overrides += @(Get-ChildItem (Join-Path $root 'pack/config') -File -Recurse | Where-Object Name -ne '.gitkeep')
     foreach ($name in @('Verify-Installation.ps1', 'CHECK-INSTALLATION.cmd', 'Repair-Installation.ps1', 'REPAIR-INSTALLATION.cmd', 'Capture-Freeze.ps1', 'CAPTURE-FREEZE.cmd', 'installation-manifest.json')) {
         $overrides += Get-Item (Join-Path $root ('pack/' + $name))
@@ -54,7 +57,7 @@ try {
         finally { $stream.Dispose(); $sha.Dispose() }
         if ($hash -ne (Get-FileHash $override.FullName -Algorithm SHA256).Hash) { throw "Override differs in archive: $relative" }
     }
-    Write-Output "Verified $($manifest.files.Count) pinned mods; no bundled jars."
+    Write-Output "Verified $($manifest.files.Count) external pins plus one project-owned compatibility jar; no third-party jars bundled."
 } finally { $zip.Dispose() }
 (Get-FileHash $archive -Algorithm SHA256).Hash.ToLower() | Set-Content ($archive + '.sha256')
 Write-Output "Built $archive"

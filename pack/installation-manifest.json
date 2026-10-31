@@ -1,11 +1,6 @@
 {
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.12",
   "files": [
-    {
-      "path": "mods/AoA3-1.20.1-3.7.1-all.jar",
-      "sha256": "f417ecb337d4a3b2aebec559a9262d8a86cc93ee7910f4eea64108bff063193a",
-      "url": "https://edge.forgecdn.net/files/4988/685/AoA3-1.20.1-3.7.1-all.jar"
-    },
     {
       "path": "mods/aether-redux-2.0.19-1.20.1-neoforge.jar",
       "sha256": "cd5103e67618d3876be3afe08e6ef101ddbffe9d4ec6e4df5f6c5987fd48d59e",
@@ -1492,6 +1487,11 @@
       "url": "https://edge.forgecdn.net/files/7335/229/Zeta-1.0-31.jar"
     },
     {
+      "path": "mods/wildrealms-compat-1.0.0.jar",
+      "sha256": "6d5cdeea066fa47aedb949b59a1ad5b7290d930610533806429602be3efec7d5",
+      "bundled": true
+    },
+    {
       "path": "kubejs/assets/buddycards/patchouli_books/buddycards_rules/en_us/categories/ability_list.json",
       "sha256": "7512a9c1e02e1ccbb36169c91f17783211bc5cbad46fed49d9ddb4882ad218a9"
     },
@@ -1545,7 +1545,7 @@
     },
     {
       "path": "kubejs/server_scripts/wild_realms.js",
-      "sha256": "b24e989af0c3f71e7298d81698df0cd97798ea1123889962ef11f887233271a6"
+      "sha256": "d2ac4a0a382c0c93ca960867879886705c541ae7bd511a1a2afc7679ec5a7960"
     },
     {
       "path": "kubejs/startup_scripts/buddycards_book.js",
@@ -1555,9 +1555,9 @@
   "settings": [
     {
       "section": "search",
+      "value": "DISABLED",
       "key": "tooltipSearchMode",
-      "path": "config/jei/client/default/jei-client.ini",
-      "value": "DISABLED"
+      "path": "config/jei/client/default/jei-client.ini"
     }
   ]
 }

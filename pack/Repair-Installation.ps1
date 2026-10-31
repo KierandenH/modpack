@@ -25,6 +25,7 @@ try {
     # Validate the whole download plan before writing any files.
     foreach ($entry in $entries) {
         if ($entry.path -notmatch '^mods/[^/\\:]+\.jar$' -or $entry.sha256 -notmatch '^[a-fA-F0-9]{64}$') { throw 'Invalid manifest path or hash.' }
+        if ($entry.bundled) { continue }
         $uri = [Uri]$entry.url
         if (-not $uri.IsAbsoluteUri -or $uri.Scheme -ne 'https' -or $uri.Host -ne 'edge.forgecdn.net' -or $uri.AbsolutePath -notmatch '^/files/\d+/\d+/[^/]+\.jar$') { throw 'Invalid official download URL.' }
     }
@@ -42,6 +43,11 @@ try {
                 Write-Output "EXISTING FILE DIFFERS: $($entry.path). Kept unchanged; use a fresh profile or report this."
                 $failed++
             } else { $present++ }
+            continue
+        }
+        if ($entry.bundled) {
+            Write-Output "MISSING BUNDLED FILE: $($entry.path). Restore it from this release ZIP's overrides folder or reimport."
+            $failed++
             continue
         }
         $temporary = Join-Path $modDir ([Guid]::NewGuid().ToString() + '.download')

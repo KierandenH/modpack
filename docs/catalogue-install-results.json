@@ -206,8 +206,8 @@
     "id": "030",
     "name": "Advent of Ascension",
     "url": "https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine",
-    "status": "pinned",
-    "detail": "Exact file in pack/mods; runtime compatibility untested."
+    "status": "deferred",
+    "detail": "Removed in alpha.12 after user raised incomplete-content warning. Pinned Forge 1.20.1 3.7.1 is a beta; reconsider only with desired adventure content available."
   },
   {
     "id": "031",

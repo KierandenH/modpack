@@ -7,17 +7,18 @@ Project protocol: [change notes, playtest results and the full remaining-work
 list](PROJECT_LOG.txt) are maintained with every GitHub update. Future gameplay
 tests are user-run; each ready build includes a focused test request.
 
-## Playtest revision: 0.1.0-alpha.11
+## Playtest revision: 0.1.0-alpha.12
 
-Alpha.11 defers MCA Reborn at the user's request and disables JEI tooltip-text
-search as an inventory-freeze mitigation. Recipe/item-name browsing remains.
-The freeze is NOT confirmed fixed. See [investigation](docs/INVENTORY_FREEZE.md).
+Alpha.12 defers AoA and adds a project-owned compatibility mod (298 total jars)
+that bypasses JEI's exhaustive enchanted-book previews, identified in all three
+user freeze samples. Normal anvil gameplay is unchanged. Runtime confirmation
+is still required. See [investigation](docs/INVENTORY_FREEZE.md).
 
 Minecraft Java **1.20.1**, Forge **47.4.28**, **64-bit Java 17**.
 This is a pinned alpha foundation. Alpha.2 launched and created a survival world;
 it is not yet a balanced or fully tested modpack.
 
-The expansion has **298 pinned mod files**, covering 217 catalogue selections plus KubeJS and transitive support/dependency mods.
+The expansion has **297 pinned external mod files**, covering 216 catalogue selections plus KubeJS and transitive support/dependency mods.
 The original 20-file alpha was the dependency foundation.
 
 - Dragons and mounts: Book of Dragons, Ice and Fire, Mythic
@@ -41,7 +42,7 @@ pool; this starter is a testing foundation, not a reduction of that vision.
 
 ## Play the alpha
 
-1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.11)
+1. Download the ZIP from [the alpha release](https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.12)
    and import it as a custom profile in CurseForge,
    or import the CurseForge archive in Prism Launcher.
 2. Select Java 17 if the launcher asks. The archive pins Minecraft and Forge.

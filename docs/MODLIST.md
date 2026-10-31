@@ -1,10 +1,9 @@
 # Pinned mod list
 
-Alpha.11: 298 pinned external files, covering 217 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
+Alpha.12: 297 pinned external files, covering 216 catalogue selections plus KubeJS and transitive support/dependency mods. Runtime compatibility is not yet tested.
 
 | Mod | File | CurseForge release |
 | --- | --- | --- |
-| Advent of Ascension (Nevermine) | AoA3-1.20.1-3.7.1-all.jar | [File 4988685](https://www.curseforge.com/minecraft/mc-mods/advent-of-ascension-nevermine/files/4988685) |
 | The Aether: Redux | aether-redux-2.0.19-1.20.1-neoforge.jar | [File 6596294](https://www.curseforge.com/minecraft/mc-mods/aether-redux/files/6596294) |
 | The Aether | aether-1.20.1-1.5.2-neoforge.jar | [File 6134920](https://www.curseforge.com/minecraft/mc-mods/aether/files/6134920) |
 | Alex's Caves | alexscaves-2.0.2.jar | [File 5848216](https://www.curseforge.com/minecraft/mc-mods/alexs-caves/files/5848216) |
@@ -306,3 +305,5 @@ Alpha.11: 298 pinned external files, covering 217 catalogue selections plus Kube
 Environmental is deferred in alpha.8 because of the reproduced Werewolves world-generation ordering conflict; its catalogue entry remains in PROJECT_LOG.txt.
 
 MCA Reborn is on hold by user request in alpha.11; see PROJECT_LOG.txt for preserved selection history.
+
+AoA is deferred for incomplete beta content. One additional project-owned jar, wildrealms-compat-1.0.0.jar, bypasses exhaustive JEI enchanted-book previews; source in compat/. Total installed mod jars: 298.

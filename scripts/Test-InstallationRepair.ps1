@@ -38,3 +38,11 @@ Check 2 'non-CurseForge URL rejected before download'
 $empty = @{version='empty-test';files=@()}
 $empty | ConvertTo-Json | Set-Content $manifest
 Check 2 'empty mod manifest rejected'
+$entry.path = 'mods/local-compat.jar'; $entry.sha256 = '0' * 64
+$entry | Add-Member -NotePropertyName bundled -NotePropertyValue $true -Force
+Save-Manifest
+Check 1 'missing bundled project jar requires restore, never downloaded from an invalid URL'
+[IO.File]::WriteAllText((Join-Path $temp $entry.path), 'local fixture')
+$entry.sha256 = (Get-FileHash (Join-Path $temp $entry.path) -Algorithm SHA256).Hash
+Save-Manifest
+Check 0 'bundled project jar verified without a network URL'

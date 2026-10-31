@@ -10,9 +10,9 @@ over their computer for testing unless explicitly requested. Automated build
 and file checks remain the developer's responsibility.
 
 CURRENT BUILD
-Version: 0.1.0-alpha.11, published; freeze mitigation/diagnostics, runtime unresolved
+Version: 0.1.0-alpha.12, built; publication pending, runtime retest required
 Minecraft 1.20.1 / Forge 47.4.28 / 64-bit Java 17
-298 pinned external files: 217 catalogue selections, KubeJS and 80 transitive support/dependency mods.
+297 pinned external files: 216 catalogue selections, KubeJS and 80 support mods; plus one project-owned compatibility jar (298 installed jars).
 Alpha.2 displayed 116 loaded mods; alpha.5 loaded count untested.
 Repository: https://github.com/KierandenH/modpack
 Download: https://github.com/KierandenH/modpack/releases/tag/v0.1.0-alpha.11
@@ -358,6 +358,41 @@ and updates the current download link; no pack-content changes.
   If frozen, run CAPTURE-FREEZE.cmd while game remains open, then send local
   reports/latest.log privately. Existing installed profiles remain unchanged.
 
+2026-10-31 - Alpha.12 - Capture identifies JEI anvil preview work; AoA deferred
+- User completed capture and raised AoA's incomplete-content notice. Found three
+  alpha.11 samples in the current Wild Realms profile. Render thread RUNNABLE
+  in all three; each includes AnvilRecipeMaker.getBookEnchantmentRecipes or its
+  enumeration. Samples show book NBT/anvil simulation, Illager Revolution's
+  eligibility check, and Enigmatic Legacy/Curios hooks. Do NOT blame those mods
+  individually: all are reached by JEI's exhaustive simulation loop.
+- Render-thread CPU increases across samples, consistent with expensive work
+  rather than a proven deadlock. Later log records vanilla registration finishing
+  in 1.256 minutes and Iron's Spells registration still running. Overall recovery
+  or stable gameplay NOT established. Tooltip mitigation was insufficient here.
+- Added project-owned Wild Realms Compatibility 1.0.0: client-only Mixin cancels
+  the exact zero-argument JEI enchanted-book preview stream before enumeration.
+  Target bound to exact JEI version/hash. Repair previews and Minecraft anvil/
+  enchanting gameplay untouched; exhaustive book-application previews omitted.
+- Source, MIT license and reproducible Java 17 build in compat/ and scripts/.
+  Build verifies exact target descriptor and tests cancellation/empty result.
+  This is NOT a live Forge injection test; runtime still requires user playtest.
+- Export now permits exactly one bundled jar, the project-owned patch; all
+  third-party mods remain references. Installer hashes it and reports missing
+  bundled files for ZIP restoration, never attempts an invented CDN download.
+- AoA removed/deferred: user considered removal after warning. Official pinned
+  file 4988685 is Forge 1.20.1 3.7.1 Beta; its overall mod concept is RPG skills,
+  weapons, mobs, bosses and dimensions. Do not mistake beta warning for complete
+  playable content. Original selection preserved. MCA remains on hold.
+- 297 external jars + one local patch; 216 selected catalogue entries plus KubeJS
+  and 80 support mods; all 226 original selections retained (ten exclusions).
+- Raw captures/logs kept private; findings summarized in docs/INVENTORY_FREEZE.md.
+  No game launched/controlled or installed profile altered.
+- PASS: 297 external verified hashes, 836 dependency ranges (including local
+  patch), 288-biome grouped audit, book/loot regressions, exact jar target and
+  callback cancellation. Nine repair and nine readiness cases pass. Export
+  has 297 external references and only the exact project-owned jar, all override
+  bytes verified. Live mixin activation/performance remains untested.
+
 PLAYTEST RECORD
 
 2026-10-29 - Alpha.2 - Assistant-run initial Windows client smoke test
@@ -418,7 +453,7 @@ OPEN - Known defects and configuration
 - BLOCKER: user reports whole-game inventory freeze lasting multiple minutes before quitting, in creative and survival. JEI recipe registration took 1.829 minutes plus 20.86s filter build; investigate repeat openings versus initial initialization, not assumed RAM issue.
 - MCA deferred in alpha.11 at user request; reconsider only if user wants social/family gameplay.
 - DEFERRED: investigate MCA/Werewolves partial-compatibility remedy before any MCA restoration; removing MCA avoids the pair but is not an integration fix.
-- Reassess AoA: installed version warns all dimensions and most mobs are missing during port transition. Do not count it as full adventure content.
+- AoA deferred in alpha.12 after incomplete-content warning; re-evaluate before any restoration.
 - Evaluate optional GuideAPI-VP and Luminous:Tag suggestions separately; screenshot messages are not installation instructions.
 - Alpha.8 old profile lacks 60 jars; alpha.9 Wild Realms (1) fully verified READY. Cause of old import omission remains unknown; gameplay tests remain open.
 - Worldgen cycle reproduced statically; Environmental removed in alpha.8. User must verify fresh world creation and exploration; restoration deferred until repaired.
@@ -493,18 +528,19 @@ OPEN - Multiplayer, distribution and maintenance
 - Document safe version upgrades, worldgen changes, backups and recovery.
 - Keep this backlog and all reported test outcomes current at every update.
 
-USER PLAYTEST REQUEST - ALPHA.11 DIAGNOSTIC BUILD
-Alpha.11 requires a separate fresh profile/world because MCA was removed.
-Import Wild-Realms-0.1.0-alpha.11.zip separately and wait for completion.
+USER PLAYTEST REQUEST - ALPHA.12 TARGETED BYPASS
+Alpha.12 requires a separate fresh profile/world because MCA and AoA were removed.
+Import Wild-Realms-0.1.0-alpha.12.zip separately and wait for completion.
 Open the profile folder, double-click REPAIR-INSTALLATION.cmd, require READY.
 If NOT READY, let downloads finish and check again; report remaining failures.
 Then launch. If it crashes, send the NEW crash report and latest.log.
 If the main menu loads, create a disposable world, try JEI, save and reload;
 then test the repaired Buddycards book and fresh Iron's Spells loot.
+Test inventory reopening/recipe browsing and actual anvil enchanting; JEI exhaustive book previews are intentionally omitted.
 If inventory freezes, leave game open and run CAPTURE-FREEZE.cmd from this profile.
 Send freeze-reports output and latest.log privately; no multi-minute wait required.
 This is a manual readiness check, not an automatic launcher lock.
-Alpha.7 reached world generation but crashed. Alpha.11 gameplay remains untested.
+Alpha.7 reached world generation but crashed. Alpha.12 gameplay remains untested.
 Use a fresh world. Test creation, exploration into new chunks, save/reload and a second seed.
 COMPLETE CATALOGUE ADDITION INVENTORY
 The inventory below retains all 226 non-library selections from the handoff.
@@ -541,7 +577,7 @@ Source descriptions and qualifications: docs/Fantasy_Modpack_Chat_Handoff.md.
 027 [PINNED / USER PLAYTEST PENDING] Deeper and Darker
 028 [PINNED / USER PLAYTEST PENDING] The Undergarden
 029 [PINNED / USER PLAYTEST PENDING] DivineRPG
-030 [PINNED / USER PLAYTEST PENDING] Advent of Ascension
+030 [DEFERRED ALPHA.12] Advent of Ascension - incomplete-content beta warning; reconsider when desired content available.
 031 [PINNED / USER PLAYTEST PENDING] Voidscape
 032 [PINNED / USER PLAYTEST PENDING] The Lost Cities
 033 [PINNED / USER PLAYTEST PENDING] Iron's Spells 'n Spellbooks

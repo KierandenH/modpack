@@ -190,3 +190,15 @@ Full evidence, known limits and one focused retest are in INVENTORY_FREEZE.md.
 archive overrides, nine readiness cases and isolated Java thread capture pass.
 No Minecraft launch/gameplay performed. If frozen, user runs CAPTURE-FREEZE.cmd
 from the affected profile and sends freeze-reports plus latest.log privately.
+
+## Alpha.12: user captures identify JEI enchanted-book preview work
+
+All three alpha.11 captures show the render thread RUNNABLE in JEI's anvil/book
+preview enumeration, with increasing CPU time. Tooltip mitigation alone did not
+prevent this bottleneck. Alpha.12 bypasses the exact preview stream with a small
+project-owned mod; normal anvils/enchanting are untouched. AoA is separately
+deferred for incomplete beta content, with original catalogue entry retained.
+Exact target/callback/build checks pass; actual Forge mixin application and
+performance remain user-tested. Fresh profile/world; test inventory, recipes,
+actual anvil enchanting, save/reload. Use CAPTURE-FREEZE if it stalls again.
+Raw user diagnostics remain private; see INVENTORY_FREEZE.md for findings.
